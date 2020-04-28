@@ -1,0 +1,369 @@
+.feeds {
+
+}
+.feeds__subscribe {
+  overflow: auto;
+  padding:10px 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  .feeds__subscribe-list {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  .feeds__subscribe-user {
+    width: 65px;
+    flex: none;
+    padding:20px 10px 10px;
+    border-bottom:$border;
+    position: relative;
+    text-align: center;
+    &.active {
+      //&:after {
+      //  content:'';
+      //  display: block;
+      //  width :45px;
+      //  height: 4px;
+      //  background: $blue;
+      //  position: absolute;
+      //  left: 10px;
+      //  bottom: -2px;
+      //  z-index: 1;
+      //}
+    }
+
+    .thumb {
+      display: block;
+      img {
+        width: 45px;
+        border-radius: 50%;
+        height: 45px;
+        overflow: hidden;
+      }
+
+    }
+    p {
+      font-size: 12px;
+      color:#5a5553;;
+      margin-top: 5px;
+      @include truncate;
+    }
+  }
+}
+
+.feeds__controller {
+  padding: 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .feeds__controllder-box {
+    width: 280px;
+    border-bottom: $border;
+    padding:0 10px;
+    display: flex;
+    a {
+      flex: 1;
+      position: relative;
+      bottom: -3px;
+      font-size: 12px;
+      color:#414141;
+      line-height: 40px;
+      opacity: 0.5;
+      text-align: center;
+      &.active {
+        opacity: 1;
+        border-bottom: 4px solid $green;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+.feed {
+
+  .feedDetail & {
+    // 상세 피드 디자인
+    .feed__content {
+      padding: 20px;
+      background:#d9d9d9;
+    }
+    .feed__util {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background:#383433;
+      padding: 15px 50px;
+
+      .detail__info {
+        text-align: right;
+        p {
+          font-size: 12px;
+          color:#fff;
+          margin-top: 10px;
+          font-weight: 300;
+        }
+      }
+      .feed__views{
+        background: url('../images/i-views-white.png') no-repeat left center;
+        background-size: auto 11px;
+        color:#fff;
+      }
+      .feed__likes{
+        background: url('../images/i-likes-white.png') no-repeat left center;
+        background-size: auto 11px;
+        color:#fff;
+      }
+      .feed__talks{
+        background: url('../images/i-talks-white.png') no-repeat left center;
+        background-size: auto 11px;
+        color:#fff;
+      }
+
+      .feed__actions {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .feed__action-btn {
+        // 좌측 버튼 고통
+        text-align: center;
+        font-size: 12px;
+        color:#fff;
+        padding-top: 25px;
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          color:$green;
+        }
+        &.feed__action-like {
+          background: url('../images/detail-like.png') no-repeat center top;
+          background-size: auto 18px;
+          &.active {
+            background: url('../images/detail-like-active.png') no-repeat center top;
+            background-size: auto 18px;
+          }
+        }
+        &.feed__action-unlike {
+          background: url('../images/detail-unlike.png') no-repeat center top;
+          background-size: auto 20px;
+          &.active {
+            background: url('../images/detail-unlike-active.png') no-repeat center top;
+            background-size: auto 18px;
+          }
+        }
+        &.feed__action-share {
+          background: url('../images/detail-share.png') no-repeat center top;
+          background-size: auto 18px;
+          &:hover {
+            background: url('../images/detail-share-active.png') no-repeat center top;
+            background-size: auto 18px;
+            color:$green;
+          }
+        }
+        &.feed__action-report {
+          background: url('../images/detail-report.png') no-repeat center top;
+          background-size: auto 20px;
+          &:hover {
+            background: url('../images/detail-report-active.png') no-repeat center top;
+            background-size: auto 18px;
+            color:$green;
+          }
+        }
+      }
+
+    }
+  }
+  background:#fff;
+  border-bottom: 10px solid #eaeaea;
+  &:last-child {
+    border-bottom: 0;
+  }
+  .feed__content {
+    border: 1px solid $border-color;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    overflow: auto;
+    .feed__slider {
+      position: relative;
+      .slick-arrow {
+        @include text-indent;
+        position: absolute;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: url('../images/i-arrow-right-white.png') $border-color no-repeat center;
+        background-size: auto 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        &.slick-prev {
+          left: 0;
+          right: auto;
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+      .feed__slide-img {
+        text-align: center;
+        img {
+          display: inline;
+        }
+      }
+      .slick-dots {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10px;
+        z-index: 5;
+        li {
+          margin:0 3px;
+        }
+        button {
+          @include text-indent;
+          border: 1px solid $border-color;
+          width: 10px;
+          height: 10px;
+          background:#efefef;
+          border-radius: 50%;
+          transition: all .3s;
+        }
+        .slick-active button {
+          background: $blue;
+        }
+      }
+    }
+    .feed__video {
+      background:#d9d9d9;
+      text-align: center;
+      iframe {
+        height: 350px;
+        width: 100%;
+      }
+    }
+    .feed__images {
+      padding-bottom: 15px;
+      display: flex;
+      overflow: auto;
+      align-items: center;
+      .feed__image-item {
+        width: 150px;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+        flex: none;
+        a {
+          display: block;
+          width: 100%;
+          height: 150px;
+          position: relative;
+          background-size: cover;
+          background-position: center center;
+          @include text-indent;
+        }
+      }
+    }
+  }
+  .feed__info {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .feed__state {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      margin-left: 10px;
+    }
+    .feed__views{
+      background: url('../images/i-views.png') no-repeat left center;
+      background-size: auto 11px;
+      padding-left: 1.5em;
+    }
+    .feed__likes{
+      background: url('../images/i-likes.png') no-repeat left center;
+      background-size: auto 11px;
+      padding-left: 1.25em;
+    }
+    .feed__talks{
+      background: url('../images/i-talks.png') no-repeat left center;
+      background-size: auto 11px;
+      padding-left: 1.25em;
+    }
+  }
+  .feed__title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.5em;
+    font-weight: 500;
+    word-break: keep-all;
+    a {
+      color:#333;
+    }
+  }
+  .feed__label {
+    color: $blue;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .feed__header {
+    display: block;
+    padding: 15px 15px;
+  }
+  .feed__header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .feed__author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .thumb {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      img {
+        border-radius: 50%;
+      }
+    }
+    p {
+      padding-left: 10px;
+      font-size: 12px;
+      color:#333;
+    }
+    .is_new {
+      @include text-indent;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $green;
+      display: block;
+    }
+  }
+  .feed__etc {
+    button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: url('../images/i-more.png') no-repeat center;
+      background-size: auto 18px;
+      @include text-indent;
+    }
+  }
+
+}

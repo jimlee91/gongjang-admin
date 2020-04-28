@@ -1,0 +1,67 @@
+.rank {
+
+
+  .rank__title {
+    border-bottom: $border;
+    padding: 10px 0;
+  }
+  .rank__table {
+    margin-top: 10px;
+    thead {
+      td, th {
+        text-align: center;
+        font-size: 10px;
+      }
+    }
+    tbody {
+      tr:nth-child(1) {
+        .no span{
+          background:$blue;
+        }
+      }
+      tr:nth-child(2),
+      tr:nth-child(3) {
+        .no span{
+          background:$green;
+        }
+      }
+      td {
+        padding-top: 8px;
+        border-bottom: $border;
+        height: 58px;
+        text-align: center;
+        font-size: 12px;
+        &.cont {
+          padding:8px 10px 0 10px;
+          text-align: left;
+        }
+        &.no {
+          span {
+            background:#d7d4d2;
+            display: block;
+            padding-top: 12px;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            color:#fff;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            position: relative;
+            &:after {
+              content:'';
+              display: block;
+              width: 20px;
+              height: 2px;
+              background:#fff;
+              opacity: .5;
+              position: absolute;
+              bottom: 12px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

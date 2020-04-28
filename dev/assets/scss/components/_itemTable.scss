@@ -1,0 +1,42 @@
+.itemTable {
+
+  .itemTable__item {
+    border-bottom: 1px solid rgba(112, 112, 112, .5);;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;;
+    padding:15px 0;
+
+
+    .itemTable__title {
+      h4 {
+        color:$green;
+        font-size:12px;
+        line-height: 15px;
+      }
+      p {
+        font-size: 10px;
+        color:#5a5553;
+        margin-top: 5px;
+      }
+    }
+    .itemTable__item-info {
+      width: 120px;
+      p {
+        color:#333;
+        line-height: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        strong {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

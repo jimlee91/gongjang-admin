@@ -1,0 +1,60 @@
+.reservation .ui-datepicker td.attend span,
+.reservation .ui-datepicker td.attend a {
+  background:$green;
+  border-radius: 50%;
+}
+.reservation .ui-datepicker td.absent span,
+.reservation .ui-datepicker td.absent a {
+  background:#eaeaea;
+  border-radius: 50%;
+}
+
+.academy {
+  .calendar-box {
+    display: flex;
+
+    .reservation .ui-datepicker .ui-datepicker-header {
+      background: none;
+    }
+    .reservation .ui-widget.ui-widget-content {
+      border: none;
+    }
+    .reservation .ui-datepicker .ui-datepicker-header {
+      border: none;
+    }
+    .reservation .ui-datepicker .ui-datepicker-header span {
+      color:#333;
+    }
+    .ui-datepicker th {
+      font-size: 10px;
+      font-weight :300;
+    }
+    .reservation .ui-datepicker td {
+      height: 45px;
+    }
+
+    .ui-widget-header .ui-icon {
+      background: url('../images/i-arrow-right.png') no-repeat center;
+      width: 25px;
+      height: 25px;
+      background-size: auto 25px;
+    }
+    .ui-icon-circle-triangle-w {
+      transform: rotate(180deg);
+    }
+    .reservation .ui-datepicker .ui-datepicker-prev {
+      left: 10px;
+    }
+    .reservation .ui-datepicker .ui-datepicker-next {
+      right: 20px;
+    }
+    .reservation .ui-datepicker .ui-datepicker-prev,
+    .reservation .ui-datepicker .ui-datepicker-next {
+      &:hover {
+        background: none;
+        border-color: transparent;
+      }
+    }
+  }
+
+}

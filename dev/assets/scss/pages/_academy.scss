@@ -1,0 +1,196 @@
+.academy {
+
+  .academy__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+  }
+
+  .academy__item {
+    width: 150px;
+    margin-right: 55px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(n+4) {
+      margin-top: 50px;
+    }
+
+    .academy__info {
+      padding: 15px 0;
+      h3 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 5px;
+      }
+      p {
+        margin-top: 5px;
+        padding-top: 5px;
+        border-top: $border;
+        font-size: 10px;
+        line-height: 14px;
+      }
+      .state {
+        background: url('../images/star.png') no-repeat left center;
+        background-size: auto 12px;
+        padding-left: 16px;
+        font-size: 12px;
+        color:$blue;
+        &.end {
+          color:#5A5553;;
+          background: url('../images/star-black.png') no-repeat left center;
+          background-size: auto 15px;
+        }
+
+      }
+    }
+    .btn {
+      display: block;
+      line-height: 32px;
+      border: $border;
+      font-size: 12px;
+      border-radius: 7px;
+      text-align: center;
+      color:#707070;
+      transition: all .3s;
+      &:hover {
+        background:$blue;
+        color:#fff;
+        border-color:$blue;
+      }
+    }
+  }
+
+  .cup__item-info {
+    &:hover {
+      background: none;
+    }
+    .btnActions .btn {
+      color:$blue;
+      border-color: $blue;
+      &:hover {
+        background:$blue;
+        color:#fff;
+      }
+    }
+    .state {
+      background: none;
+      padding-left: 0;
+    }
+  }
+}
+
+.group {
+  .group__title {
+    line-height: 45px;
+    background:#383433;
+    color:#fff;
+    padding:0 50px;
+    font-size: 14px;
+  }
+}
+.academy-detail {
+  .subContent__section {
+    position: relative;
+  }
+}
+.academy-detail-thumb {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  width: 70px;
+  text-align: center;
+  z-index: 10;
+  p {
+    color: #5A5553;
+    font-size: 10px;
+    background: url('../images/i-search-blue.png') no-repeat right center;
+    background-size: auto 12px;
+    padding-right: 15px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .thumbbox {
+    width: 70px;
+    padding:5px;
+    height: 70px;
+    display: block;
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}
+
+.academy-intro {
+  margin-top: 15px;
+  width: 350px;
+
+  .academy-intro-desc {
+    font-size: 12px;
+    word-break: keep-all;
+  }
+
+  .infoTable {
+    margin-top: 10px;
+    strong {
+      font-size: 12px;
+    }
+    font-size: 12px;
+  }
+}
+
+.coach {
+  display: flex;
+  .coach__img {
+    width: 45px;
+    flex: none;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .coach__info {
+    padding-left: 15px;
+  }
+  .coach__number {
+    font-size: 12px;
+    line-height: 15px;
+    margin:7px 0;
+  }
+  .coach__history {
+    h3, li {
+      font-size: 12px;
+      line-height: 30px;
+      font-weight: 400;
+      border-bottom: 1px solid $green;
+    }
+  }
+}
+
+
+.calendar-date-info {
+  flex: 1;
+  margin-left: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  .infos {
+    border-left: $border;
+    padding-left: 30px;
+    flex: 1;
+
+    .infos-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      font-size: 12px;
+      margin-bottom: 15px;
+      strong {
+        flex: none;
+        width:  80px;
+
+      }
+    }
+  }
+
+}

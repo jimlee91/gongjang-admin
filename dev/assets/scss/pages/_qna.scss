@@ -1,0 +1,80 @@
+.qnalist__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  strong {
+    font-size: 10px;
+    color:#5a5553;
+    font-weight: 400;
+  }
+  span {
+    flex: 1;
+    height: 1px;
+    background:#5a5553;
+    opacity: .8;
+    margin:0 10px;
+
+  }
+}
+.qnalist {
+  .qnalink {
+    width: 65px;
+    flex: none;
+    line-height: 24px;
+    font-size: 10px;
+    border: 1px solid $green;
+    text-align: center;
+    color:#333;
+    border-radius: 2em;
+    transition: all .3s;
+    &.active {
+      border-color: $green;
+      background: $green;
+      color:#fff;
+    }
+    &:hover {
+      border-color: $green;
+      background: $green;
+      color:#fff;
+    }
+  }
+}
+
+.qnadetail {
+  .qnadetail__header {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(122,122,122,.5);
+    margin-bottom: 10px;
+    h3 {
+      font-size: 12px;
+      flex: 1;
+      line-height: 1.5em;
+    }
+    span {
+      font-size: 10px;
+      color:#5a5553;
+    }
+  }
+
+  .qnadetail__body {
+    padding:10px 0;
+    min-height: 280px;
+    border-bottom: 1px solid rgba(122,122,122,.5);
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .qnadetail__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    strong, span {
+      font-size: 10px;
+    }
+  }
+}

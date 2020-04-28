@@ -1,0 +1,144 @@
+.match {
+  .subContent__section {
+    padding: 15px 50px !important;
+  }
+}
+
+.match__item {
+
+}
+.match__header {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: $border;
+  .match__place {
+    color:$blue;
+    font-size: 12px;
+  }
+  .match__title {
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: 600;
+
+    .date {
+      font-size: 12px;
+      margin-left: auto;
+      font-weight: 300;
+    }
+  }
+}
+.match__body {
+  display: flex;
+  align-items: center;
+
+  .match__link {
+    width: 75px;
+    flex: none;
+    font-size: 12px;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    color: rgb(90, 85, 83);
+    border-radius: 7px;
+    border: solid 1px rgb(90, 85, 83);
+    display: block;
+
+    &.disabled {
+      opacity: .5;
+    }
+  }
+}
+
+.match-detail__title {
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: 600;
+
+  .date {
+    font-size: 12px;
+    margin-left: auto;
+    font-weight: 300;
+  }
+}
+
+.match-detail__author {
+  margin-top: 2em;
+  border-top: $border;
+  display: flex;
+}
+
+.match__state-link {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  .wait {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid $blue;
+    text-align: center;
+    line-height: 76px;
+    font-size: 12px;
+    color:$blue;
+    font-weight: 500;
+  }
+  .complete {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid $green;
+    text-align: center;
+    line-height: 76px;
+    font-size: 12px;
+    color: $green;
+    font-weight: 500;
+  }
+}
+
+.match__applicant {
+  h2 {
+    font-size: 14px;
+  }
+
+  .match__applicant-link {
+    width: 55px;
+    height: 55px;
+    display: block;
+    line-height: 53px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid transparent;;
+
+    &.complete {
+      border-color: $blue;
+      color: $blue;
+    }
+    &.reject {
+      border-color: #707070;
+      color: #707070;
+    }
+  }
+  .match__applicant-list {
+    margin-top: 10px;
+
+    td {
+      padding: 15px 0;
+      border-bottom: $border;
+
+      .number {
+        font-size: 12px;
+      }
+    }
+    tr:last-child {
+      td {
+        border: none;
+      }
+    }
+  }
+
+}

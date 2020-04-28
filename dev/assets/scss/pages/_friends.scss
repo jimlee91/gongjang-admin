@@ -1,0 +1,62 @@
+.friends__list {
+  padding: 10px 0;
+
+  .friends__item {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: $border;
+    &.friends__item--link {
+      background: url('../images/i-arrow-right.png') no-repeat right center;
+      background-size: auto 12px;
+      padding-right: 30px;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    .friends__add {
+      @include text-indent;
+      width: 15px;
+      height: 15px;
+      background: url('../images/i-plus-black.png') no-repeat right center;
+      background-size: 15px auto;
+    }
+    .friends__remove {
+      @include text-indent;
+      width: 15px;
+      height: 15px;
+      background: url('../images/i-plus-black.png') no-repeat right center;
+      background-size: 15px auto;
+      transform: rotate(45deg);
+    }
+  }
+
+}
+.friends__actions {
+  width: 70px;
+  flex: none;
+
+  .btn {
+    height: 25px;
+    border-radius: 2em;
+    font-size: 10px;
+    width: 100%;
+    transition: all .3s;
+    &.btn--tr {
+      border: 1px solid $green;
+      margin-bottom: 5px;
+      &:hover {
+        color:#fff;
+        background: $green;
+      }
+    }
+    &.btn--fa {
+      border: 1px solid #5a5553;
+      &:hover {
+        color:#fff;
+        background: #5a5553;
+      }
+    }
+  }
+}

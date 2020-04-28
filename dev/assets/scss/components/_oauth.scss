@@ -1,0 +1,104 @@
+.oauth {
+
+  .oauth__info {
+    margin-top: 10px;
+    .oauth__content {
+      background:#fff;
+      border-radius: 5px;
+      width: 100%;
+      height: 100px;
+      padding: 0 15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .oauth__content--after {
+      align-items: center;
+
+
+    }
+    .oauth__content--before {
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.16);
+        font-size: 12px;
+        color:#333;
+      }
+    }
+  }
+
+
+  .oauth__state {
+    height: 30px;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: $green;
+      opacity: 0.45;
+      z-index: 10;
+    }
+    a {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 20;
+      span {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 50;
+        font-size: 12px;
+        line-height: 30px;
+        color:#fff;
+        padding:0 10px;
+      }
+      &:after {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 30px);
+        background: $green;
+        opacity: 0.45;
+        z-index: 10;
+      }
+      &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 60px);
+        background: $green;
+        opacity: 0.45;
+        z-index: 10;
+      }
+    }
+  }
+}

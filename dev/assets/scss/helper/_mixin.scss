@@ -1,0 +1,10 @@
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin text-indent {
+  text-indent: -9999px;
+  overflow: hidden;
+}

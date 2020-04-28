@@ -1,0 +1,103 @@
+.comment {
+  background:#383433;
+  padding: 30px 50px;
+
+  .comment__list {
+
+  }
+  .comment__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    &:last-child {
+      border-bottom: none;
+    }
+    &.comment__item--admin {
+      border-bottom: 1px solid rgba(90, 85, 83,.5);
+      .comment__author {
+        width: 75px;
+      }
+    }
+
+    .comment__content {
+      flex: 1;
+
+      .comment__text {
+        font-size: 12px;
+        line-height: 16px;
+        color:#fff;
+        font-weight: 400;
+      }
+      .comment__createdAt {
+        opacity: .5;
+        text-align: right;
+        color:#fff;
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: 300;
+      }
+    }
+    .userCard {
+      width: 140px;
+      flex: none;
+    }
+    .userCard__thumb {
+      width: 40px;
+    }
+    .userCard__name{
+      color:#fff;
+      font-size: 14px;
+    }
+    .userCard__team p {
+      font-size: 10px;
+      margin: 0;
+      color:#fff;
+    }
+  }
+  .comment__total {
+    margin: 15px 0;
+    color:#fff;
+    font-weight: 300;
+  }
+}
+.comment__form {
+  display: flex;
+  flex-wrap: wrap;
+
+  .comment__textbox {
+    border: 1px solid #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 0;
+    height: 50px;
+    padding: 10px 0 10px 10px;
+    flex: 1;
+    textarea {
+      font-size: 12px;
+      line-height: 15px;
+      resize: none;
+      height: 30px;
+      color:#fff;
+      outline-width: 0;
+    }
+  }
+  .submit {
+    height: 50px;
+    flex: none;
+    width: 50px;
+    white-space: nowrap;
+    background: $blue;
+    color:#fff;
+    border-top-right-radius: 5px;
+    font-size: 12px;
+    border-bottom-right-radius: 5px;
+    &:hover {
+      background:#fff;
+      color:$blue;
+      border: 1px solid $blue;
+    }
+  }
+}

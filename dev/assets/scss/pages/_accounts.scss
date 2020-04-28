@@ -1,0 +1,257 @@
+.accounts__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .accounts__title {
+    position: relative;
+    &:after {
+      position: absolute;
+      left: -2px;
+      bottom: -2px;
+      opacity: .5;
+      width: calc(100% + 4px);
+      height:12px;
+      background:$green;
+      content:'';
+      z-index: 1;
+    }
+    span {
+      font-size: 22px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .accounts__state {
+    font-size: 14px;
+    color:$green;
+    &.step1-2{
+      background: url('../images/step1-2.png') no-repeat left center;
+      background-size: auto 12px;
+      padding-left: 35px;
+    }
+    &.step2-2 {
+      background: url('../images/step2-2.png') no-repeat left center;
+      background-size: auto 12px;
+      padding-left: 35px;
+    }
+    &.step3-1 {
+      background: url('../images/step3-1.png') no-repeat left center;
+      background-size: auto 12px;
+      padding-left: 55px;
+    }
+    &.step3-2 {
+      background: url('../images/step3-2.png') no-repeat left center;
+      background-size: auto 12px;
+      padding-left: 55px;
+    }
+    &.step3-3 {
+      background: url('../images/step3-3.png') no-repeat left center;
+      background-size: auto 12px;
+      padding-left: 55px;
+    }
+  }
+}
+
+
+.accounts {
+  padding: 30px 50px;
+
+  .accounts__info {
+    margin-top: 25px;
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+      color:#646464;
+      margin-top: 10px;
+    }
+  }
+
+
+  .accounts__etc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    a {
+      padding:0 .5em;
+      font-size: 12px;
+      color:#333;
+      border-right: 1px solid #bcbcbc;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+  .accounts__btnbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+      font-size: 12px;
+      border-radius: 3em;
+      height: 35px;
+      line-height: 35px;
+      display: block;
+      width: 190px;
+      transition: all .3s;
+      text-align: center;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.btn-blue {
+        background:$blue;
+        color:#fff;
+        &:hover {
+          background:$green;
+        }
+      }
+      &.btn-white {
+        color:#333;
+        border: 1px solid $green;
+      }
+      &.btn-white2 {
+        color:#333;
+        border: 1px solid $border-color;
+      }
+    }
+  }
+
+  .sns-oauth {
+    padding-top: 20px;
+    border-top: 1px solid #707070;
+  }
+}
+
+.login {
+  .login__form {
+    padding:  70px 0;
+    width: 100%;
+    max-width: 260px;
+    margin:0 auto;
+  }
+  .login__logo {
+    text-align: center;
+  }
+  .login__text {
+    text-align: center;
+    margin: 40px 0 30px;
+    h2 {
+      font-size: 22px;
+    }
+    p {
+      line-height:1.5em;
+      margin-top: 5px;
+      font-size: 12px;
+      color: rgba(0,0,0,0.7);
+    }
+  }
+  .form__row {
+    margin-bottom: 10px;
+  }
+  .accounts__etc {
+    margin-top: 30px;
+  }
+  .accounts__btnbox {
+    margin-top: 50px;
+  }
+
+}
+
+.registered {
+  .registered__result {
+    padding: 50px 0;
+    text-align: center;
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin:0 auto;
+      font-size: 24px;
+      color:#fff;
+      width: 55px;
+      height: 55px;
+      background:$green;
+      border-radius: 50%;
+    }
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 22px;
+      font-weight: 300;
+      line-height:1.5em;
+    }
+    p {
+      font-size: 14px;
+      color: #999;
+      font-weight: 300;
+      line-height:1.5em;
+    }
+  }
+  .registered__form {
+    margin-top: 60px;
+    &.mt-0 {
+      margin-top: 0;
+    }
+
+    .form__row {
+      margin-bottom: 30px;
+    }
+  }
+  .registered__agreements {
+    margin-top: 30px;
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      label {
+        width: auto;
+      }
+      a {
+        font-size: 12px;
+        color:#646464;
+      }
+    }
+  }
+  .accounts__btnbox {
+    margin-top: 100px;
+  }
+  .registered__age {
+    margin-top: 130px;
+
+    label {
+      margin-bottom: 15px;
+      span {
+        display: block;
+        line-height: 35px;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        border: solid 1px rgba(0,0,0,0.5);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .3s;
+      }
+      input:checked + span {
+        border-color:$green;
+        color:$green;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    input {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.event {
+  padding-bottom: 50px;
+
+}
+
+.event__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 50px 0;
+
+  h3 {
+    font-size: 12px;
+  }
+  .box {
+    width: 100px;
+  }
+}
+
+.event__list {
+
+}
+.event__item {
+  border-bottom: 10px solid rgb(234, 234, 234);
+  display: block;
+  padding: 10px 50px 0;
+
+  .notice--detail & {
+    padding: 0;
+    border: none;
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  .event__info {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    .date {
+      margin-left: auto;
+      font-size: 10px;
+      color:#5a5553;;
+    }
+
+    .event__state {
+      color:$blue;
+      width: 60px;
+      font-size: 12px;
+      padding-left: 16px;
+      background: url('../images/star.png') no-repeat left center;
+      background-size: auto 12px;
+      flex: none;
+    }
+
+    p {
+      font-size: 12px;
+      color:#5a5553;;
+      font-weight: 600;
+      padding:0 10px 0 0;
+    }
+  }
+}

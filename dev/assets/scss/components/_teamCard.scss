@@ -1,0 +1,117 @@
+.teamCard {
+
+  .teamCard__item {
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
+    width: 450px;
+    padding: 30px 35px;
+    border-radius: 5px 5px 20px 5px;
+    display: flex;
+    margin:0 auto;
+    .teamCard__info {
+      display: flex;
+      flex: 1;
+      padding-right: 10px;
+      .teamCard__amb {
+
+      }
+      .teamCard__desc {
+        padding-left: 10px;
+        padding-top: 10px;
+        .date {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+        .description {
+          font-size: 10px;
+          line-height: 15px;
+          margin-top: 20px;
+          font-weight: 500;
+        }
+        h2 {
+          position: relative;
+          span {
+            position: relative;
+            z-index: 2;
+            font-size: 26px;
+            font-weight: 300;
+            strong {
+              font-weight: 600;
+            }
+          }
+          &:after {
+            content:'';
+            display: block;
+            height: 14px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: $green;
+            z-index: 1;
+          }
+        }
+      }
+    }
+    .teamCard__actions {
+      width: 70px;
+      flex: none;
+
+      a {
+        display: block;
+        margin-top: 8px;
+        &.white {
+          line-height: 32px;
+          border-radius: 7px;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background:#fff;
+          border: 1px solid $blue;
+          color:$blue;
+          font-size: 10px;
+          text-align: center;
+        }
+        &.black {
+          line-height: 32px;
+          border-radius: 7px;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background:#707070;
+          border: 1px solid #707070;
+          color:#fff;
+          font-size: 10px;
+          text-align: center;
+          transition: all .3s;
+          &:hover {
+            background:#fff;
+            color:#707070;
+          }
+          &.disabled {
+            opacity: .5;
+            background:#fff;
+            color:#707070;
+          }
+        }
+        &.btn {
+          line-height: 32px;
+          background: $blue;
+          color:#fff;
+          text-align: center;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          border-radius: 7px;
+          span {
+            color:#fff;
+            font-size: 10px;
+            padding-right: 15px;
+
+            &.share {
+              background: url('../images/dubble-arrow.png') no-repeat right center;
+              background-size: auto 10px;
+            }
+            &.gongan {
+              background: url('../images/gongan-green.png') no-repeat right center;
+              background-size: auto 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

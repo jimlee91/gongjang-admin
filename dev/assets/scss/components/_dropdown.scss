@@ -1,0 +1,22 @@
+.dropdown {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .dropdown__title {
+    height: 40px;
+    background:#fff;
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    width: 100%;
+    border-bottom: $border;
+    span {
+      margin-left: auto;
+      font-size: 12px;
+      background: url('../images/arrow-down.png') no-repeat right center;
+      background-size: auto 5px;
+      padding-right: 15px;
+    }
+  }
+}

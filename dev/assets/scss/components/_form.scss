@@ -1,0 +1,282 @@
+.form {
+
+  &.form--border {
+    padding: 25px 30px;
+    border: 1px solid #5a5553;
+    border-radius: 7px;
+  }
+  .form__row-box {
+    margin-bottom: 20px;
+    .form__row {
+      .reservation & {
+        margin-bottom: 0 !important;
+      }
+    }
+    .form__row-title {
+      width: 70px !important;
+    }
+    .form__help {
+      padding-left: 70px;
+    }
+  }
+  .form__help {
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 15px;
+    color:rgba(0,0,0,0.5);
+    &.confirm {
+      color: $blue;
+    }
+    &.error {
+      color: #f00;
+    }
+
+  }
+  .form__row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+    &.disabled {
+      .form__row-title {
+        opacity: .6;
+      }
+    }
+    &.column {
+      display: flex;
+      margin-bottom: 20px !important;
+      .form__row-title {
+        flex: none;
+        width: 100px;
+        line-height: 35px;
+      }
+      .box {
+
+        margin: 0;
+        flex: 1;
+      }
+    }
+
+    .form__row-title {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .box.column {
+      flex-direction: column;
+      .checkbox {
+        width: 100%;
+      }
+    }
+    .box {
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      &.in-files {
+        input[type="file"] {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          opacity: 0;
+          z-index: 10;
+        }
+      }
+      .checkbox {
+        margin-top: 10px;
+        width: auto;
+        margin-right: 30px;
+      }
+      textarea {
+        flex: 1;
+        font-size: 12px;
+        line-height: 1.5em;
+        padding: 15px;
+        border: 1px solid $border-color;
+        border-radius: 7px;
+        outline-width: 0;
+        min-height: 200px;
+        &.input-border {
+          border: solid 1px rgba(0,0,0,0.5) !important;
+        }
+      }
+      input {
+        flex: 1;
+        height: 30px;
+        font-size: 12px;
+        border-bottom: 1px solid $border-color;
+        &:read-only {
+          border: none;
+        }
+        &.input-border {
+          height: 35px !important;
+        }
+      }
+      select {
+        flex: 1;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 7px;
+        border: 1px solid $border-color;
+        width: 100%;
+        padding:0 10px;
+        background: url('../images/arrow-down.png') no-repeat calc(100% - 10px) center;
+        background-size: auto 7px;
+        &.white {
+          color:#fff;
+          border-color: rgba(255,255,255,.8) !important;
+          background: url('../images/arrow-down-white.png') no-repeat calc(100% - 10px) center;
+          background-size: auto 7px;
+        }
+      }
+      .btn {
+        margin-left: 10px;
+        width: 100px;
+        height: 30px;
+        border: 1px solid $green;
+        border-radius: 2em;
+        color:#333;
+        font-size: 12px;
+        transition: all .3s;
+        &:hover {
+          color:#fff;
+          background: $green;
+        }
+      }
+      .counter {
+        position: absolute;
+        left: 195px;
+        top: 0;
+        line-height: 30px;
+        font-size: 12px;
+        color:$blue;
+      }
+    }
+
+
+    .input-border {
+      border-radius: 7px;
+      border: solid 1px rgba(0,0,0,0.5) !important;
+      padding:0 1em;
+      font-size: 12px;
+      height: 35px;
+    }
+  }
+
+  .form__fileFields {
+    width: 100%;
+    .fileField-empty {
+      line-height: 35px;
+      font-size: 12px;
+      width: 100%;
+      padding:0 10px;
+      text-align: left;
+      border-radius: 5px;
+      border: 1px solid $border-color;
+      background: url('../images/i-search-black.png') no-repeat calc(100% - 10px) center;
+      background-size: auto 14px;
+    }
+    .fileField-list {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $border-color;
+    }
+    .fileField-item {
+      margin-bottom: 5px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 300;
+      }
+      a {
+        @include text-indent;
+        width: 15px;
+        height: 15px;
+        background: url('../images/i-x.png') no-repeat center;
+        background-size: auto 10px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.checkbox2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  input {
+    display: none;
+    &:checked + span {
+      background: url('../images/i-checkbox-on.png') no-repeat center;
+      border: none;
+      background-size: auto 16px;
+      width: 14px;
+      height: 16px;
+    }
+  }
+  span {
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #5a5553;
+  }
+}
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  input {
+    display: none;
+    &:checked + span {
+      background:$green;
+    }
+  }
+  span {
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+    background:#d7d4d2;
+    border-radius: 50%;
+    transition: all .3s;
+  }
+  strong {
+    font-weight: 500;
+  }
+  i {
+    font-style: normal;
+    color:$blue;
+  }
+}
+
+.switch{display:inline-block;cursor:pointer;width: 60px;}
+.switch__layout{width:60px;height:30px;position:relative;border-radius:2em;overflow:hidden;border: 1px solid $border-color;}
+.switch input{position:absolute;left:0;top:0;width:1px;height:1px;overflow:hidden;opacity:0;}
+.switch input + span:before{display:block;width:100%;height:100%;background:#fff;content:'';transition:all .2s ease-out;}
+.switch input + span:after{position:absolute;left:34px;top:4px;width:20px;height:20px;background:$border-color;content:'';display:block;border-radius:50%;transition:all .2s ease-out;}
+.switch input:checked + span:before{background:#fff;}
+.switch input:checked + span:after{left:4px;background: $blue;}
+.switch input:disabled + span:before{opacity: .3;}
+
+
+.form-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  @include text-indent;
+  background: url('../images/i-search-black.png') no-repeat center;
+  background-size: auto 15px;
+}

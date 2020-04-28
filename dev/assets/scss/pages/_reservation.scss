@@ -1,0 +1,429 @@
+.reservation {
+
+  .calendar {
+    margin-bottom: 15px;
+
+    .ui-widget-header .ui-icon {
+      display: none;
+    }
+    .ui-datepicker .ui-datepicker-prev {
+      background: url('../images/i-arrow-right-white.png') no-repeat center;
+      background-size: auto 14px;
+      transform: rotate(180deg) translateY(50%);
+    }
+    .ui-datepicker .ui-datepicker-prev:hover {
+      border: none !important;
+      background: url('../images/i-arrow-right-white.png') no-repeat center;
+      background-size: auto 14px;
+      transform: rotate(180deg) translateY(50%);
+    }
+    .ui-datepicker .ui-datepicker-next {
+      background: url('../images/i-arrow-right-white.png') no-repeat center;
+      background-size: auto 14px;
+      transform: translateY(-50%);
+    }
+    .ui-datepicker .ui-datepicker-next:hover {
+      border: none !important;
+      background: url('../images/i-arrow-right-white.png') no-repeat center;
+      background-size: auto 14px;
+    }
+  }
+  .ui-widget.ui-widget-content {
+    width: 370px;
+    margin:0 auto;
+    border: $border;
+    border-radius: 7px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .ui-datepicker .ui-datepicker-header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background:#5A5553;
+    color:#fff;
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .ui-datepicker-year {
+    display: none;
+  }
+
+  .ui-datepicker td {
+    width: 50px;
+    text-align: center;
+    height: 35px;
+    padding: 0;
+  }
+  .ui-datepicker td span, .ui-datepicker td a {
+    background: none;
+    border: none;
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color:#5A5553;;
+    border: 2px solid $blue;
+    border-radius: 50%;
+    line-height: 26px;
+  }
+}
+
+.reservation__timebox {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 -5px;
+  .time {
+    cursor: pointer;
+    width: 33.333%;
+    padding:0 5px;
+    &:nth-child(n + 4) {
+      margin-top: 10px;
+    }
+
+    span{
+      font-size: 12px;
+      display: block;
+      line-height: 35px;
+      border: $border;
+      border-radius: 7px;
+      text-align: center;
+      transition: all .3s;
+    }
+    input:checked + span {
+      background:$blue;
+      color:#fff;
+
+    }
+  }
+}
+
+#selectSpot {
+  .modal__content--selectSpot {
+    padding: 0;
+  }
+  .modal__title {
+    line-height: 60px;
+    padding:0 30px;
+    margin: 0;
+  }
+  .selectSpot__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .selectSpot__tab {
+    width: 160px;
+    background:#eaeaea;
+    button {
+      width: 100%;
+      height: 50px;
+      font-size: 12px;
+      position: relative;
+      &.active {
+        color:$blue;
+        font-weight: 600;
+        &:after {
+          content:'';
+          display: block;
+          position: absolute;
+          right :0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 0;
+          height: 0;
+          border-right: 10px solid #fff;
+          border-left: 10px solid transparent;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+        }
+      }
+    }
+  }
+  .selectSpot__views {
+    flex: 1;
+
+    .spotlist {
+      width: 120px;
+      margin:0 auto;
+
+      button {
+        display: block;
+        width: 100%;
+        line-height: 50px;
+        text-align: center;
+        border-bottom: $border;
+        font-size: 12px;
+        color:#5A5553;
+        &.active {
+          color:$green;
+        }
+      }
+    }
+  }
+}
+
+.addOption__list {
+  background:#eaeaea;
+  padding: 10px 20px;
+  .addOption__item {
+    display: flex;
+    align-items: center;
+
+    .no {
+      font-size: 12px;
+      width: 30px;
+      text-align: left;
+      font-weight: 400;
+    }
+    .itemname {
+      white-space: nowrap;
+      width: 60px;
+      font-size: 12px;
+      text-align: center;
+      font-weight: 400;
+    }
+    .count {
+      display: flex;
+      white-space: nowrap;
+      line-height: 20px;
+      font-size: 12px;
+      input {
+        width: 30px;
+        text-align: right;
+        line-height: 20px;
+        font-size: 12px;
+        padding-right: 5px;
+      }
+    }
+    .change {
+      margin-left: 10px;
+      color:$blue;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    .price {
+      margin-left: auto;
+      font-size: 12px;
+    }
+    .remove {
+      @include text-indent;
+      width: 30px;
+      height: 30px;
+      background: url('../images/i-minus-black.png') no-repeat right center;
+      background-size: auto 15px;
+    }
+  }
+}
+
+.addMember__list {
+  &.addMember__list--checked {
+    background:#eaeaea;
+    padding: 20px;
+    margin: 0;
+  }
+  max-height: 300px;
+  overflow: auto;
+  margin:0 -20px;
+  margin-top: 30px;
+  padding:0 20px;
+  .addMember__item {
+
+    &.addMember__item--number {
+      input {
+        margin-left: auto;
+        width: 60px;
+        font-size: 10px;
+        text-align: center;
+        height: 30px;
+        border: $border;
+        border-radius: 7px;
+      }
+      button {
+        margin-left: 5px;
+      }
+    }
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .thumb {
+      margin-right: 10px;
+      img {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+    button {
+      margin-left: auto;
+      @include text-indent;
+      width: 30px;
+      height: 30px;
+      &.add {
+        background: url('../images/i-plus-black.png') no-repeat right center;
+        background-size: auto 15px;
+      }
+      &.remove {
+        background: url('../images/i-minus-black.png') no-repeat right center;
+        background-size: auto 15px;
+      }
+    }
+  }
+}
+
+.reservation .form .form__row.form__mileage {
+  input {
+    width: 80px !important;
+    flex: none;
+    margin-right: 5px;
+  }
+  .box {
+    line-height: 35px;
+  }
+
+  .form-info  {
+    margin-top: 10px;
+    padding-left: 1em;
+    border-left: 2px solid $green;
+    font-size: 12px;
+  }
+}
+
+.reservation__history {
+  padding: 0 0 30px;
+}
+
+.reservation__result {
+  .reservation__history & {
+    padding:0 50px;
+    transition: all .3s;
+    color:#5A5553;
+    &:hover {
+      background:#eaeaea;
+    }
+    .inner {
+      border-bottom: $border;
+      width: 100%;
+      display: flex;
+      padding:15px 0;
+    }
+  }
+  &.reservation__result--full {
+    width: 100%;
+    border: none;
+
+    &.border {
+      border-top: $border;
+      border-bottom: $border;
+      padding:15px 100px;
+    }
+  }
+  padding: 15px 0;
+  border-top: $border;
+  border-bottom: $border;
+  width: 400px;
+  margin:0 auto;
+  display: flex;
+  .reservation__result-info {
+    flex: 1;
+    span {
+      font-size: 12px;
+      display: block;
+      font-weight: 300;
+    }
+    h3 {
+      font-weight: 300;
+      font-size: 16px;
+      margin-top: 10px;
+      strong {
+        font-wegiht: 500;
+      }
+    }
+    p {
+      margin-top: 10px;
+      font-size: 12px;
+      color:$blue;
+    }
+  }
+  .infoTable2 {
+    margin-left: auto;
+    width: 150px;
+  }
+}
+
+.reservation__share {
+  width: 400px;
+  margin:0 auto;
+  margin-bottom: 100px;
+  justify-content: flex-end;
+  text-align: right;
+  margin-top: 20px;
+  .btn {
+    width: 100px;
+  }
+}
+
+#resultShare {
+  .form__row-box .form__row{
+    margin-bottom: 0 !important;
+  }
+}
+
+.reservation__block.border {
+  border-bottom: 10px solid #eaeaea;
+}
+
+.reservation__history-info {
+  border: 1px solid $green;
+  border-radius: 7px;
+  padding: 20px 30px;
+
+  .infoTable th, .infoTable td {
+    padding: 10px 0;
+  }
+  .infoTable td {
+    padding-left: 20px;
+  }
+}
+
+.reservation__history-header {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  .inner {
+    flex: 1;
+    border-right:1px solid #707070;
+    span {
+      font-size: 10px;
+    }
+    h3 {
+      margin-top: 5px;
+      font-weight: 300;
+      font-size: 16px;
+      strong {
+        font-weight: 600;
+      }
+    }
+    p {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  }
+
+}

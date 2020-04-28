@@ -1,0 +1,72 @@
+.userHeader{
+  background:#383433;
+  padding: 25px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  &:after {
+    content:'';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 63px;
+    z-index: 1;
+  }
+
+  .userCard__thumb {
+    width: 65px;
+  }
+  .userCard__name {
+    color:#fff;
+    font-size: 22px;
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .userHeader__links {
+    width: 90px;
+    flex: none;
+
+    a {
+      display: block;
+      width: 100%;
+      line-height: 35px;
+      text-align: center;
+      border: 1px solid #fff;
+      color:#fff;
+      border-radius: 5px;
+      font-size: 12px;
+      transition: all .3s;
+      &:hover {
+        background:$blue;
+        border-color:$blue;
+      }
+      &.btn-blue {
+        border: 1px solid $green;
+        color:$green;
+        &:hover {
+          background:$green;
+          color:#fff;
+        }
+      }
+      &:first-child {
+        margin-bottom: 10px;
+      }
+      span {
+        display: inline-block;
+        background: url('../images/i-member.png') no-repeat right center;
+        background-size: auto 15px;
+        line-height: 15px;
+        padding-right: 20px;
+      }
+    }
+  }
+}

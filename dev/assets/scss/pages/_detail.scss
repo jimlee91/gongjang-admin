@@ -1,0 +1,64 @@
+.detail {
+
+  .detail__content {
+    background:#fff;
+  }
+  .detail__body {
+    padding:0 50px;
+    .inner  {
+      padding: 25px 0;
+      border-top: 1px solid $border-color;
+      line-height: 20px;
+    }
+  }
+  .detail__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 50px;
+    .detail__info {
+      flex: 1;
+      padding-right: 20px;
+      .detail__title {
+        line-height: 20px;
+      }
+      .detail__author {
+        margin-top: 10px;
+        .userCard {
+          font-size: 12px;
+          color:#333;
+        }
+        .userCard__thumb {
+          width: 40px;
+        }
+      }
+    }
+    .detail__link {
+      width: 75px;
+      padding: 18px 0 15px;
+      flex: none;
+      border: 1px solid $blue;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &:hover {
+        background: $blue;
+        span {
+          color:#fff;
+          background: url('../images/i-gongan-green.png') no-repeat center top;
+          background-size: auto 15px;
+        }
+      }
+      span {
+        color: $blue;
+        background: url('../images/i-gongan.png') no-repeat center top;
+        padding-top: 25px;
+        background-size: auto 15px;
+        font-size: 12px;
+      }
+    }
+  }
+}

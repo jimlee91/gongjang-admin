@@ -1,0 +1,253 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+
+  .modal__content {
+    width: 450px;
+    background:#fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-height: 90%;
+    overflow: auto;
+  }
+  .modal__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 20px;
+    color:#646464;
+  }
+
+  .modal__btnbox {
+    margin-top: 30px;
+
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.border {
+      border-top: 1px solid rgba(0,0,0,0.2);
+    }
+  }
+  .modal__btn {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 7px;
+    background:$blue;
+    color:#fff;
+    transition: all .3s;
+    &:not(.bg-white):hover {
+      background:$green;
+    }
+    &:nth-child(n + 2) {
+      margin-left: 10px;
+    }
+    &.bg-white {
+      background:#fff;
+      color:#333;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+// 파일등록 2-1
+#addFile {
+  .modal__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+
+      width: 170px;
+      flex: none;
+      height: 140px;
+      border: 1px solid rgb(215, 212, 210);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &.has-files {
+        // 파일이 등록되어있을때,
+        border-color: $green;
+        p {
+          color: $green;
+        }
+      }
+      p {
+        font-size: 14px;
+        margin-top: 15px;
+      }
+      .icon {
+        @include text-indent;
+        width: 60px;
+        height: 40px;
+      }
+      &.addFile__images {
+        .icon {
+          background: url('../images/add-file-img.png') no-repeat center;
+          background-size: auto 100%;
+        }
+        &.has-files {
+          .icon {
+            // 액티브된 이미지
+            background: url('../images/add-file-img-active.png') no-repeat center;
+            background-size: auto 100%;
+          }
+        }
+      }
+      &.addFile__videos {
+        .icon {
+          background: url('../images/add-file-video.png') no-repeat center;
+          background-size: auto 100%;
+        }
+        &.has-files {
+          .icon {
+            // 액티브된 이미지
+            background: url('../images/add-file-video-active.png') no-repeat center;
+            background-size: auto 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.teamEvaluation {
+  .comment__form {
+    margin-top: 130px;
+  }
+  .comment__textbox {
+    border: 1px solid #d7d4d2 !important;
+    border-right: 0;
+    textarea {
+      color:#333 !important;
+    }
+  }
+}
+
+.teamEvaluation__box {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+  .teamEvaluation__form {
+    flex: 1;
+
+    h3 {
+      font-size: 12px;
+      text-align: center;
+      font-weight: 300;
+    }
+    p {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 5px;
+      font-weight: 300;
+    }
+    .grade__count {
+      outline-width: 0;
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      height: 60px;
+    }
+  }
+
+  .teamEvaluation__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    padding: 15px 0;
+    min-height: 180px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+
+    .thumb {
+      width: 90px;
+      flex: none;
+    }
+    .info {
+      padding-left: 10px;
+      max-width:calc(100% - 100px);
+      h2 {
+        @include truncate;
+        font-size: 22px;
+        position: relative;
+        &:after {
+          position: absolute;
+          left: -2px;
+          bottom: -2px;
+          opacity: .5;
+          width: calc(100% + 4px);
+          height:12px;
+          background:$green;
+          content:'';
+          z-index: 1;
+        }
+        span {
+          font-size: 22px;
+          position: relative;
+          z-index: 2;
+          font-weight: 400;
+          strong {
+            font-weight: 600;
+          }
+        }
+      }
+      p {
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.grade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  .grade__star {
+    margin:0 2px;
+    width: 30px;
+    height: 30px;
+    background: url('../images/star-zero.png') no-repeat center;
+    background-size: 100% 100%;
+    &.active {
+      background: url('../images/star1.png') no-repeat center;
+      background-size: 100% 100%;
+    }
+    &.active-half {
+      background: url('../images/star-half.png') no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+#preview .modal__content{
+  width: 660px;
+}

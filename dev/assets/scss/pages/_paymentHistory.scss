@@ -1,0 +1,72 @@
+.paymentHistory {
+
+  .paymentHistory__tab {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    select {
+      height: 25px;
+      border: 1px solid #5a5553;
+      padding:0 10px;
+      color:#5a5553;
+      opacity: .6;
+      font-size: 12px;
+      border-radius: 5px;
+      padding-right: 30px;
+      background: url('../images/arrow-down.png') no-repeat calc(100% - 10px) center;
+      background-size: auto 5px;
+    }
+    .btn {
+      margin-right: 10px;
+      line-height: 25px;
+      border: 1px solid #5a5553;
+      font-size: 12px;
+      border-radius: 5px;
+      padding:0 10px;
+      white-space: nowrap;
+      color:#5a5553;
+      opacity: .6;
+      &.active {
+        color:$green;
+        border-color: $green;
+        opacity: 1;
+      }
+    }
+  }
+
+
+
+}
+.paymentHistory__body {
+  margin-top: 20px;
+
+  .schedule {
+    border-top: 1px solid $border-color;
+  }
+  .schedule__item {
+    padding: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid $border-color !important;
+
+    .inner {
+      align-items: center;
+    }
+    .table {
+      width: 180px !important;
+    }
+  }
+  .paymentHistory__case {
+    color:$blue;
+    font-size: 12px;
+  }
+  .reservation__place {
+    font-size: 16px;
+  }
+  .paymentHistory__actions {
+    margin-top: 10px;
+    a {
+      padding: 0;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.teambox {
+  a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  img {
+    width: 25px;
+    margin-right: 5px;
+  }
+}
+
+.participants {
+  display: flex;
+  flex-wrap: wrap;
+
+  .participants__item {
+    width: 16.6%;
+    text-align: center;
+    padding:0 5px;
+    &:nth-child(n + 7) {
+      margin-top: 15px;
+    }
+
+    a {
+      display: block;
+      .thumb {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin:0 auto;
+      }
+      .info {
+        margin-top: 5px;
+        h3 {
+          font-size: 12px;
+          @include truncate;
+        }
+        p {
+          font-size: 10px;
+          @include truncate;
+        }
+      }
+    }
+  }
+}

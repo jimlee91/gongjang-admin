@@ -1,0 +1,21 @@
+.subContent {
+  background:#fff;
+
+  .subContent__section {
+    padding: 30px 50px;
+
+    &.bg-black {
+      background:rgb(56, 52, 51);
+
+      &.border {
+        border-bottom: 10px solid #6E6B6B;
+      }
+    }
+    .accounts__header {
+      margin-bottom: 36px;
+    }
+    &.border {
+      border-bottom: 10px solid rgb(234, 234, 234);
+    }
+  }
+}

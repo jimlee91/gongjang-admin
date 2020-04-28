@@ -1,0 +1,44 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">회원정보 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class=" subContent">
+                    <div class="subContent__section ">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    앱 설정
+                                </span>
+                            </h2>
+                        </section>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

@@ -1,0 +1,117 @@
+.mileage__total {
+  display: flex;
+  margin-top: 35px;
+  align-content: flex-start;
+  h3 {
+    flex: none;
+    width:  100px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .mileage__info {
+    flex: 1;
+    p {
+      line-height: 15px;
+      color:$blue;
+      font-size: 14px;
+      margin-bottom: 1em;
+      padding-left: 10px;
+    }
+    .mileage__use {
+      border-left: 1px solid $green;
+      padding-left: 10px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}
+
+.mileage__privacy {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  h3 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  a {
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(100, 100, 100);
+  }
+}
+
+.mileage__history {
+
+}
+.mileage__header {
+  display: flex;
+  justify-content: space-between;;
+  align-content: center;
+  .mileage__tab {
+    display: flex;
+    button {
+      padding:0 10px;
+      font-size: 14px;
+      line-height: 15px;
+      height: 15px;
+      font-weight: 600;
+      &.active {
+        color: $green;
+      }
+      &:first-child {
+        padding-left: 0;
+        border-right: 1px solid rgb(90, 85, 83);
+      }
+    }
+  }
+
+  .mileage__sort {
+    select{
+      border: 1px solid #5a5553;
+      border-radius: 5px;
+      height: 25px;
+      width: 60px;
+      padding:0 10px;
+      font-size: 12px;
+      background: url('../images/arrow-down.png') no-repeat calc(100% - 10px) center;
+      background-size: auto 5px;
+    }
+  }
+}
+
+.mileage__views {
+  margin-top: 35px;
+
+  .mileage__item {
+    border-bottom: 1px solid rgba(112, 112, 112, .5);;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;;
+    padding:10px 0;
+
+    h4 {
+      color:$green;
+      font-size:12px;
+      line-height: 15px;
+    }
+    .mileage__item-info {
+      width: 120px;
+      p {
+        line-height: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        strong {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

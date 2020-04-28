@@ -1,0 +1,439 @@
+.player {
+
+  .player__listbox {
+  }
+  .player__section {
+
+  }
+  .player__section-label {
+    line-height: 32px;
+    padding:0 50px;
+    background:#5a5553;
+    color:#fff;
+    font-size: 14px;
+
+    &.me {
+      background:$blue;
+    }
+  }
+  .player__list {
+
+  }
+  .player__item {
+    &:nth-child(n + 2) {
+      .inner {
+        border-top: $border;
+      }
+    }
+    a {
+      display: block;
+      padding: 0 50px;
+
+      .inner {
+        padding: 20px 0;
+        background: url('../images/i-arrow-right.png') no-repeat right center;
+        background-size: auto 12px;
+      }
+    }
+  }
+}
+
+.player-detail {
+
+  .select-cup {
+    display: flex;
+
+    h3 {
+      line-height: 35px;
+      font-size: 14px;
+      color:$green;
+      width: 70px;
+      white-space: nowrap;
+      flex: none;
+    }
+    .form {
+      flex: 1;
+    }
+  }
+  .player-schedule-info {
+    margin-left: auto;
+
+    span {
+      font-size: 12px;
+      line-height: 35px;
+      position: relative;
+      padding-left: 12px;
+      margin-left: 10px;
+      &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+      &.c1 {
+        &:before {
+          background: $blue;
+        }
+      }
+      &.c2 {
+        &:before {
+          background: $green;
+        }
+      }
+    }
+  }
+  .player-detail-top {
+    padding: 15px 50px !important;
+    display: flex;
+    .form__row {
+      margin: 0 !important;
+    }
+  }
+}
+
+$playerInfoBg:#383433;
+.player-info__top {
+  background:#fff;
+  .top {
+    padding: 0 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 30px;
+
+    .player-info-box {
+
+      .player__name {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        a {
+          margin-top: 2px;
+          line-height: 28px;
+          border: 1px solid $green;
+          border-radius: 7px;
+          padding:0 10px;
+          color:$green;
+          span {
+            font-size: 12px;
+            padding-right: 15px;
+            background: url('../images/gongan-green.png') no-repeat right center;
+            background-size: auto 10px;
+          }
+        }
+        .name {
+          font-size: 25px;
+          position: relative;
+          font-weight: 600;
+          margin-right: 10px;
+          span {
+            position: relative;
+            z-index: 2;
+          }
+          &:after {
+            content:'';
+            height: 14px;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            background: $green;
+            width: 100%;
+          }
+        }
+      }
+
+      .teams {
+        margin-top: 10px;
+        li {
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+          font-size: 10px;
+          a {
+            color: #5A5553;
+          }
+          img {
+            vertical-align: sub;
+          }
+        }
+      }
+    }
+    .player-info-thumb {
+      position: relative;
+      margin-left: auto;
+      display: flex;
+      align-items: flex-end;
+      img {
+        width: 160px;
+      }
+      .box {
+        margin-left: -20px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background:#fff;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        border-bottom-left-radius: 25px;
+        li {
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          font-size: 12px;
+          text-align: center;
+          strong {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    background: $playerInfoBg;
+    height: 50px;
+    border-top-left-radius: 50px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .share {
+      color:#fff;
+      padding-right: 15px;
+      font-size: 12px;
+      background: url('../images/dubble-arrow.png') no-repeat right center;
+      background-size: auto 10px;
+    }
+    .friends {
+      color:#fff;
+      padding-right: 15px;
+      font-size: 12px;
+      background: url('../images/i-plus.png') no-repeat right center;
+      background-size: auto 12px;
+      margin-left: 12px;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+
+  }
+}
+.player-info__starcard {
+  padding:20px 50px;
+  background:$playerInfoBg;
+
+  .startcards-box {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .statcards {
+    display: flex;
+
+    .statcard__item {
+      text-align: center;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .thumb {
+        width: 65px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        font-size: 10px;
+        margin-top: 5px;
+        color:#fff;
+      }
+    }
+  }
+}
+.player-info__mom {
+  padding:20px 50px;
+  background:$playerInfoBg;
+}
+
+.stats {
+  display: flex;
+}
+.stats__item {
+  width: 50px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .point {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    strong {
+      color:$blue;
+    }
+  }
+  .starts__item-box {
+    width: 50px;
+    height: 50px;
+    color:#fff;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 27px;
+  }
+
+  &.stats__item--attack .starts__item-box {
+    background: url('../images/stat-blue-1.png') no-repeat center;
+    background-size: 100% 100%;
+  }
+  &.stats__item--pass .starts__item-box {
+    background: url('../images/stat-blue-2.png') no-repeat center;
+    background-size: 100% 100%;
+  }
+  &.stats__item--defense .starts__item-box {
+    background: url('../images/stat-blue-3.png') no-repeat center;
+    background-size: 100% 100%;
+  }
+}
+
+.player-info-section-title {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  strong {
+    font-size: 10px;
+    color:#fff;
+  }
+  span {
+    color:$green;
+    margin-left: 5px;
+  }
+
+  a {
+    margin-left: auto;
+    line-height: 24px;
+    width: 60px;
+    border:1px solid #fff;
+    color:#fff;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 2em;
+    transition: all .3s;
+    &:hover {
+      background:#fff;
+      color:#5A5553;
+    }
+  }
+}
+
+.player-info .subContent__section.border{
+  border-color:#6E6B6B;
+}
+
+.mom-list {
+  margin-top: 20px;
+  .mom-list__item {
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    color:#fff;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+  .mom__thumb {
+    width: 40px;
+    height: 40px;
+    flex: none;
+    margin-right: 24px;
+  }
+  span {
+    margin-left: auto;
+    font-size: 10px;
+  }
+}
+
+.open {
+  margin-left: 12px;
+  &.black .switch {
+    width: 100%;
+    .switch__layout {
+      width: 100%;
+      border-color:#5A5553;
+    }
+    input + span:after {
+      left: 44px;
+    }
+    input:checked + span:after {
+      left: 4px;
+    }
+    i {
+      color:#5A5553;
+      width: 48px;
+      text-align: center;
+      &.on {
+        right: 0px;
+      }
+      &.off {
+        left: 0px;
+      }
+    }
+  }
+
+
+  .switch {
+    .switch__layout {
+      border-color:#fff;
+    }
+
+    span {
+      i {
+        position: absolute;
+        top: 0;
+        line-height: 26px;
+        font-size: 10px;
+        color:#fff;
+        z-index: 0;
+        font-style: normal;
+        width: 29px;
+        text-align: center;
+        display: none;
+        &.on {
+          right: 3px;
+        }
+        &.off {
+          left: 2px;
+          display: block;
+        }
+      }
+    }
+    input:checked + span {
+      i.off {
+        display: none;
+      }
+      i.on {
+        display: block;
+      }
+    }
+
+    input + span:after {
+      background: #eee;
+    }
+    input:checked + span:after {
+      background: $blue;
+    }
+    input:checked + span:before {
+      background: none;
+    }
+    input + span:before {
+      background: none;
+    }
+  }
+}

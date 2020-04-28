@@ -1,0 +1,144 @@
+.evaluation {
+  display: flex;
+  flex-wrap: wrap;
+  .evaluation__item {
+    width: 95px;
+    flex: none;
+    margin-right: 21px;
+    &:nth-child( n + 6 ) {
+      margin-top: 20px;
+    }
+    &:nth-child( 5n ) {
+      margin-right: 0;
+    }
+    .thumb {
+      position: relative;
+      width: 95px;
+      height: 95px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: block;
+      margin:0 auto;
+    }
+    .info {
+      margin-top: 10px;
+      h3 {
+        font-size: 16px;
+        @include truncate;
+      }
+      p {
+        margin-top: 3px;
+        font-size: 10px;
+        color: $green;
+        @include truncate;
+      }
+    }
+
+    &.active-mom,
+    &.active-pass,
+    &.active-defense,
+    &.active-attack {
+      .thumb:after {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: rgba(0,0,0,0.3);
+      }
+      .thumb span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        text-align: center;
+        line-height: 95px;
+        border-radius: 50%;
+        border: 4px solid #337ef7;
+        font-size: 16px;
+        color:#fff;
+        font-weight: 600;
+      }
+    }
+    &.active-mom,
+    &.active-attack,
+    &.active-pass {
+      .thumb span {
+        border-color: $green;
+      }
+    }
+
+    &:hover {
+      .thumb:after {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: rgba(0,0,0,0.5);
+      }
+    }
+  }
+}
+
+.evaluation-box {
+  display: flex;
+  align-items: flex-end;
+  .thumb {
+    width: 140px;
+    flex: none;
+  }
+  .info {
+    padding-left: 60px;
+  }
+  .user-info {
+    margin-bottom: 10px;
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      margin-top: 3px;
+      color: $green;
+      font-size: 10px;
+    }
+  }
+
+  .stats__item--attack .starts__item-box {
+    background: url('../images/stat-white-1.png') no-repeat center;
+    background-size: 100% 100%;
+    color:#5A5553;
+    &.active,
+    &:hover {
+      background: url('../images/stat-green-1.png') no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+  .stats__item--pass .starts__item-box {
+    background: url('../images/stat-white-2.png') no-repeat center;
+    background-size: 100% 100%;
+    color:#5A5553;
+    &.active,
+    &:hover {
+      background: url('../images/stat-green-2.png') no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+  .stats__item--defense .starts__item-box {
+    background: url('../images/stat-white-3.png') no-repeat center;
+    background-size: 100% 100%;
+    color:#5A5553;
+    &.active,
+    &:hover {
+      background: url('../images/stat-green-3.png') no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+}
