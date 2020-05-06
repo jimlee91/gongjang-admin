@@ -1,0 +1,146 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">기능 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">예약</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    예약목록
+                                </span>
+                            </h2>
+                        </section>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <div class="form">
+                            <div class="form__row column mb-0">
+                                <div class="box ">
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">진행상황</option>
+                                        <option value="">예약자</option>
+                                        <option value="">지점</option>
+                                    </select>
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">분류선택</option>
+                                        <option value="">결제대기</option>
+                                        <option value="">결제완료</option>
+                                        <option value="">환불요청</option>
+                                    </select>
+                                    <input type="text" placeholder="지점을 검색하세요." class="input-border">
+                                    <button class="form-search"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="admtable mt-40">
+                            <table>
+                                <colgroup>
+                                    <col width="40">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="75">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>지점명</th>
+                                    <th>예약날짜</th>
+                                    <th>가격</th>
+                                    <th>예약자</th>
+                                    <th>진행상황</th>
+                                    <th>삭제</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">시흥 장왕점</a>
+                                    </td>
+                                    <td>2020-02-03</td>
+                                    <td>
+                                        150,000
+                                    </td>
+                                    <td>
+                                        <a href="">김공장</a>
+                                    </td>
+                                    <td>
+                                        <span class="color-green">황불요청</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-green">더보기</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">시흥 장왕점</a>
+                                    </td>
+                                    <td>2020-02-03</td>
+                                    <td>
+                                        150,000
+                                    </td>
+                                    <td>
+                                        <a href="">김공장</a>
+                                    </td>
+                                    <td>
+                                        <span class="color-green">결제대기</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-green">더보기</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">시흥 장왕점</a>
+                                    </td>
+                                    <td>2020-02-03</td>
+                                    <td>
+                                        150,000
+                                    </td>
+                                    <td>
+                                        <a href="">김공장</a>
+                                    </td>
+                                    <td>
+                                        <span class="color-blue">결제완료</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-green">더보기</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        @@include('./include/pagination.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

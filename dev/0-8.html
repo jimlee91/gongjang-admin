@@ -1,0 +1,48 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content account">
+        <div class="content__main">
+            <div class="accounts registered">
+                <section class="accounts__header">
+                    <h2 class="accounts__title">
+                            <span>
+                                새 비밀번호 설정
+                            </span>
+                    </h2>
+                </section>
+                <div class="accounts__info">
+                    <h3>*새로운 비밀번호를 설정해주세요.</h3>
+                    <p>
+                        안전한 비밀번호로 내정보를 보호하세요
+                    </p>
+                </div>
+
+                <div class="registered__form ">
+                    <div class="form form--border">
+                        <div class="form__row">
+                            <label for="" class="form__row-title">새 비밀번호</label>
+                            <div class="box">
+                                <input type="password" placeholder="영문자+숫자+특수문자 조합 8자 이상~16자 이하">
+                            </div>
+<!--                            <p class="form__help error">-->
+<!--                                사용 불가능한 비밀번호입니다.-->
+<!--                            </p>-->
+                        </div>
+                        <div class="form__row">
+                            <label for="" class="form__row-title">새 비밀번호 확인</label>
+                            <div class="box">
+                                <input type="password" placeholder="비밀번호 확인">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accounts__btnbox">
+                        <button class="btn btn-blue waves-effect" onclick="">완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')

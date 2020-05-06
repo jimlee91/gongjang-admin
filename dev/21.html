@@ -1,0 +1,492 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm frcs">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">기능 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">지점</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="frcs__header">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        동대문점
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">정보</a>
+                        <a href="" class="active">예약시간관리</a>
+                        <a href="" class=" ">옵션</a>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <form action="">
+                            <div class="form ">
+                                <div class="form__row column ">
+                                    <div class="form__row-title">
+                                        <span class="l-border">예약 가능 날짜</span>
+                                    </div>
+                                    <div class="box">
+                                        <input type="text" class="input-border datepicker">
+                                        <span class="hypen">~</span>
+                                        <input type="text" class="input-border datepicker">
+                                        <a href="" class="btn ml-20">적용</a>
+                                    </div>
+                                </div>
+                                <div class="form__row column ">
+                                    <div class="form__row-title">
+                                        <span class="l-border">예약 가능 날짜</span>
+                                    </div>
+                                    <div class="box">
+                                        <div class="frcs__registered">
+                                            <div class="frcs__registered-top">
+                                                <div class="col1">
+                                                    <div class="in">
+                                                        <strong>구장이름</strong>
+                                                        <input type="text" placeholder="구장이름">
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="in">
+                                                        <strong>구장구분</strong>
+                                                        <input type="text" placeholder="실내/실외">
+                                                    </div>
+                                                </div>
+                                                <div class="col3">
+                                                    <div class="in">
+                                                        <strong>구장가로</strong>
+                                                        <input type="text" placeholder="m">
+                                                    </div>
+                                                </div>
+                                                <div class="col4">
+                                                    <div class="in">
+                                                        <strong>구장세로</strong>
+                                                        <input type="text" placeholder="m">
+                                                    </div>
+                                                </div>
+                                                <div class="col5">
+                                                    <a href="" class="btn btn--small btn-blue">추가</a>
+                                                </div>
+                                            </div>
+                                            <div class="frcs__registered-body">
+                                                <table>
+                                                    <colgroup>
+                                                        <col class="col1">
+                                                        <col class="col2">
+                                                        <col class="col3">
+                                                        <col class="col4">
+                                                        <col class="col5">
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th colspan="4">
+                                                            <label for="allck" class="checkbox2">
+                                                                <input type="checkbox" hidden id="allck">
+                                                                <span> </span> 전체선택
+                                                            </label>
+                                                        </th>
+                                                        <th>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="r1" class="checkbox2">
+                                                                <input type="checkbox" hidden id="r1">
+                                                                <span> </span> 1. A구장
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            실내구장
+                                                        </td>
+                                                        <td>99</td>
+                                                        <td>68</td>
+                                                        <td>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="r2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="r2">
+                                                                <span> </span> 1. B구장
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            실내구장
+                                                        </td>
+                                                        <td>99</td>
+                                                        <td>68</td>
+                                                        <td>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="r3" class="checkbox2">
+                                                                <input type="checkbox" hidden id="r3">
+                                                                <span> </span> 1. C구장
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            실내구장
+                                                        </td>
+                                                        <td>99</td>
+                                                        <td>68</td>
+                                                        <td>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__row column ">
+                                    <div class="form__row-title">
+                                        <span class="l-border">요일별<br/>예약 금액 변경</span>
+                                    </div>
+                                    <div class="box column">
+                                        <div class="qnalist__header">
+                                            <span></span>
+                                            <a href="" class="btn btn--small">적용</a>
+                                        </div>
+
+                                        <div class="frcs__reservation">
+                                            <select name="" id="" class="mb-15" style="width: 90px;">
+                                                <option value="">요일선택</option>
+                                            </select>
+                                            <div class="qnalist__header">
+                                                <span></span>
+                                                <a href="" class="btn btn--small btn-blue" style="width: 40px;">추가</a>
+                                            </div>
+                                            <ul class="frcs__reservation-itembox">
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__row column ">
+                                    <div class="form__row-title">
+                                        <span class="l-border">
+                                            공휴일<br/>
+                                            금액 변경
+                                        </span>
+                                    </div>
+                                    <div class="box column">
+                                        <div class="qnalist__header">
+                                            <span></span>
+                                            <a href="" class="btn btn--small">적용</a>
+                                        </div>
+                                        <div class="frcs__reservation">
+
+                                            <div class="qnalist__header">
+                                                <span></span>
+                                                <a href="" class="btn btn--small btn-blue" style="width: 40px;">추가</a>
+                                            </div>
+                                            <ul class="frcs__reservation-itembox">
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__row column ">
+                                    <div class="form__row-title">
+                                        <span class="l-border">
+                                            특정 날짜<br/>
+                                            예약 금액 변경
+                                        </span>
+                                    </div>
+                                    <div class="box column">
+                                        <div class="qnalist__header">
+                                            <span></span>
+                                            <a href="" class="btn btn--small">적용</a>
+                                        </div>
+
+                                        <div class="reservation">
+                                            <div class="calendar"></div>
+
+
+                                            <script>
+                                                $('.calendar').datepicker({
+                                                    dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+                                                    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                                                    minDate: 0,
+                                                    onSelect: function(date){
+                                                        $('.month').text(date.substring(0, 2))
+                                                        $('.day').text(date.substring(3, 5))
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+
+
+                                        <div class="qnalist__header">
+                                            <span></span>
+                                            <a href="" class="btn btn--small">추가</a>
+                                        </div>
+
+                                        <div class="form__row" style="margin-bottom: 20px !important;">
+                                            <h3 class="form__row-title font-10">선택된 날짜 목록</h3>
+                                            <div class="box">
+                                                <input type="text" class="input-border" value="2020-04-14, 2020-04-15, 2020-04-16, 2020-04-17, 2020-04-19,2020-04-20, 2020-04-21">
+                                            </div>
+                                        </div>
+                                        <div class="frcs__reservation">
+                                            <ul class="frcs__reservation-itembox">
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                                <li>
+                                                    <select name="" id="">
+                                                        <option value="">AM</option>
+                                                        <option value="">PM</option>
+                                                    </select>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <span class="hypen">~</span>
+                                                    <input type="text" class="input-border">
+                                                    <span>:</span>
+                                                    <input type="text" class="input-border">
+                                                    <input type="text" placeholder="금액" class="ml-10 text-center">
+                                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

@@ -1,0 +1,378 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm prd">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title">
+                            <a href="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">선수</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    팀 상세
+                                </span>
+                            </h2>
+                        </section>
+                    </div>
+                    <div class="prd__section">
+                        <div class="prd__section-tab">
+                            <div>
+                                <strong>팀정보</strong>
+                                <article class="newbtnbox">
+                                    <a href="#//" onclick="showModal('#removeplayer')" class="btn">팀 삭제</a>
+                                    <a href="" class="btn blue">수정완료</a>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="prd__section-content">
+                            <div class="prd-member">
+
+                                <div class="left">
+                                    <div class="userCard">
+                                        <a class="userCard__thumb" href="">
+                                            <img src="//via.placeholder.com/120x120" alt="">
+                                        </a>
+                                        <div class="form">
+                                            <div class="form__row">
+                                                <div class="box">
+                                                    <label class="form__fileFields" for="thumb">
+                                                        <input type="file" id="thumb" hidden>
+                                                        <button class="fileField-empty input-border" type="button">
+                                                            사진 변경
+                                                        </button>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="right">
+                                    <div class="form">
+                                        <div class="form__row column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">팀 명</span>
+                                            </div>
+                                            <div class="box">
+                                                <input type="text" readonly value="NHS" class="input-border">
+                                            </div>
+                                        </div>
+                                        <div class="form__row column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">팀원 수</span>
+                                            </div>
+                                            <div class="box">
+                                                <input type="text" value="20" class="input-border">
+                                            </div>
+                                        </div>
+                                        <div class="form__row column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">창단일</span>
+                                            </div>
+                                            <div class="box">
+                                                <input type="text" value="20.11.12" readonly class="input-border">
+                                            </div>
+                                        </div>
+                                        <div class="form__row form__row--full column">
+                                            <div class="form__row-title" style="width: 75px !important;">
+                                                <span class="l-border">소개말</span>
+                                            </div>
+                                            <div class="box">
+                                                <input type="text" value="" class="input-border">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prd__section">
+                        <button class="prd__section-tab">
+                            <div>
+                                <strong>팀원정보</strong>
+                                <span>내용접기</span>
+                            </div>
+                        </button>
+                        <div class="prd__section-content">
+                            <div class="form">
+                                <div class="form__row column">
+                                    <div class="box">
+                                        <div class="teamtable teamtable--player">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="30">
+                                                    <col>
+                                                    <col width="65">
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        1.
+                                                    </td>
+                                                    <td>
+                                                        <div class="teaminfo">
+                                                            <span class="thumb">
+                                                                <img src="//via.placeholder.com/30x30" alt="">
+                                                            </span>
+                                                            김공장
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small ml-0">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        1.
+                                                    </td>
+                                                    <td>
+                                                        <div class="teaminfo">
+                                                            <span class="thumb">
+                                                                <img src="//via.placeholder.com/30x30" alt="">
+                                                            </span>
+                                                            김공장
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small ml-0">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        1.
+                                                    </td>
+                                                    <td>
+                                                        <div class="teaminfo">
+                                                            <span class="thumb">
+                                                                <img src="//via.placeholder.com/30x30" alt="">
+                                                            </span>
+                                                            김공장
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small ml-0">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prd__section">
+                        <button class="prd__section-tab">
+                            <div>
+                                <strong>스케쥴</strong>
+                                <span>내용접기</span>
+                            </div>
+                        </button>
+                        <div class="prd__section-content">
+                            <div class="form">
+                                <div class="form__row column">
+                                    <div class="form__row-title">
+                                        <span class="l-border">일정</span>
+                                    </div>
+                                    <div class="box">
+
+                                        <div class="admtable table">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="30">
+                                                    <col width="70">
+                                                    <col width="">
+                                                    <col width="">
+                                                    <col width="">
+                                                    <col width="65">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th class="text-left">구분</th>
+                                                    <th>내용</th>
+                                                    <th>해당일</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <!-- 공간 -->
+
+                                                <tr>
+                                                    <td class="text-left">1.</td>
+                                                    <td class="text-left"><a href="">예약</a></td>
+                                                    <td>부천중동점</td>
+                                                    <td>20.03.03</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">1.</td>
+                                                    <td class="text-left"><a href="">예약</a></td>
+                                                    <td>부천중동점</td>
+                                                    <td>20.03.03</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">1.</td>
+                                                    <td class="text-left"><a href="">예약</a></td>
+                                                    <td>부천중동점</td>
+                                                    <td>20.03.03</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prd__section">
+                        <button class="prd__section-tab">
+                            <div>
+                                <strong>대회 순위</strong>
+                                <span>내용접기</span>
+                            </div>
+                        </button>
+                        <div class="prd__section-content">
+                            <div class="form">
+                                <div class="form__row column">
+                                    <div class="form__row-title">
+                                        <span class="l-border">순위</span>
+                                    </div>
+                                    <div class="box">
+
+                                        <div class="admtable table">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="30">
+                                                    <col width="120">
+                                                    <col width="">
+                                                    <col width="">
+                                                    <col width="65">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th class="text-left">대회</th>
+                                                    <th>순위</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <!-- 공간 -->
+                                                <tr>
+                                                    <td class="text-left">1.</td>
+                                                    <td class="text-left"><a href="">H-리그 26강</a></td>
+                                                    <td>1위</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">1.</td>
+                                                    <td class="text-left"><a href="">H-리그 26강</a></td>
+                                                    <td>1위</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">1.</td>
+                                                    <td class="text-left"><a href="">H-리그 26강</a></td>
+                                                    <td>1위</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="btnbox">
+                                                            <a href="" class="btn btn--small">더보기</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prd__section">
+                        <div class="prd__section-tab">
+                            <div>
+                                <strong>공간</strong>
+                                <article class="btnbox" style="width: 65px;">
+                                    <a href="" class="btn btn--small btn-white">더보기</a>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="prd__section-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="removeplayer" style="display: none;">
+    <div class="modal__content">
+        <h2 class="modal__title">
+            '김공장'선수를 <span>정말 삭제하시겠습니까?</span>
+        </h2>
+        <div class="modal__body">
+            <p>
+                삭제 시 복원하실 수 없습니다.
+            </p>
+        </div>
+        <div class="modal__btnbox">
+            <a href="" class="modal__btn js-modal-close">네</a>
+            <a href="" class="modal__btn bg-white js-modal-close">아니오</a>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

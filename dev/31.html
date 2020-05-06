@@ -1,0 +1,154 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="frcs__header">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        동대문점
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">대회정보</a>
+                        <a href="" class="">경기등록</a>
+                        <a href="" class="">경기일정</a>
+                        <a href="" class="active ">신청내역</a>
+                        <a href="" class=" ">순위</a>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <div class="flex mb-10">
+                            <select name="" id="" style="width: 85px;" class="newselect ml-auto">
+                                <option value="">지역선택</option>
+                            </select>
+                            <select name="" id="" style="width: 85px;" class="newselect ml-5">
+                                <option value="">진행상황</option>
+                            </select>
+                        </div>
+                        <div class="admtable mt-70">
+                            <table>
+                                <colgroup>
+                                    <col width="40">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="55">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>팀명</th>
+                                    <th>지점</th>
+                                    <th>신청일</th>
+                                    <th>진행상황</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">공장</a>
+                                    </td>
+                                    <td>
+                                        장황점
+                                    </td>
+                                    <td>
+                                        2020.02.03
+                                    </td>
+                                    <td>
+                                        <span class="color-green">결제대기</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">공장</a>
+                                    </td>
+                                    <td>
+                                        장황점
+                                    </td>
+                                    <td>
+                                        2020.02.03
+                                    </td>
+                                    <td>
+                                        <span class="color-green">결제대기</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">공장</a>
+                                    </td>
+                                    <td>
+                                        장황점
+                                    </td>
+                                    <td>
+                                        2020.02.03
+                                    </td>
+                                    <td>
+                                        <span class="color-gray">신청완료</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        @@include('./include/pagination.html')
+
+                        <div class="form mt-40">
+                            <div class="form__row column mb-0">
+                                <div class="box ">
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">분류선택</option>
+                                        <option value="">가맹</option>
+                                        <option value="">지점</option>
+                                        <option value="">제휴</option>
+                                    </select>
+                                    <input type="text" placeholder="지점을 검색하세요." class="input-border">
+                                    <button class="form-search"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

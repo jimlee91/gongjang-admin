@@ -17,11 +17,26 @@
       margin-right: 0;
     }
 
+    &.btn--small {
+      font-size: 10px !important;
+      max-width: 65px;
+      width: 100% !important;
+      line-height: 22px !important;
+      height: 25px !important;
+    }
+
     &.btn-blue {
       background:$blue;
       color:#fff;
       &:hover {
         background:$green;
+      }
+    }
+    &.btn-black {
+      border:1px solid #5a5553;
+      color:#5a5553;;
+      &:hover {
+        border-color:$green;
       }
     }
     &.btn-green {
@@ -36,6 +51,10 @@
     &.btn-white {
       color:#333;
       border: 1px solid $green;
+      &:hover {
+        background:$green;
+        color:#fff;
+      }
     }
     &.btn-white2 {
       color:#333;

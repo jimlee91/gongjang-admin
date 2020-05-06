@@ -1,0 +1,328 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm frcs">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">기능 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">지점</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    지점등록
+                                </span>
+                            </h2>
+                        </section>
+
+                    </div>
+
+                    <div class="inner-wrap">
+                        <form action="">
+                            <div class="form flex">
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title">
+                                        <span class="l-border">지점명</span>
+                                    </div>
+                                    <div class="box">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title">
+                                        <span class="l-border">지점 주소</span>
+                                    </div>
+                                    <div class="box">
+                                        <select name="" id="" class="mr-5">
+                                            <option value="">지역 선택</option>
+                                            <option value="">서울특별시</option>
+                                            <option value="">경기도</option>
+                                        </select>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title">
+                                        <span class="l-border">연락처</span>
+                                    </div>
+                                    <div class="box">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title">
+                                        <span class="l-border">SNS</span>
+                                    </div>
+                                    <div class="box">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form mt-10">
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top">
+                                        <span class="l-border">지점 대표 사진</span>
+                                    </div>
+                                    <div class="box">
+                                        <div class="thumb frcs__thumb">
+                                            <div class="imgbox">
+                                                <img src="" alt="">
+                                            </div>
+
+                                            <label class="btnbox mt-15" for="thumb">
+                                                <input type="file" hidden id="thumb">
+                                                <span class="btn btn--small btn-white">추가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title">
+                                        <span class="l-border">구장 등록</span>
+                                    </div>
+                                    <div class="box">
+                                        <div class="frcs__registered">
+                                            <div class="frcs__registered-top">
+                                                <div class="col1">
+                                                    <div class="in">
+                                                        <strong>구장이름</strong>
+                                                        <input type="text" placeholder="구장이름">
+                                                    </div>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="in">
+                                                        <strong>구장구분</strong>
+                                                        <input type="text" placeholder="실내/실외">
+                                                    </div>
+                                                </div>
+                                                <div class="col3">
+                                                    <div class="in">
+                                                        <strong>구장가로</strong>
+                                                        <input type="text" placeholder="m">
+                                                    </div>
+                                                </div>
+                                                <div class="col4">
+                                                    <div class="in">
+                                                        <strong>구장세로</strong>
+                                                        <input type="text" placeholder="m">
+                                                    </div>
+                                                </div>
+                                                <div class="col5">
+                                                    <a href="" class="btn btn--small btn-blue">추가</a>
+                                                </div>
+                                            </div>
+                                            <div class="frcs__registered-body">
+                                                <table>
+                                                    <colgroup>
+                                                        <col class="col1">
+                                                        <col class="col2">
+                                                        <col class="col3">
+                                                        <col class="col4">
+                                                        <col class="col5">
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th colspan="4">
+                                                            <label for="allck" class="checkbox2">
+                                                                <input type="checkbox" hidden id="allck">
+                                                                <span> </span> 전체선택
+                                                            </label>
+                                                        </th>
+                                                        <th>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="r1" class="checkbox2">
+                                                                <input type="checkbox" hidden id="r1">
+                                                                <span> </span> 1. A구장
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            실내구장
+                                                        </td>
+                                                        <td>99</td>
+                                                        <td>68</td>
+                                                        <td>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="r2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="r2">
+                                                                <span> </span> 1. B구장
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            실내구장
+                                                        </td>
+                                                        <td>99</td>
+                                                        <td>68</td>
+                                                        <td>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="r3" class="checkbox2">
+                                                                <input type="checkbox" hidden id="r3">
+                                                                <span> </span> 1. C구장
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            실내구장
+                                                        </td>
+                                                        <td>99</td>
+                                                        <td>68</td>
+                                                        <td>
+                                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top">
+                                        <span class="l-border">결제방식</span>
+                                    </div>
+                                    <div class="box">
+                                        <div class="frcs__benefit">
+                                            <label for="ck1" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck1">
+                                                <span></span> 인조잔디
+                                            </label>
+                                            <label for="ck2" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck2">
+                                                <span></span> 조끼 대여
+                                            </label>
+                                            <label for="ck3" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck3">
+                                                <span></span> 신가드 대여
+                                            </label>
+                                            <label for="ck4" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck4">
+                                                <span></span> 음료수 판매
+                                            </label>
+                                            <label for="ck5" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck5">
+                                                <span></span> 탈의실
+                                            </label>
+                                            <label for="ck6" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck6">
+                                                <span></span> 실내 구장
+                                            </label>
+                                            <label for="ck7" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck7">
+                                                <span></span> 국제 규격
+                                            </label>
+                                            <label for="ck8" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck8">
+                                                <span></span> 풋살화 대여
+                                            </label>
+                                            <label for="ck9" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck9">
+                                                <span></span> 주차장 무료
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title ">
+                                        <span class="l-border">위치 정보</span>
+                                    </div>
+                                    <div class="box">
+                                        <input type="text" placeholder="위치정보를 적어주세요.">
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top">
+                                        <span class="l-border">유의사항</span>
+                                    </div>
+                                    <div class="box">
+                                        <textarea name="" id="" placeholder="유의사항을 적어주세요."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top">
+                                        <span class="l-border">환불 규정</span>
+                                    </div>
+                                    <div class="box">
+                                        <textarea name="" id="" placeholder="환불 규정을 적어주세요."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title ">
+                                        <span class="l-border">계좌번호</span>
+                                    </div>
+                                    <div class="box column">
+                                        <div class="form__row" style="margin-bottom: 10px !important;">
+                                            <div class="form__row-title font-10">은행</div>
+                                            <div class="box">
+                                                <input type="text" placeholder="은행을 적어주세요.">
+                                            </div>
+                                        </div>
+                                        <div class="form__row">
+                                            <div class="form__row-title font-10">계좌번호</div>
+                                            <div class="box">
+                                                <input type="text" placeholder="계좌번호를 적어주세요.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top">
+                                        <span class="l-border">결제방식</span>
+                                    </div>
+                                    <div class="box">
+                                        <div class="frcs__benefit">
+                                            <label for="ck12" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck12">
+                                                <span></span> 계좌이체
+                                            </label>
+                                            <label for="ck22" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck22">
+                                                <span></span> 카드결제
+                                            </label>
+                                            <label for="ck32" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck32">
+                                                <span></span> 핸드폰결제
+                                            </label>
+                                            <label for="ck42" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck42">
+                                                <span></span> 네이버 페이
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btnbox mt-100">
+                                <a href="" class="btn btn-blue">완료</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

@@ -1,3 +1,6 @@
+.border-none {
+  border: none !important;
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -104,10 +107,22 @@
   color:$blue;
 }
 
+.color-gray {
+  color:#d9d9d9;
+}
+
 .w-220 {
   width: 220px !important;
   flex: none !important;
 }
 .ml-auto {
   margin-left: auto !important;
+}
+
+.adm-default-padding {
+  padding: 65px 92px;
+
+  &.pb-0 {
+    padding-bottom: 0 !important;
+  }
 }

@@ -19,12 +19,16 @@
     .notice__item-header {
       display: flex;
       align-items: flex-end;
+      .newbtnbox {
+        margin-left: 5px;
+      }
       p {
         font-size: 12px;
         font-weight: 600;
         color:#333;
         flex: 1;
-        padding:0 5px 0 3px;
+        padding:0 5px 5px 3px;
+        border-bottom: 1px solid rgba(90, 85, 83, .5);
       }
       strong {
         color:$blue;
@@ -70,7 +74,6 @@
   margin-top: 5px;
   padding-top: 20px;
   font-size: 10px;
-  border-top: 1px solid rgba(90, 85, 83, .5);
   min-height: 200px;
   position: relative;
   padding-bottom: 30px;

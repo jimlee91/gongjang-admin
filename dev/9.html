@@ -1,0 +1,201 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm prd">
+            <form action="">
+                <div class="wrap flex">
+                    <div class="content__left">
+                        <div class="lnb">
+                            <div class="lnb__title">
+                                <a href="">회원 관리</a>
+                            </div>
+                            <div class="lnb__depth">
+                                <a href="" class="active">선수</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__main">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                <span>
+                                    선수 생성
+                                </span>
+                                </h2>
+                            </section>
+                        </div>
+                        <div class="prd__section">
+                            <div class="prd__section-tab">
+                                <div>
+                                    <strong>회원정보</strong>
+                                </div>
+                            </div>
+                            <div class="prd__section-content">
+                                <div class="prd-member">
+
+                                    <div class="left">
+                                        <div class="userCard">
+                                            <a class="userCard__thumb" href="">
+                                                <span class="is_new">새글</span>
+                                                <img src="//via.placeholder.com/120x120" alt="">
+                                            </a>
+                                            <div class="form">
+                                                <div class="form__row">
+                                                    <div class="box">
+                                                        <label class="form__fileFields" for="thumb">
+                                                            <input type="file" id="thumb" hidden>
+                                                            <button class="fileField-empty input-border" type="button">
+                                                                사진 변경
+                                                            </button>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="form">
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">아이디</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text"  value="hongildong23">
+                                                    <button class="btn  ml-auto btn--small">중복확인</button>
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">이름</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text" value="김공장" >
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">생년월일</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text" value="19890401">
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">연락처</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text" value="01055556666">
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">메일</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text" value="hongildong23@gmail.com">
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">닉네임</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text" value="김공장" >
+                                                    <button class="btn  ml-auto btn--small">중복확인</button>
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">비밀번호</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="password" value="" >
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border">비밀번호 확인</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="password" value="" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prd__section">
+                            <button class="prd__section-tab">
+                                <div>
+                                    <strong>선수정보</strong>
+                                </div>
+                            </button>
+                            <div class="prd__section-content">
+                                <div class="prd-info">
+                                    <div class="form" style="width: 100%;">
+                                        <div class="form__row form__row--full column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">축구 포지션</span>
+                                            </div>
+                                            <div class="box">
+                                                <select name="" id="">
+                                                    <option value="">피보(PVO)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form__row form__row--full column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">풋살 포지션</span>
+                                            </div>
+                                            <div class="box">
+                                                <select name="" id="">
+                                                    <option value="">피보(PVO)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form__row form__row--full column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">신장</span>
+                                            </div>
+                                            <div class="box">
+                                                <input type="text" value="182cm" class="">
+                                            </div>
+                                        </div>
+                                        <div class="form__row form__row--full column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">몸무게</span>
+                                            </div>
+                                            <div class="box">
+                                                <input type="text" value="80kg" class="">
+                                            </div>
+                                        </div>
+                                        <div class="form__row form__row--full column">
+                                            <div class="form__row-title">
+                                                <span class="l-border">선출</span>
+                                            </div>
+                                            <div class="box">
+                                                <select name="" id="">
+                                                    <option value="">선출</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnbox mt-20 mb-100">
+                            <button class="btn btn-blue waves-effect">완료</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')

@@ -193,7 +193,6 @@
       display: flex !important;
       flex-wrap: wrap;
       align-items: flex-start;
-      color:#333;
       transition: all .3s;
 
       .reservation__info {
@@ -214,13 +213,15 @@
         font-size: 12px;
       }
       .table {
-        width: 120px;
-        flex: none;
+        width: 180px !important;
+        flex: none !important;
         th, td {
-          font-size: 12px;
+          font-size: 10px;
           text-align: left;
-          height: 20px;
+          height: 20px !important;
+          line-height: 20px !important;
           white-space: nowrap;
+          border: none !important;
         }
       }
     }
@@ -231,8 +232,6 @@
       border: none;
     }
     a {
-      background:#fff;
-      padding: 15px;
       display: block;
     }
     .schedule__d-day {

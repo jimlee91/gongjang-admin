@@ -282,23 +282,9 @@ $playerInfoBg:#383433;
   .starts__item-box {
     width: 50px;
     height: 50px;
-    color:#fff;
     font-size: 10px;
     text-align: center;
     padding-top: 27px;
-  }
-
-  &.stats__item--attack .starts__item-box {
-    background: url('../images/stat-blue-1.png') no-repeat center;
-    background-size: 100% 100%;
-  }
-  &.stats__item--pass .starts__item-box {
-    background: url('../images/stat-blue-2.png') no-repeat center;
-    background-size: 100% 100%;
-  }
-  &.stats__item--defense .starts__item-box {
-    background: url('../images/stat-blue-3.png') no-repeat center;
-    background-size: 100% 100%;
   }
 }
 

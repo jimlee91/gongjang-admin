@@ -1,0 +1,472 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm frcs">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">기능 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">지점</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="frcs__header">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        동대문점
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">대회정보</a>
+                        <a href="" class="">경기등록</a>
+                        <a href="" class="active">경기일정</a>
+                        <a href="" class=" ">신청내역</a>
+                        <a href="" class=" ">순위</a>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <form action="">
+                            <div class="form flex">
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">날짜</span></div>
+                                    <div class="box column">
+                                        <input type="text" class="datepicker">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">대화 명</span></div>
+                                    <div class="box column">
+                                        <input type="text" readonly value="AIA컵">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">시간</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">지점</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="장왕점 공장 - A구장" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">라운드</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="A-1">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">구장</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="비고란고라니">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">홈팀</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="홈팀1" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">원정팀</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="NSH" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">홈팀 득점</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">원정팀 득점</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">홈팀 경고</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">원정팀 경고</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">홈팀 퇴장</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">원정팀 퇴장</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">홈팀 승부차기</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border font-10">원정팀 승부차기</span></div>
+                                    <div class="box column">
+                                        <input type="text" value="0" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form">
+                                <div class="form__row column">
+                                    <div class="form__row-title "><span class="l-border font-10">경기결과</span></div>
+                                    <div class="box column">
+                                        <div>
+                                            <div class="qnalist__header mb-10">
+                                                <strong class="font-12">홈 팀</strong>
+                                                <span></span>
+                                                <select name="" id="" style="width: 85px;">
+                                                    <option value="">홈팀 선수</option>
+                                                </select>
+                                            </div>
+                                            <div class="match-result-board">
+                                                <div class="top">
+                                                    <div class="left">
+                                                        <div class="frcs__benefit col5">
+                                                            <label for="prcs1" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs1">
+                                                                <span></span> 전반
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 후반
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 1쿼터
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 2쿼터
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 3쿼터
+                                                            </label>
+                                                        </div>
+                                                        <div class="frcs__benefit col5 mt-20">
+
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 득점
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 경고
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 퇴장
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 자책골
+                                                            </label>
+                                                        </div>
+                                                        <div class="frcs__benefit col5 mt-20">
+
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 몰수패
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 부전승
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 승부차기
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <input type="text" class="input-border">
+                                                        <span class="unit font-10">분</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <a href="" class="btn btn--small btn-blue">추가</a>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <table class="admtable">
+                                                        <colgroup>
+                                                            <col width="100">
+                                                            <col width="100">
+                                                            <col>
+                                                            <col width="55">
+                                                        </colgroup>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-20">
+                                            <div class="qnalist__header mb-10">
+                                                <strong class="font-12">원정 팀</strong>
+                                                <span></span>
+                                                <select name="" id="" style="width: 85px;">
+                                                    <option value="">원정팀 선수</option>
+                                                </select>
+                                            </div>
+                                            <div class="match-result-board">
+                                                <div class="top">
+                                                    <div class="left">
+                                                        <div class="frcs__benefit col5">
+                                                            <label for="prcs1" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs1">
+                                                                <span></span> 전반
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 후반
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 1쿼터
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 2쿼터
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 3쿼터
+                                                            </label>
+                                                        </div>
+                                                        <div class="frcs__benefit col5 mt-20">
+
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 득점
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 경고
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 퇴장
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 자책골
+                                                            </label>
+                                                        </div>
+                                                        <div class="frcs__benefit col5 mt-20">
+
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 몰수패
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 부전승
+                                                            </label>
+                                                            <label for="prcs2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="prcs2">
+                                                                <span></span> 승부차기
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <input type="text" class="input-border">
+                                                        <span class="unit font-10">분</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <a href="" class="btn btn--small btn-blue">추가</a>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <table class="admtable">
+                                                        <colgroup>
+                                                            <col width="100">
+                                                            <col width="100">
+                                                            <col>
+                                                            <col width="55">
+                                                        </colgroup>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                1. 김공장(11)
+                                                            </td>
+                                                            <td>
+                                                                전반 15분
+                                                            </td>
+                                                            <td class="text-right pr-20">
+                                                                득점
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <a href="" class="btn btn--small btn-black">삭제</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top"><span class="l-border font-10">진행사항</span></div>
+                                    <div class="box column">
+                                        <div class="frcs__benefit">
+                                            <label for="prcs1" class="checkbox2">
+                                                <input type="checkbox" hidden id="prcs1">
+                                                <span></span> 예정
+                                            </label>
+                                            <label for="prcs2" class="checkbox2">
+                                                <input type="checkbox" hidden id="prcs2">
+                                                <span></span> 종료
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title "><span class="l-border font-10">비고</span></div>
+                                    <div class="box column">
+                                        <input type="text" class="input-border">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="btnbox mt-100">
+                                <a href="" class="btn btn-blue">등록</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')

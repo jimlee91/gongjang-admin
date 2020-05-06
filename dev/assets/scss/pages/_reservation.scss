@@ -1,7 +1,6 @@
 .reservation {
 
   .calendar {
-    margin-bottom: 15px;
 
     .ui-widget-header .ui-icon {
       display: none;
@@ -29,7 +28,7 @@
     }
   }
   .ui-widget.ui-widget-content {
-    width: 370px;
+    width: 100%;
     margin:0 auto;
     border: $border;
     border-radius: 7px;

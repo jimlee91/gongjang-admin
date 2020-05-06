@@ -1,0 +1,222 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm prd">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="frcs__header">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        HNS 아카데미
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">아카데미 정보</a>
+                        <a href="" class="">수강생</a>
+                        <a href="" class="active">수업</a>
+                        <a href="" class=" ">결제내역</a>
+                        <a href="" class=" ">코치</a>
+                        <a href="" class=" ">공지사항</a>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <div class="form">
+                            <div class="form__row">
+                                <div class="box">
+                                    <select name="" id="">
+                                        <option value="">해당하는 수업을 선택하세요.</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form flex mt-20">
+                            <div class="form__row form__row-half column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">수업 명</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" readonly value="월 목 유소년 반">
+                                </div>
+                            </div>
+                            <div class="form__row form__row-half column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">모집 대상</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" readonly value="14세 미만">
+                                </div>
+                            </div>
+                            <div class="form__row form__row-half column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">수업 설명</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" readonly value="14세 어린이 반">
+                                </div>
+                            </div>
+                            <div class="form__row form__row-half column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">모집 인원</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" readonly value="10">
+                                    <span class="unit font-10">명</span>
+                                </div>
+                            </div>
+                            <div class="form__row form__row-half column"></div>
+                            <div class="form__row form__row-half column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">수업료</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" readonly value="250,000">
+                                    <span class="unit font-10">원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form mt-10">
+                            <div class="form__row column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">요일</span>
+                                </div>
+                                <div class="box column">
+                                    <ul class="i-list">
+                                        <li>월 AM 12:00 ~ AM 12:00</li>
+                                        <li>월 AM 12:00 ~ AM 12:00</li>
+                                        <li>월 AM 12:00 ~ AM 12:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form mt-20">
+                            <div class="form__row column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">코치</span>
+                                </div>
+                                <div class="box column">
+                                    <ul class="i-list">
+                                        <li>김공장 코치</li>
+                                        <li>김공장 코치</li>
+                                        <li>김공장 코치</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form mt-20">
+                            <div class="form__row column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">학생</span>
+                                </div>
+                                <div class="box column">
+                                    <ul class="i-list col3">
+                                        <li><a href="">김공장(hongildong12)</a></li>
+                                        <li><a href="">김공장(hongildong12)</a></li>
+                                        <li><a href="">김공장(hongildong12)</a></li>
+                                        <li><a href="">김공장(hongildong12)</a></li>
+                                        <li><a href="">김공장(hongildong12)</a></li>
+                                        <li><a href="">김공장(hongildong12)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-wrap">
+                        <div class="form">
+                            <div class="form__row column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">출석체크</span>
+                                </div>
+                                <div class="box column">
+                                    <div class="reservation">
+                                        <div class="calendar"></div>
+                                        <script>
+                                            $('.calendar').datepicker({
+                                                dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+                                                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                                                minDate: 0,
+                                                onSelect: function(date){
+                                                    $('.month').text(date.substring(0, 2))
+                                                    $('.day').text(date.substring(3, 5))
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+
+                                    <div class="attendance">
+                                        <div class="attendance-top">
+                                            <label for="ck-all" class="checkbox2">
+                                                <input type="checkbox" hidden id="ck-all">
+                                                <span></span> 전체 선택
+                                            </label>
+
+                                            <div class="newbtnbox">
+                                                <a href="" class="blue">출석체크</a>
+                                            </div>
+                                        </div>
+                                        <div class="attendance-bottom">
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                            <label for="c1" class="checkbox2">
+                                                <input type="checkbox" hidden id="c1">
+                                                <span></span> 김공장 (98.09.22)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

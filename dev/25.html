@@ -1,0 +1,142 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">기능 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">대회</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    대회목록
+                                </span>
+                            </h2>
+                        </section>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <div class="form">
+                            <div class="form__row column mb-0">
+                                <div class="box ">
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">진행상황</option>
+                                        <option value="">모집중</option>
+                                        <option value="">진행중</option>
+                                        <option value="">종료</option>
+                                    </select>
+                                    <input type="text" placeholder="지점을 검색하세요." class="input-border">
+                                    <button class="form-search"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="admtable mt-40">
+                            <table>
+                                <colgroup>
+                                    <col width="40">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="150">
+                                    <col>
+                                    <col width="50">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>대회명</th>
+                                    <th>대회구분</th>
+                                    <th>참가대상</th>
+                                    <th>기간</th>
+                                    <th>진행상황</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">2020 H-리그</a>
+                                    </td>
+                                    <td>리그</td>
+                                    <td>
+                                        성인
+                                    </td>
+                                    <td>
+                                        2020.02.03 ~ 2020.03.03
+                                    </td>
+                                    <td>
+                                        <span class="color-green">모집중</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">2020 H-리그</a>
+                                    </td>
+                                    <td>리그</td>
+                                    <td>
+                                        성인
+                                    </td>
+                                    <td>
+                                        2020.02.03 ~ 2020.03.03
+                                    </td>
+                                    <td>
+                                        <span class="color-green">모집중</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">2020 H-리그</a>
+                                    </td>
+                                    <td>리그</td>
+                                    <td>
+                                        성인
+                                    </td>
+                                    <td>
+                                        2020.02.03 ~ 2020.03.03
+                                    </td>
+                                    <td>
+                                        <span class="color-green">모집중</span>
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        @@include('./include/pagination.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

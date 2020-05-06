@@ -1,0 +1,190 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm frcs">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">기능 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">지점</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="frcs__header">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        동대문점
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">대회정보</a>
+                        <a href="" class="active">경기등록</a>
+                        <a href="" class=" ">경기일정</a>
+                        <a href="" class=" ">신청내역</a>
+                        <a href="" class=" ">순위</a>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <form action="">
+                            <div class="form">
+                                <div class="form__row column">
+                                    <div class="form__row-title "><span class="l-border">지점목록</span></div>
+                                    <div class="box column">
+                                        <select name="" id="" class="w-220">
+                                            <option value="">지점선택</option>
+                                            <option value="">시흥 장왕점</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top"><span class="l-border">날짜선택</span></div>
+                                    <div class="box">
+                                        <div class="reservation">
+                                            <div class="calendar"></div>
+                                            <script>
+                                                $('.calendar').datepicker({
+                                                    dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+                                                    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                                                    minDate: 0,
+                                                    onSelect: function(date){
+                                                        $('.month').text(date.substring(0, 2))
+                                                        $('.day').text(date.substring(3, 5))
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title"><span class="l-border">팀선택</span></div>
+                                    <div class="box column">
+                                        <div class="select-frcs">
+                                            <div class="select-frcs-item">
+                                                <strong>전체지점</strong>
+                                                <div class="select-frcs-list">
+                                                    <div class="top">
+                                                        <label for="ckall-1" class="checkbox2">
+                                                            <input type="checkbox" hidden id="ckall-1">
+                                                            <span></span> 전체선택
+                                                        </label>
+                                                    </div>
+                                                    <ul class="items">
+                                                        <li>
+                                                            <label for="ck-1" class="checkbox2">
+                                                                <input type="checkbox" hidden id="ck-1">
+                                                                <span></span> 지점1
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ck-2" class="checkbox2">
+                                                                <input type="checkbox" hidden id="ck-2">
+                                                                <span></span> 지점1
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ck-3" class="checkbox2">
+                                                                <input type="checkbox" hidden id="ck-3">
+                                                                <span></span> 지점1
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ck-4" class="checkbox2">
+                                                                <input type="checkbox" hidden id="ck-4">
+                                                                <span></span> 지점1
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="flex" style="justify-content: center">
+                                                    <a href="" class="btn btn--small btn-blue block" style="margin-right: 5px !important;">홈 팀</a>
+                                                    <a href="" class="btn btn--small btn-blue block">원정 팀</a>
+                                                </div>
+                                            </div>
+                                            <div class="select-frcs-arrow"></div>
+                                            <div class="select-frcs-team">
+                                                <div class="row">
+                                                    <strong>홈 팀</strong>
+                                                    <div class="conb">
+                                                        <label for="t1" class="checkbox2">
+                                                            <input type="checkbox" hidden id="t1">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <strong>원정 팀</strong>
+                                                    <div class="conb">
+                                                        <label for="t1" class="checkbox2">
+                                                            <input type="checkbox" hidden id="t1">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="flex" style="justify-content: center">
+                                                    <a href="" class="btn btn--small btn-black" >삭제</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form flex">
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title">
+                                        <span class="l-border">시간선택</span>
+                                    </div>
+                                    <div class="box">
+                                        <select name="" id="" class="mr-5">
+                                            <option value="">AM</option>
+                                            <option value="">PM</option>
+                                        </select>
+                                        <input type="text" class="input-border">
+                                        <span class="unit font-10 ml-2 mr-2">:</span>
+                                        <input type="text" class="input-border">
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title">
+                                        <span class="l-border">라운드</span>
+                                    </div>
+                                    <div class="box">
+                                        <input type="text" class="">
+                                        <span class="unit font-10">라운드</span>
+                                    </div>
+                                </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title">
+                                        <span class="l-border">구장선택</span>
+                                    </div>
+                                    <div class="box">
+                                        <input type="text" class="">
+                                        <span class="unit font-10">구장</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="btnbox mt-100">
+                                <a href="" class="btn btn-blue">등록</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')

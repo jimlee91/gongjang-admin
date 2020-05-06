@@ -1,0 +1,60 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content account">
+        <div class="content__main">
+            <div class="accounts registered">
+                <section class="accounts__header">
+                    <h2 class="accounts__title">
+                            <span>
+                                아이디 찾기
+                            </span>
+                    </h2>
+                </section>
+                <div class="accounts__info">
+                    <h3>*등록된 휴대폰 번호로 아이디 찾기</h3>
+                    <p>
+                        가입 당시 입력한 휴대전화 번호를 통해 아이디를 찾으세요.
+                    </p>
+                </div>
+
+                <div class="registered__form ">
+                    <div class="form">
+                        <div class="form__row">
+                            <label for="" class="form__row-title">이름</label>
+                            <div class="box">
+                                <input type="text" placeholder="본인 실명을 입력하세요.">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="" class="form__row-title">휴대폰 번호</label>
+                            <div class="box">
+                                <input type="text" placeholder="'-' 구분없이 입력">
+                                <button class="btn waves-effect">인증번호 발송</button>
+                            </div>
+                            <p class="form__help confirm">
+                                인증번호가 발송되었습니다.
+                            </p>
+                        </div>
+                        <div class="form__row">
+                            <label for="" class="form__row-title">인증번호</label>
+                            <div class="box">
+                                <input type="text" placeholder="인증번호 입력" class="">
+                                <button class="btn waves-effect ml-auto">인증확인</button>
+                                <span class="counter">3:00</span>
+                            </div>
+                            <p class="form__help confirm">
+                                인증이 완료되었습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accounts__btnbox">
+                        <button class="btn btn-blue waves-effect" onclick="">다음</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')

@@ -1,0 +1,72 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title">
+                            <a href="">마이페이지</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">게시물</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    공간 설정
+                                </span>
+                            </h2>
+                        </section>
+                    </div>
+                    <div class="inner-wrap ">
+                        <div class="spaceSetting">
+                            <form action="">
+                                <div class="form">
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">공간 선택</label>
+                                        <div class="box">
+                                            <select name="" id="">
+                                                <option value="">공간을 선택하세요.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="appSetting-item">
+                                        <div class="appSetting__info">
+                                            <h3>공간 전체 비공개 설정</h3>
+                                            <p>공간의 전체 게시물을 비공개 설정 하시겠습니까?</p>
+                                        </div>
+                                        <label for="s1" class="switch">
+                                            <div class="switch__layout">
+                                                <input type="checkbox" hidden="" id="s1" checked="">
+                                                <span></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="form__row mt-20">
+                                        <label for="" class="form__row-title">공간 설명</label>
+                                        <div class="box">
+                                            <textarea type="text" placeholder="내용을 입력하세요."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btnbox mt-100">
+                                    <button class="btn btn-blue waves-effect">확인</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')

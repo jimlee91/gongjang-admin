@@ -1,4 +1,5 @@
 .container {
+  padding-bottom: 50px;
 }
 .content {
   width: 903px;
@@ -10,12 +11,14 @@
   .content__left {
     width: 76px;
     flex: none;
+    margin-right: 16px;
   }
   .content__main {
     flex: 1;
     margin:0 auto;
     background:#fff;
     border-radius: 7px;
+    overflow: hidden;
   }
 }
 
@@ -24,5 +27,58 @@
   .content__main {
     max-width: 628px;
     margin:0 auto;
+  }
+}
+
+.content__header {
+  padding:0 92px;
+  padding-top: 57px;
+  padding-bottom: 35px;
+  width: 100%;
+  align-items: flex-end;
+}
+.inner-wrap {
+  padding:0 92px;
+  padding-bottom: 100px;
+}
+.newbtnbox {
+  margin-left: auto;
+  display: flex;
+  a {
+    line-height: 22px;
+    text-align: center;
+    padding:0 5px;
+    height: 24px;
+    min-width: 65px;
+    font-size: 10px;
+    color:#5a5553;
+    border:1px solid #5a5553;
+    border-radius: 5px;
+    margin-right: 8px;
+    transition: all .3s;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background:#5a5553;
+      color:#fff;
+    }
+
+    &.blue {
+      border-color:$blue;
+      color:$blue;
+      &:hover {
+        background:$blue;
+        color:#fff;
+      }
+    }
+    &.gray {
+      border-color:rgba(255,255,255,.6);
+      color:rgba(255,255,255,.6);
+      &:hover {
+        background:rgba(255,255,255,.6);
+        color:#fff;
+      }
+    }
   }
 }

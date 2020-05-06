@@ -1,0 +1,106 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm qawrite">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title">
+                            <a href="">마이페이지</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">1:1 문의</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    문의하기
+                                </span>
+                            </h2>
+                        </section>
+                    </div>
+                    <div class="inner-wrap">
+                        <div class="subContent__section ">
+
+                            <div class="spaceSetting">
+                                <form action="">
+                                    <div class="form">
+                                        <div class="form__row column">
+                                            <label for="" class="form__row-title font-12">제목</label>
+                                            <div class="box">
+                                                <input type="text" class="input-border">
+                                            </div>
+                                        </div>
+
+                                        <div class="form__row column">
+                                            <label for="" class="form__row-title font-12">카테고리</label>
+                                            <div class="box">
+                                                <select name="" id="" class="input-border">
+                                                    <option value="">카테고리</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form__row column">
+                                            <label for="" class="form__row-title font-12">내용</label>
+                                            <div class="box">
+                                                <textarea type="text" placeholder="내용을 입력하세요." class="input-border"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form__row column">
+                                            <label for="" class="form__row-title">업로드</label>
+                                            <div class="box">
+                                                <div class="form__fileFields">
+                                                    <!-- if # 등록된 파일이 없을경우 -->
+                                                    <button class="fileField-empty input-border" id="fileField-empty" type="button" onclick="showModal('#addFile')">
+                                                        업로드 파일 선택
+                                                    </button>
+                                                    <!-- else -->
+                                                    <ul class="fileField-list" id="fileField-list" style="display: none;">
+
+                                                    </ul>
+                                                    <!-- end if -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btnbox mt-100">
+                                        <button class="btn btn-blue waves-effect">확인</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="addFile" style="display: none;">
+    <div class="modal__content">
+        <div class="modal__body">
+            <label for="fileImages" class="addFile__images">
+                <input type="file" id="fileImages" hidden="" multiple="" accept="image/*">
+                <div class="icon">사진 아이콘</div>
+                <p>사진</p>
+            </label>
+
+            <label for="fileVideos" class="addFile__videos">
+                <input type="file" id="fileVideos" hidden="" multiple="" accept="video/*">
+                <div class="icon">동영상</div>
+                <p>동영상</p>
+            </label>
+        </div>
+        <div class="modal__btnbox">
+            <a href="#//" class="modal__btn js-modal-close">확인</a>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
