@@ -24,32 +24,32 @@
     }
   }
   .accounts__state {
-    font-size: 14px;
+    font-size: 10px;
     color:$green;
     &.step1-2{
       background: url('../images/step1-2.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 35px;
+      background-size: auto 10px;
+      padding-left: 30px;
     }
     &.step2-2 {
       background: url('../images/step2-2.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 35px;
+      background-size: auto 10px;
+      padding-left: 30px;
     }
     &.step3-1 {
       background: url('../images/step3-1.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 55px;
+      background-size: auto 10px;
+      padding-left: 50px;
     }
     &.step3-2 {
       background: url('../images/step3-2.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 55px;
+      background-size: auto 10px;
+      padding-left: 50px;
     }
     &.step3-3 {
       background: url('../images/step3-3.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 55px;
+      background-size: auto 10px;
+      padding-left: 50px;
     }
   }
 }
@@ -205,7 +205,7 @@
     }
   }
   .registered__agreements {
-    margin-top: 30px;
+    margin-top: 65px;
     .item {
       display: flex;
       flex-wrap: wrap;
@@ -218,7 +218,7 @@
         width: auto;
       }
       a {
-        font-size: 12px;
+        font-size: 10px;
         color:#646464;
       }
     }
@@ -227,7 +227,7 @@
     margin-top: 100px;
   }
   .registered__age {
-    margin-top: 130px;
+    margin-top: 16px;
 
     label {
       margin-bottom: 15px;
@@ -237,8 +237,8 @@
         width: 100%;
         text-align: center;
         font-size: 12px;
-        border: solid 1px rgba(0,0,0,0.5);
-        border-radius: 5px;
+        border: $border;
+        border-radius: 7px;
         cursor: pointer;
         transition: all .3s;
       }
@@ -254,4 +254,45 @@
       display: none;
     }
   }
+}
+
+.registered__admin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .col {
+    cursor: pointer;
+    &:first-child {
+      margin-right: 14px;
+    }
+    .box {
+      padding:0 8px;
+      border: $border;
+      border-radius: 7px;
+    }
+    strong {
+      color:#5a5553;
+      font-size: 10px;
+      display: block;
+      text-align: center;
+      line-height: 24px;
+      font-weight: 300;
+      border-bottom: $border;
+    }
+    p {
+      line-height: 36px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    input:checked + .box {
+      border-color:$green;
+      color:$green;
+      strong {
+        color:$green;
+        border-color:$green;
+      }
+    }
+  }
+
 }

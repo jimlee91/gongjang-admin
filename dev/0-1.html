@@ -1,0 +1,111 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content account">
+        <div class="content__main">
+            <div class="accounts registered">
+                <section class="accounts__header">
+                    <h2 class="accounts__title">
+                            <span>
+                                회원가입
+                            </span>
+                    </h2>
+                    <div class="accounts__state step1-2">
+                        신청 1단계
+                    </div>
+                </section>
+
+                <div class="registered__form">
+                    <!-- 나이 선택 -->
+                    <div class="registered__admin">
+                        <label for="a1" class="col">
+                            <input type="radio" id="a1" hidden>
+                            <div class="box">
+                                <strong>지점 관리자</strong>
+                                <p>가맹점</p>
+                            </div>
+                        </label>
+                        <label for="a2" class="col">
+                            <input type="radio" id="a2" hidden>
+                            <div class="box">
+                                <strong>지점 관리자</strong>
+                                <p>제휴점</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="registered__age">
+                        <label for="type1" class="">
+                            <input type="radio" name="type" id="type1">
+                            <span>
+                                    아카데미 감독
+                                </span>
+                        </label>
+                        <label for="type2" class="">
+                            <input type="radio" name="type" id="type2">
+                            <span>코치</span>
+                        </label>
+                    </div>
+
+                    <!-- 약관 동의 -->
+                    <section class="registered__agreements">
+                        <h3 class="section-title">아래 내용 동의</h3>
+                        <div class="list">
+                            <div class="item">
+                                <label for="allAgree" class="checkbox">
+                                    <input type="checkbox" id="allAgree" hidden="">
+                                    <span></span>
+                                    <strong>모두 동의합니다.</strong>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <label for="agree1" class="checkbox">
+                                    <input type="checkbox" id="agree1" hidden="">
+                                    <span></span>
+                                    이용약관 동의
+                                </label>
+                                <a href="#//" onclick="showModal('#pravicy');">보기</a>
+                            </div>
+                            <div class="item">
+                                <label for="agree2" class="checkbox">
+                                    <input type="checkbox" id="agree2" hidden="">
+                                    <span></span>
+                                    개인정보 수집 및 이용 동의
+                                </label>
+                                <a href="#//" onclick="showModal('#pravicy');">보기</a>
+                            </div>
+                            <div class="item">
+                                <label for="agree3" class="checkbox">
+                                    <input type="checkbox" id="agree3" hidden="">
+                                    <span></span>
+                                    위치 정보 이용약관 동의 <i>*선택</i>
+                                </label>
+                                <a href="#//" onclick="showModal('#pravicy');">보기</a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="accounts__btnbox">
+                        <button class="btn btn-blue ">다음</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="pravicy" style="display: none;">
+    <div class="modal__content">
+        <h2 class="modal__title">이용약관</h2>
+        <div class="modal__body">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores debitis dicta doloribus ea esse expedita id itaque, maiores, molestiae possimus quasi veritatis. Accusamus adipisci, beatae commodi cum dicta dolor ducimus eligendi esse eum ex exercitationem id impedit itaque laborum laudantium libero magni maiores maxime minima modi molestiae molestias nesciunt nobis numquam odio provident quaerat qui, quibusdam quo recusandae sed sequi sit veniam. Ab, accusamus atque cupiditate dolorem doloribus earum est laboriosam magnam nam, nobis placeat qui, tempore tenetur voluptas voluptatum? Autem commodi cupiditate excepturi exercitationem hic, laboriosam laudantium maiores nostrum placeat possimus praesentium quisquam quos velit vitae voluptas voluptatibus!
+            </p>
+        </div>
+        <div class="modal__btnbox border">
+            <a href="" class="modal__btn js-modal-close">동의</a>
+            <a href="" class="modal__btn bg-white js-modal-close">비동의</a>
+        </div>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')

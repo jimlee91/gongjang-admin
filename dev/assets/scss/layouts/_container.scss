@@ -1,36 +1,28 @@
 .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  min-height: 100vh;
 }
 .content {
-  width: 1200px;
+  width: 903px;
   margin:0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 15px;
   align-items: stretch;
   .content__left {
-    width: 200px;
+    width: 76px;
     flex: none;
   }
   .content__main {
     flex: 1;
     margin:0 auto;
-    padding:0 20px;
-    max-width: 700px;
-    .content__body {
-      background: #fff;
-      border-radius:5px;
-      overflow: hidden;
-    }
+    background:#fff;
+    border-radius: 7px;
   }
-  .content__right {
-    width: 300px;
-    flex: none;
-    min-height: calc(100vh - 165px);
-    display: flex;
-    flex-direction: column;
+}
+
+.content.account {
+  padding-top: 40px;
+  .content__main {
+    max-width: 628px;
+    margin:0 auto;
   }
 }
