@@ -1,0 +1,136 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">1:1 문의</a>
+                        <a href="" class="active">FAQ</a>
+                        <a href="" class="">공지사항</a>
+                        <a href="" class="">이벤트</a>
+                        <a href="" class="">매치용병</a>
+                        <a href="" class="">팝업관리</a>
+                        <a href="" class="">알림톡</a>
+                    </div>
+
+                    <div class="inner-wrap">
+                        <div class="flex mb-10">
+                            <div class="newbtnbox">
+                                <a href="" class="blue" style="height: 30px;line-height: 28px;">등록하기</a>
+                            </div>
+                            <select name="" id="" style="width: 85px;" class="newselect ml-5">
+                                <option value="">진행상황</option>
+                            </select>
+                        </div>
+                        <div class="admtable mt-70">
+                            <table>
+                                <colgroup>
+                                    <col width="40">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="55">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>제목</th>
+                                    <th>카테고리</th>
+                                    <th>조회수</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">회원가입 문제</a>
+                                    </td>
+                                    <td>
+                                        회원가입
+                                    </td>
+                                    <td>
+                                        200
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">회원가입 문제</a>
+                                    </td>
+                                    <td>
+                                        회원가입
+                                    </td>
+                                    <td>
+                                        200
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        <a href="">회원가입 문제</a>
+                                    </td>
+                                    <td>
+                                        회원가입
+                                    </td>
+                                    <td>
+                                        200
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        @@include('./include/pagination.html')
+
+                        <div class="form mt-40">
+                            <div class="form__row column mb-0">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">제목 검색</span>
+                                </div>
+                                <div class="box ">
+                                    <input type="text" placeholder="지점을 검색하세요." class="input-border">
+                                    <button class="form-search"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

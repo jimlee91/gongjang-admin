@@ -1,0 +1,427 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm prd prd-detail">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">1:1 문의</a>
+                        <a href="" class="">FAQ</a>
+                        <a href="" class="">공지사항</a>
+                        <a href="" class="">이벤트</a>
+                        <a href="" class="active">매치용병</a>
+                        <a href="" class="">팝업관리</a>
+                        <a href="" class="">알림톡</a>
+                    </div>
+
+                    <div class="inner-wrap pb-20" style="border-bottom: 10px solid #eaeaea">
+                        <div class="form flex">
+                            <div class="form__row column form__row-half">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">작성자</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" value="관리자" readonly>
+                                </div>
+                            </div>
+                            <div class="form__row column form__row-half">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">매치형태</span>
+                                </div>
+                                <div class="box">
+                                    <select name="" id="">
+                                        <option value="">매치 형태</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <div class="form__row column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">날짜</span>
+                                </div>
+                                <div class="box ">
+                                    <div class="reservation">
+                                        <div class="calendar"></div>
+                                        <script>
+                                            $('.calendar').datepicker({
+                                                dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+                                                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                                                minDate: 0,
+                                                onSelect: function(date){
+                                                    $('.month').text(date.substring(0, 2))
+                                                    $('.day').text(date.substring(3, 5))
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__row column pt-10">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">시간</span>
+                                </div>
+                                <div class="box">
+                                    <div class="time flex">
+                                        <select name="" id="" class="mr-5" style="width: 90px;">
+                                            <option value="">AM</option>
+                                        </select>
+                                        <input type="text" class="input-border text-center" placeholder="" style="width: 40px;">
+                                        <span class="font-10 ml-2 mr-2" style="line-height: 30px;">:</span>
+                                        <input type="text" class="input-border text-center" placeholder="" style="width: 40px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form flex mt-10">
+                            <div class="form__row column form__row-half">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">팀 수준</span>
+                                </div>
+                                <div class="box">
+                                    <label for="rd1" class="checkbox">
+                                        <input type="radio" id="rd1" hidden>
+                                        <span></span> 상
+                                    </label>
+                                    <label for="rd2" class="checkbox">
+                                        <input type="radio" id="rd2" hidden>
+                                        <span></span> 중
+                                    </label>
+                                    <label for="rd3" class="checkbox">
+                                        <input type="radio" id="rd3" hidden>
+                                        <span></span> 하
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__row column form__row-half">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">가능 팀 수</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text">
+                                    <span class="unit font-10">팀</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <div class="form__row column ">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">지점</span>
+                                </div>
+                                <div class="box">
+                                    <select name="" id="">
+                                        <option value="">동대문점</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__row column ">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">제목</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" value="매치">
+                                </div>
+                            </div>
+                            <div class="form__row column pt-10">
+                                <div class="form__row-title vertical-top">
+                                    <span class="l-border font-10">내용</span>
+                                </div>
+                                <div class="box">
+                                    <textarea name="" id=""></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="inner-wrap pt-40">
+                        <div class="form">
+                            <div class="form__row border-bottom column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">모집자</span>
+                                </div>
+                                <div class="box column">
+                                    <div class="form__row column mb-0">
+                                        <div class="form__row-title" style="width: 100px !important;">
+                                            <span class="font-10">매치팀</span>
+                                        </div>
+                                        <div class="box l-border">
+                                            <a href="" class="team flex align-center">
+                                                <div class="thumb">
+                                                    <img src="//via.placeholder.com/25x25" alt="">
+                                                </div>
+                                                <p class="font-10 ml-5">가나다 스포츠</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="form__row ">
+                                        <div class="form__row-title">
+                                            <span class="font-10">참여선수</span>
+                                        </div>
+                                        <div class="box">
+                                            <div class="evaluation evaluation--full ">
+                                                <div class="evaluation__item">
+                                                    <span class="thumb">
+                                                        <img src="//via.placeholder.com/95x95" alt="">
+                                                        <span>수비</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <h3>김공장</h3>
+                                                        <p>
+                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="evaluation__item">
+                                                    <span class="thumb">
+                                                        <img src="//via.placeholder.com/95x95" alt="">
+                                                        <span>수비</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <h3>김공장</h3>
+                                                        <p>
+                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="evaluation__item">
+                                                    <span class="thumb">
+                                                        <img src="//via.placeholder.com/95x95" alt="">
+                                                        <span>수비</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <h3>김공장</h3>
+                                                        <p>
+                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="evaluation__item">
+                                                    <span class="thumb">
+                                                        <img src="//via.placeholder.com/95x95" alt="">
+                                                        <span>수비</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <h3>김공장</h3>
+                                                        <p>
+                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="evaluation__item">
+                                                    <span class="thumb">
+                                                        <img src="//via.placeholder.com/95x95" alt="">
+                                                        <span>수비</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <h3>김공장</h3>
+                                                        <p>
+                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="evaluation__item">
+                                                    <span class="thumb">
+                                                        <img src="//via.placeholder.com/95x95" alt="">
+                                                        <span>수비</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <h3>김공장</h3>
+                                                        <p>
+                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="evaluation__item">
+                                                    <span class="thumb">
+                                                        <img src="//via.placeholder.com/95x95" alt="">
+                                                        <span>수비</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <h3>김공장</h3>
+                                                        <p>
+                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__row column">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">신청자</span>
+                                </div>
+                                <div class="box column">
+                                    <div class="form__row column mb-0">
+                                        <div class="form__row-title" style="width: 100px !important;">
+                                            <span class="font-10">매치팀</span>
+                                        </div>
+                                        <div class="box l-border">
+                                            <a href="" class="team flex align-center">
+                                                <div class="thumb">
+                                                    <img src="//via.placeholder.com/25x25" alt="">
+                                                </div>
+                                                <p class="font-10 ml-5">가나다 스포츠</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="form__row ">
+                                        <div class="form__row-title">
+                                            <span class="font-10">참여선수</span>
+                                        </div>
+                                        <div class="box">
+                                            <div class="participants mt-10">
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="participants__item">
+                                                    <a href="">
+                                                        <div class="thumb">
+                                                            <img src="//via.placeholder.com/50x50" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>김공장</h3>
+                                                            <p>
+                                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다 스포츠
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="newbtnbox mt-50">
+                            <a href="" class="btn  ml-auto">삭제</a>
+                            <a href="" class="btn blue">수정완료</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')

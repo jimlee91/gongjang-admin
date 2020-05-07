@@ -1049,3 +1049,26 @@
     }
   }
 }
+
+.buy-history {
+  background:#eaeaea;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form--couch {
+  .btn {
+    width: 40px !important;
+  }
+  .comp {
+    width: 40px;
+    margin-left: 10px;
+    flex: none;
+  }
+}
+
+.select-member-table {
+  border-top: $border;
+  border-bottom: $border;
+  margin-top: 10px;
+}

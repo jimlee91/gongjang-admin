@@ -1,0 +1,131 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="active">예약</a>
+                        <a href="" class="">아카데미</a>
+                        <a href="" class="">대회</a>
+                        <a href="" class="">선수 팀</a>
+                        <a href="" class="">매치 용병</a>
+                        <a href="" class="">기타</a>
+                    </div>
+
+
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    메세지 보내기
+                                </span>
+                            </h2>
+                        </section>
+                    </div>
+                    <div class="inner-wrap">
+                        <div class="form">
+
+                            <div class="form__row ">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">내용</span>
+                                </div>
+                                <div class="box pt-10">
+                                    <textarea name="" id="" placeholder="내용을 입력하세요."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form__row ">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">받는 사람</span>
+                                </div>
+                                <div class="box pt-10">
+                                    <div class="select-member-case" style="width: 100%;">
+                                        <div class="row">
+                                            <label for="c1" class="checkbox mt-0">
+                                                <input type="radio" name="case" id="c1" hidden>
+                                                <span></span> 회원 전체
+                                            </label>
+                                        </div>
+                                        <div class="row flex mt-5">
+                                            <label for="c2" class="checkbox mt-0">
+                                                <input type="radio" name="case" id="c2" hidden>
+                                                <span></span> 특정 회원
+                                            </label>
+
+                                            <div class="flex ml-auto">
+                                                <input type="text" class="input-border">
+                                                <a href="" class="btn btn--small btn-blue">추가</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="select-member-table admtable">
+                                        <table>
+                                            <colgroup>
+                                                <col width="40">
+                                                <col>
+                                                <col width="55">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td class="text-left">
+                                                    <a href="">hongildong23 (김공장)</a>
+                                                </td>
+                                                <td>
+                                                    <div class="btnbox">
+                                                        <a href="" class="btn btn--small btn-black">삭제</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td class="text-left">
+                                                    <a href="">hongildong23 (김공장)</a>
+                                                </td>
+                                                <td>
+                                                    <div class="btnbox">
+                                                        <a href="" class="btn btn--small btn-black">삭제</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td class="text-left">
+                                                    <a href="">hongildong23 (김공장)</a>
+                                                </td>
+                                                <td>
+                                                    <div class="btnbox">
+                                                        <a href="" class="btn btn--small btn-black">삭제</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btnbox mt-100">
+                                <a href="" class="btn btn-blue">보내기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

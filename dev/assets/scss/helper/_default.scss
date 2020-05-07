@@ -9,6 +9,9 @@
 .align-start {
   align-items: flex-start !important;
 }
+.align-center {
+  align-items: center !important;
+}
 .hide-text {
   text-indent: -9999px;
   overflow: hidden;
@@ -117,6 +120,9 @@
 }
 .ml-auto {
   margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
 }
 
 .adm-default-padding {

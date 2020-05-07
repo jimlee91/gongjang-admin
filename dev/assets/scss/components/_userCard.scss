@@ -52,7 +52,7 @@
   }
   .userCard__name {
     color:#333;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     span {
       font-size: 10px;
@@ -72,7 +72,7 @@
       @include truncate;
       flex: 1;
       max-width: calc(100% - 15px);
-      font-size: 12px;
+      font-size: 10px;
       color:$green;
       margin-left: 5px;
     }

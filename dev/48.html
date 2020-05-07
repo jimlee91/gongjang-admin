@@ -1,0 +1,137 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="active">1:1 문의</a>
+                        <a href="" class="">FAQ</a>
+                        <a href="" class="">공지사항</a>
+                        <a href="" class="">이벤트</a>
+                        <a href="" class="">매치용병</a>
+                        <a href="" class="">팝업관리</a>
+                        <a href="" class="">알림톡</a>
+                    </div>
+
+                    <div class="inner-wrap">
+
+                        <div class="form">
+                            <div class="form__row column mb-0">
+                                <div class="box ">
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">카테고리</option>
+                                        <option value="">분류</option>
+                                    </select>
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">분류선택</option>
+                                        <option value="">분류</option>
+                                    </select>
+                                    <input type="text" placeholder="검색어를 입력하세요." class="input-border">
+                                    <button class="form-search"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admtable mt-40">
+                            <table>
+                                <colgroup>
+                                    <col width="40">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="55">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>작성자 이름</th>
+                                    <th>제목</th>
+                                    <th>카테고리</th>
+                                    <th>조회수</th>
+                                    <th>등록일</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td><a href="">김공장</a></td>
+                                    <td>
+                                        <a href="">제목자리 입니다.</a>
+                                    </td>
+                                    <td>회원가입</td>
+                                    <td>
+                                        200
+                                    </td>
+                                    <td>
+                                        20.03.03
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td><a href="">김공장</a></td>
+                                    <td>
+                                        <a href="">제목자리 입니다.</a>
+                                    </td>
+                                    <td>회원가입</td>
+                                    <td>
+                                        200
+                                    </td>
+                                    <td>
+                                        20.03.03
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td><a href="">김공장</a></td>
+                                    <td>
+                                        <a href="">제목자리 입니다.</a>
+                                    </td>
+                                    <td>회원가입</td>
+                                    <td>
+                                        200
+                                    </td>
+                                    <td>
+                                        20.03.03
+                                    </td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        @@include('./include/pagination.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

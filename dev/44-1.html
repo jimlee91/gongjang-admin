@@ -1,0 +1,148 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm prd">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="frcs__header">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        HNS 아카데미
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">아카데미 정보</a>
+                        <a href="" class="">수강생</a>
+                        <a href="" class="">수업</a>
+                        <a href="" class=" ">결제내역</a>
+                        <a href="" class="active">코치</a>
+                        <a href="" class=" ">공지사항</a>
+                    </div>
+                    <form action="">
+                        <div class="prd__section-content pb-50 stdt">
+                            <div class="prd-member">
+                                <div class="left">
+                                    <div class="userCard">
+                                        <a class="userCard__thumb" href="">
+                                            <span class="is_new">새글</span>
+                                            <img src="//via.placeholder.com/120x120" alt="">
+                                        </a>
+                                        <div class="form">
+                                            <div class="form__row">
+                                                <div class="box">
+                                                    <label class="form__fileFields" for="thumb">
+                                                        <input type="file" id="thumb" hidden>
+                                                        <button class="fileField-empty input-border" type="button">
+                                                            사진 변경
+                                                        </button>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right flex">
+                                    <div class="col mr-20" style="flex: 1;">
+                                        <div class="form">
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border font-10">이름</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text" value="hongildong23">
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border font-10">생년월일</span>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="text" value="92.09.23">
+                                                </div>
+                                            </div>
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title">
+                                                    <span class="l-border font-10">권한설정</span>
+                                                </div>
+                                                <div class="box pt-10">
+                                                    <label for="ck1" class="checkbox2 mb-10">
+                                                        <input type="checkbox" id="ck1" hidden>
+                                                        <span></span> 아카데미 정보 수정 가능
+                                                    </label>
+                                                    <label for="ck2" class="checkbox2 mb-10">
+                                                        <input type="checkbox" id="ck2" hidden>
+                                                        <span></span> 공지사항 등록 및 수정 가능
+                                                    </label>
+                                                    <label for="ck3" class="checkbox2">
+                                                        <input type="checkbox" id="ck3" hidden>
+                                                        <span></span> 결제 내역 수정 가능
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="flex: 1;">
+                                        <div class="form form--couch">
+                                            <div class="form__row form__row--full column">
+                                                <div class="form__row-title" style="width: 50px !important;">
+                                                    <span class="l-border font-10">이력</span>
+                                                </div>
+                                                <div class="box column">
+                                                    <div class="flex">
+                                                        <input type="text" class="input-border" style="flex: 1 !important;">
+                                                        <a href="" class="btn btn-blue btn--small">추가</a>
+                                                    </div>
+                                                    <div class="flex" style="align-items: center;">
+                                                        <ul class="i-list" style="flex: 1;">
+                                                            <li>
+                                                                김공장 코치
+                                                                <button class="remover">삭제</button>
+                                                            </li>
+                                                            <li>
+                                                                김공장 코치
+                                                                <button class="remover">삭제</button>
+                                                            </li>
+                                                            <li>
+                                                                김공장 코치
+                                                                <button class="remover">삭제</button>
+                                                            </li>
+                                                        </ul>
+                                                        <span class="font-10 comp">인증완료</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form">
+
+                                <div class="btnbox mt-100">
+                                    <a href="" class="btn btn-blue">수정완료</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

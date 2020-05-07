@@ -1,0 +1,73 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="active">예약</a>
+                        <a href="" class="">아카데미</a>
+                        <a href="" class="">대회</a>
+                        <a href="" class="">선수 팀</a>
+                        <a href="" class="">매치 용병</a>
+                        <a href="" class="">기타</a>
+                    </div>
+
+
+                    <div class="content__header flex">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    대회 신청 완료 메세지
+                                </span>
+                            </h2>
+                        </section>
+                    </div>
+                    <div class="inner-wrap">
+                        <div class="form">
+
+                            <div class="form__row ">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">내용</span>
+                                </div>
+                                <div class="box pt-10">
+                                    <textarea name="" id="" placeholder="내용을 입력하세요."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="appSetting-item border-none">
+                                <div class="appSetting__info">
+                                    <h3>활성화</h3>
+                                    <p>활성화 시에는 대회 신청 완료 시 메시지가 자동 전송됩니다.</p>
+                                </div>
+                                <label for="s1" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden="" id="s1" checked="">
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="btnbox mt-100">
+                                <a href="" class="btn btn-blue">적용</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

@@ -1,0 +1,106 @@
+@@include('./include/header.html')
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">회원 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">팀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="">1:1 문의</a>
+                        <a href="" class="">FAQ</a>
+                        <a href="" class="">공지사항</a>
+                        <a href="" class="active">이벤트</a>
+                        <a href="" class="">매치용병</a>
+                        <a href="" class="">팝업관리</a>
+                        <a href="" class="">알림톡</a>
+                    </div>
+
+                    <div class="inner-wrap ">
+                        <div class="form ">
+                            <div class="form__row column ">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">제목</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form flex">
+                            <div class="form__row column form__row-half">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">포스터</span>
+                                </div>
+                                <div class="box ">
+                                    <div class="form__fileFields">
+                                        <!-- if # 등록된 파일이 없을경우 -->
+                                        <button class="fileField-empty input-border" id="fileField-empty" type="button" onclick="showModal('#addFile')">
+                                            업로드 파일 선택
+                                        </button>
+                                        <!-- else -->
+                                        <ul class="fileField-list" id="fileField-list" style="display: none;">
+
+                                        </ul>
+                                        <!-- end if -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__row column form__row-half">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">이벤트 기간</span>
+                                </div>
+                                <div class="box">
+                                    <input type="text" value=""  class="datepicker input-border" placeholder="시작일">
+                                    <span class="hypen">~</span>
+                                    <input type="text" class="datepicker input-border" placeholder="종료일">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <div class="form__row ">
+                                <div class="form__row-title">
+                                    <span class="l-border font-10">내용</span>
+                                </div>
+                                <div class="box pt-10">
+                                    <textarea name="" id=""></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="btnbox mt-100">
+                                <a href="#//" class="btn btn-blue">완료</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="addFile" style="display: none;">
+    <div class="modal__content">
+        <div class="modal__body">
+            <label for="fileImages" class="addFile__images ml-auto mr-auto">
+                <input type="file" id="fileImages" hidden="" multiple="" accept="image/*">
+                <div class="icon">사진 아이콘</div>
+                <p>사진</p>
+            </label>
+        </div>
+        <div class="modal__btnbox">
+            <a href="" class="modal__btn js-modal-close">확인</a>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
