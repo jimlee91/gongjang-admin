@@ -15,27 +15,50 @@
                     </div>
                 </div>
                 <div class="content__main">
+                    <div class="frcs__header">
+                        <div class="content__header flex">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        HNS 아카데미
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
 
                     <div class="cup__info-tab cup__info-tab--type2 black mb-40">
-                        <a href="" class="">1:1 문의</a>
-                        <a href="" class="">FAQ</a>
-                        <a href="" class="">공지사항</a>
-                        <a href="" class="active">이벤트</a>
-                        <a href="" class="">매치용병</a>
-                        <a href="" class="">팝업관리</a>
-
+                        <a href="" class="">아카데미 정보</a>
+                        <a href="" class="">수강생</a>
+                        <a href="" class="">수업</a>
+                        <a href="" class=" ">결제내역</a>
+                        <a href="" class=" ">코치</a>
+                        <a href="" class=" ">공지사항</a>
+                        <a href="" class="">쿠폰</a>
+                        <a href="" class="active">상점</a>
                     </div>
 
                     <div class="inner-wrap">
-                        <div class="flex mb-10">
-                            <div class="newbtnbox">
-                                <a href="" class="blue" style="height: 30px;line-height: 28px;">등록하기</a>
+
+                        <div class="form">
+                            <div class="form__row column">
+                                <div class="form__row-title">
+                                    <div class="l-border">상품 생성</div>
+                                </div>
+                                <div class="box">
+                                    <input type="text" class="" placeholder="상품 명을 입력하세요.">
+                                    <span class="hypen color-green"> - </span>
+                                    <input type="text" class="" placeholder="가격을 입력하세요.">
+
+                                    <div class="newbtnbox ml-100">
+                                        <a href="" class=" blue">생성하기</a>
+                                    </div>
+                                </div>
                             </div>
-                            <select name="" id="" style="width: 85px;" class="newselect ml-5">
-                                <option value="">진행상황</option>
-                            </select>
                         </div>
-                        <div class="admtable mt-70">
+
+
+                        <div class="admtable border-bottom mt-50">
                             <table>
                                 <colgroup>
                                     <col width="40">
@@ -43,14 +66,16 @@
                                     <col>
                                     <col>
                                     <col>
-                                    <col width="55">
+                                    <col>
+                                    <col width="65">
                                 </colgroup>
                                 <thead>
                                 <tr>
                                     <th></th>
-                                    <th>제목</th>
-                                    <th>기간</th>
-                                    <th>진행상황</th>
+                                    <th>상품 명</th>
+                                    <th>가격</th>
+                                    <th>생성 날짜</th>
+                                    <th>사용여부</th>
                                     <th></th>
                                     <th></th>
                                 </tr>
@@ -59,14 +84,13 @@
                                 <tr>
                                     <td class="text-left">1.</td>
                                     <td>
-                                        <a href="">1+1 이벤트</a>
+                                        유니폼 상의
                                     </td>
                                     <td>
-                                        2020.02.03 ~ 2020.02.05
+                                        10,000
                                     </td>
-                                    <td>
-                                        <span class="color-gray">종료</span>
-                                    </td>
+                                    <td>20.02.03</td>
+                                    <td>O</td>
                                     <td></td>
                                     <td>
                                         <div class="btnbox">
@@ -77,14 +101,13 @@
                                 <tr>
                                     <td class="text-left">1.</td>
                                     <td>
-                                        <a href="">1+1 이벤트</a>
+                                        유니폼 상의
                                     </td>
                                     <td>
-                                        2020.02.03 ~ 2020.02.05
+                                        10,000
                                     </td>
-                                    <td>
-                                        <span class="color-blue">예정</span>
-                                    </td>
+                                    <td>20.02.03</td>
+                                    <td>O</td>
                                     <td></td>
                                     <td>
                                         <div class="btnbox">
@@ -95,14 +118,30 @@
                                 <tr>
                                     <td class="text-left">1.</td>
                                     <td>
-                                        <a href="">1+1 이벤트</a>
+                                        유니폼 상의
                                     </td>
                                     <td>
-                                        2020.02.03 ~ 2020.02.05
+                                        10,000
+                                    </td>
+                                    <td>20.02.03</td>
+                                    <td>O</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>
+                                        유니폼 상의
                                     </td>
                                     <td>
-                                        <span class="color-green">진행중</span>
+                                        10,000
                                     </td>
+                                    <td>20.02.03</td>
+                                    <td>X</td>
                                     <td></td>
                                     <td>
                                         <div class="btnbox">
@@ -115,19 +154,9 @@
                             </table>
                         </div>
 
-                        @@include('./include/pagination.html')
 
-                        <div class="form mt-40">
-                            <div class="form__row column mb-0">
-                                <div class="form__row-title">
-                                    <span class="l-border font-10">제목 검색</span>
-                                </div>
-                                <div class="box ">
-                                    <input type="text" placeholder="지점을 검색하세요." class="input-border">
-                                    <button class="form-search"></button>
-                                </div>
-                            </div>
-                        </div>
+
+                        @@include('./include/pagination.html')
                     </div>
                 </div>
             </div>

@@ -35,28 +35,38 @@
 
                     <div class="inner-wrap">
                         <form action="">
-                            <div class="form flex">
-                                <div class="form__row column form__row-half">
+                            <div class="form ">
+                                <div class="form__row column ">
                                     <div class="form__row-title">
                                         <span class="l-border">지점명</span>
                                     </div>
                                     <div class="box">
-                                        <input type="text">
+                                        <input type="text" class="w-220">
                                     </div>
                                 </div>
-                                <div class="form__row column form__row-half">
+                                <div class="form__row column ">
                                     <div class="form__row-title">
                                         <span class="l-border">지점 주소</span>
                                     </div>
                                     <div class="box">
-                                        <select name="" id="" class="mr-5">
-                                            <option value="">지역 선택</option>
+                                        <strong class="font-10 lineheight-30 mr-10">시도 </strong>
+                                        <select name="" id="" class="mr-15 ">
+                                            <option value="">시/도 선택</option>
                                             <option value="">서울특별시</option>
                                             <option value="">경기도</option>
                                         </select>
+                                        <strong class="font-10 lineheight-30 mr-10">시군구 </strong>
+                                        <select name="" id="" class="mr-15">
+                                            <option value="">시/군/구 선택</option>
+                                            <option value="">서울특별시</option>
+                                            <option value="">경기도</option>
+                                        </select>
+                                        <strong class="font-10 lineheight-30 mr-10">상세주소 </strong>
                                         <input type="text">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form flex">
                                 <div class="form__row column form__row-half">
                                     <div class="form__row-title">
                                         <span class="l-border">연락처</span>
@@ -85,9 +95,9 @@
                                                 <img src="" alt="">
                                             </div>
 
-                                            <label class="btnbox mt-15" for="thumb">
+                                            <label class=" mt-15" for="thumb">
                                                 <input type="file" hidden id="thumb">
-                                                <span class="btn btn--small btn-white">추가</span>
+                                                <span class="btn btn--small btn-blue block ml-auto mr-auto">추가</span>
                                             </label>
                                         </div>
                                     </div>
@@ -274,6 +284,56 @@
                                     </div>
                                     <div class="box">
                                         <textarea name="" id="" placeholder="환불 규정을 적어주세요."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title vertical-top">
+                                        <span class="l-border">옵션</span>
+                                    </div>
+                                    <div class="box">
+                                        <div class="form-options">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="ck92" class="checkbox2">
+                                                        <input type="checkbox" hidden id="ck92">
+                                                        <span></span> 조끼
+                                                    </label>
+                                                    <div>
+                                                        <input type="text" placeholder="가격을 적어주세요">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="ck93" class="checkbox2">
+                                                        <input type="checkbox" hidden id="ck93">
+                                                        <span></span> 신가드
+                                                    </label>
+                                                    <div>
+                                                        <input type="text" placeholder="가격을 적어주세요">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="ck94" class="checkbox2">
+                                                        <input type="checkbox" hidden id="ck94">
+                                                        <span></span> 풋살화
+                                                    </label>
+                                                    <div>
+                                                        <input type="text" placeholder="가격을 적어주세요">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="ck95" class="checkbox2">
+                                                        <input type="checkbox" hidden id="ck95">
+                                                        <span></span> 기타
+                                                    </label>
+                                                    <div>
+                                                        <input type="text" placeholder="이름을 적어주세요">
+                                                        <input type="text" placeholder="가격을 적어주세요">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form__row column">

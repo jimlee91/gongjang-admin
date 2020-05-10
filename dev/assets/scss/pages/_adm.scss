@@ -182,6 +182,7 @@
     }
     .frcs__thumb {
       .imgbox {
+        position: relative;
         width: 165px;
         height: 160px;
         border: $border;
@@ -1071,4 +1072,77 @@
   border-top: $border;
   border-bottom: $border;
   margin-top: 10px;
+}
+
+.default-border {
+  border: $border;
+  border-radius: 7px;
+  &.flex {
+    display: flex;
+    padding:10px 0;
+    .col {
+      flex: 1;
+      &:first-child {
+        border-right: $border;
+      }
+      .attendance-top {
+        height: 55px;
+      }
+      .attendance-bottom {
+        display: block;
+
+        .checkbox2 {
+          width: 100%;
+          margin-top: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .attendance {
+    padding: 0 20px;
+    border: none;
+    margin: 0;
+  }
+  .attendance-top {
+    height: 65px;
+    border-bottom: $border;
+    align-items: center;
+    .newbtnbox {
+      align-self: center;
+    }
+  }
+  .attendance-bottom {
+    margin: 0;
+    padding:20px 0;
+  }
+}
+
+.form-options {
+  flex: 1;
+  width: 100%;
+  .row {
+    display: flex;
+    margin-bottom: 15px;
+    .col {
+      flex: 1;
+      margin-right: 40px;
+      display: flex;
+      .checkbox2 {
+        align-self: flex-start;
+        height: 30px;
+      }
+      div {
+        width: 130px;
+        flex: none;
+
+        input:nth-child(n + 2) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
 }

@@ -59,13 +59,13 @@
                                         <span class="l-border">대회구분</span>
                                     </div>
                                     <div class="box ">
-                                        <label for="ck1" class="checkbox2" style="width: 70px !important;">
-                                            <input type="checkbox" hidden id="ck1">
-                                            <span></span> 리그
-                                        </label>
+<!--                                        <label for="ck1" class="checkbox2" style="width: 70px !important;">-->
+<!--                                            <input type="checkbox" hidden id="ck1">-->
+<!--                                            <span></span> 리그-->
+<!--                                        </label>-->
                                         <label for="ck2" class="checkbox2" style="width: 70px !important;">
-                                            <input type="checkbox" hidden id="ck2">
-                                            <span></span> 컵
+                                            <input type="checkbox" hidden id="ck2" checked>
+                                            <span hidden></span> 컵
                                         </label>
                                     </div>
                                 </div>
@@ -115,8 +115,9 @@
                                     </div>
                                     <div class="box">
                                         <div class="thumb frcs__thumb">
-                                            <div class="imgbox">
+                                            <div class="imgbox relative" >
                                                 <img src="" alt="">
+                                                <span class="form__help confirm" style="position: absolute;left: 180px;bottom: 0;white-space: nowrap;">* 권장사이즈 170 * 900</span>
                                             </div>
 
                                             <label class="btnbox mt-15" for="thumb">
@@ -157,6 +158,12 @@
                                     <div class="box">
                                         <input type="text" class="w-220">
                                         <span class="unit font-10">팀</span>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title"><span class="l-border">조별예선 그룹 수</span></div>
+                                    <div class="box">
+                                        <input type="text" class="w-220">
                                     </div>
                                 </div>
                                 <div class="form__row column">
@@ -203,7 +210,7 @@
                                         </div>
 
                                         <p class="form__help confirm">
-                                            * 사진 및 동영상 업로드 가능
+                                            * 사진 및 파일 업로드 가능
                                         </p>
                                     </div>
                                 </div>
@@ -216,7 +223,25 @@
                                         <textarea name="" id="" placeholder="정책을 적어주세요."></textarea>
                                     </div>
                                 </div>
-
+                                <div class="form__row column">
+                                    <div class="form__row-title ">
+                                        <span class="l-border">계좌번호</span>
+                                    </div>
+                                    <div class="box column">
+                                        <div class="form__row" style="margin-bottom: 10px !important;">
+                                            <div class="form__row-title font-10">은행</div>
+                                            <div class="box">
+                                                <input type="text" placeholder="은행을 적어주세요.">
+                                            </div>
+                                        </div>
+                                        <div class="form__row">
+                                            <div class="form__row-title font-10">계좌번호</div>
+                                            <div class="box">
+                                                <input type="text" placeholder="계좌번호를 적어주세요.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form__row column">
                                     <div class="form__row-title vertical-top">
                                         <span class="l-border">결제방식</span>
@@ -240,6 +265,19 @@
                                                 <span></span> 네이버 페이
                                             </label>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="form__row column">
+                                    <div class="form__row-title ">
+                                        <span class="l-border">메인대회 설정</span>
+                                    </div>
+                                    <div class="box">
+                                        <label for="s1" class="switch ml-auto">
+                                            <div class="switch__layout">
+                                                <input type="checkbox" hidden="" id="s1" checked="">
+                                                <span></span>
+                                            </div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>

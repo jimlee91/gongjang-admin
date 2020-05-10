@@ -59,12 +59,12 @@
                                         <span class="l-border">대회구분</span>
                                     </div>
                                     <div class="box ">
-                                        <label for="ck1" class="checkbox2" style="width: 70px !important;">
-                                            <input type="checkbox" hidden id="ck1">
+                                        <label for="ck1" class="checkbox2 readonly" style="width: 70px !important;">
+                                            <input type="checkbox" hidden id="ck1" checked readonly>
                                             <span></span> 리그
                                         </label>
-                                        <label for="ck2" class="checkbox2" style="width: 70px !important;">
-                                            <input type="checkbox" hidden id="ck2">
+                                        <label for="ck2" class="checkbox2 readonly" style="width: 70px !important;">
+                                            <input type="checkbox" hidden id="ck2" readonly>
                                             <span></span> 컵
                                         </label>
                                     </div>
@@ -115,13 +115,14 @@
                                     </div>
                                     <div class="box">
                                         <div class="thumb frcs__thumb">
-                                            <div class="imgbox">
+                                            <div class="imgbox relative" >
                                                 <img src="" alt="">
+                                                <span class="form__help confirm" style="position: absolute;left: 180px;bottom: 0;white-space: nowrap;">* 권장사이즈 170 * 900</span>
                                             </div>
 
-                                            <label class="btnbox mt-15" for="thumb">
+                                            <label class=" mt-15" for="thumb">
                                                 <input type="file" hidden id="thumb">
-                                                <span class="btn btn--small btn-white">추가</span>
+                                                <span class="btn btn--small btn-blue block ml-auto mr-auto">추가</span>
                                             </label>
                                         </div>
                                     </div>
@@ -251,22 +252,9 @@
                                     </div>
                                 </div>
                                 <div class="form__row column">
-                                    <div class="form__row-title"><span class="l-border">토너먼트</span></div>
+                                    <div class="form__row-title"><span class="l-border">조별예선 그룹 수</span></div>
                                     <div class="box">
-                                        <div class="frcs__benefit">
-                                            <label for="ck31" class="checkbox2">
-                                                <input type="checkbox" hidden="" id="ck31">
-                                                <span></span> 16강
-                                            </label>
-                                            <label for="ck32" class="checkbox2">
-                                                <input type="checkbox" hidden="" id="ck32">
-                                                <span></span> 8강
-                                            </label>
-                                            <label for="ck3" class="checkbox2">
-                                                <input type="checkbox" hidden="" id="ck3">
-                                                <span></span> 4강
-                                            </label>
-                                        </div>
+                                        <input type="text" class="w-220">
                                     </div>
                                 </div>
                                 <div class="form__row column">
@@ -279,7 +267,7 @@
                                 </div>
 
                                 <div class="form__row column">
-                                    <label for="" class="form__row-title"><span class="l-border">유의사항</span></label>
+                                    <label for="" class="form__row-title"><span class="l-border">업로드</span></label>
                                     <div class="box box--has-info">
                                         <div class="form__fileFields">
                                             <!-- if # 등록된 파일이 없을경우 -->
@@ -307,7 +295,6 @@
                                         <textarea name="" id="" placeholder="정책을 적어주세요."></textarea>
                                     </div>
                                 </div>
-
                                 <div class="form__row column">
                                     <div class="form__row-title ">
                                         <span class="l-border">계좌번호</span>
@@ -379,24 +366,24 @@
 </div>
 
 
-    <div class="modal" id="addFile" style="display: none;">
-        <div class="modal__content">
-            <div class="modal__body">
-                <label for="fileImages" class="addFile__images">
-                    <input type="file" id="fileImages" hidden="" accept="image/*">
-                    <div class="icon">사진 아이콘</div>
-                    <p>사진</p>
-                </label>
+<div class="modal" id="addFile" style="display: none;">
+    <div class="modal__content">
+        <div class="modal__body">
+            <label for="fileImages" class="addFile__images">
+                <input type="file" id="fileImages" hidden="" accept="image/*">
+                <div class="icon">사진 아이콘</div>
+                <p>사진</p>
+            </label>
 
-                <label for="fileVideos" class="addFile__videos">
-                    <input type="file" id="fileVideos" hidden="" accept="video/*">
-                    <div class="icon">동영상</div>
-                    <p>동영상</p>
-                </label>
-            </div>
-            <div class="modal__btnbox">
-                <a href="#//" class="modal__btn js-modal-close">확인</a>
-            </div>
+            <label for="fileVideos" class="addFile__videos">
+                <input type="file" id="fileVideos" hidden="" accept="video/*">
+                <div class="icon">동영상</div>
+                <p>동영상</p>
+            </label>
+        </div>
+        <div class="modal__btnbox">
+            <a href="#//" class="modal__btn js-modal-close">확인</a>
         </div>
     </div>
+</div>
 @@include('./include/footer.html')
