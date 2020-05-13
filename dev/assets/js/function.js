@@ -19,6 +19,16 @@
                 autohidemode:'leave'
             });
         }
+        if( $('.frcs__reservation-itembox').length > 0 ) {
+            $('.frcs__reservation-itembox').niceScroll({
+                cursorwidth:4,
+                cursoropacitymin:1,
+                cursorcolor:'#383433',
+                cursorborder:'none',
+                cursorborderradius:4,
+                autohidemode:'leave'
+            });
+        }
 
         $('button.prd__section-tab').on('click', function(){
             $(this).parents('.prd__section').find('.prd__section-content').stop().slideToggle();

@@ -52,8 +52,12 @@
       border: $border;
       border-radius: 7px;
       padding: 30px 24px;
+      .qnalist__header {
 
+      }
       .frcs__reservation-itembox {
+        height: 220px;
+        overflow: auto;
         li {
           height: 26px;
           margin-bottom: 20px;
@@ -278,9 +282,18 @@
       display: flex;
       padding:0 32px 25px;
 
+      &.column {
+        flex-direction: column;
+        padding: 40px 92px;
+      }
+
       .cont,
       .table {
         flex: 1;
+
+        & + .btnbox {
+          min-width: 65px;
+        }
 
         th {
           line-height: 35px;
@@ -323,6 +336,9 @@
       padding: 8px 5px;
       &.space {
         height: 10px !important;
+      }
+      .btnbox {
+        margin-left: 0 !important;
       }
       a {
         font-size: 10px;
@@ -1144,5 +1160,37 @@
         }
       }
     }
+  }
+}
+
+.breakhr {
+  height: 10px;
+  width: 100%;
+  background: #eaeaea;
+  margin:20px 0;
+  position: relative;
+  &:after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 10px;
+    left: -92px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    background:#eaeaea;
+
+  }
+  &:before {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 10px;
+    right: -92px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    background:#eaeaea;
+
   }
 }

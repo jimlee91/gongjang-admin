@@ -179,7 +179,8 @@ gulp
 - [28. 경기등록 (컵) – 2](https://elegant-meninsky-d77a33.netlify.app/28-2.html)
 - [28. 경기등록 (컵) – 1](https://elegant-meninsky-d77a33.netlify.app/28-3.html)
 - [26. 대회 등록 (컵)](https://elegant-meninsky-d77a33.netlify.app/26.html)
-- [27. 대회 상세 (리그) – 2](https://elegant-meninsky-d77a33.netlify.app/27-2.html)
+- [27. 대회 상세 (리그) – 2](https://elegant-meninsky-d77a33.netlify.app/27-3.html)
+    - 지점 목록 기타 추가
 - [30. 경기 일정 상세](https://elegant-meninsky-d77a33.netlify.app/30.html)
 - [28. 경기등록 (리그) – 1](https://elegant-meninsky-d77a33.netlify.app/28-3.html)
 - [28. 경기등록 (리그)](https://elegant-meninsky-d77a33.netlify.app/28.html)
