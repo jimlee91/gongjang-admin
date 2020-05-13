@@ -1,0 +1,556 @@
+@@include('./include/header.html')
+
+<!-- chartjs cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+<div class="container">
+    @@include('./include/gnb.html')
+    <div class="content">
+        <div class="adm ">
+            <div class="wrap flex">
+                <div class="content__left">
+                    <div class="lnb">
+                        <div class="lnb__title " >
+                            <a href="" class="">기능 관리</a>
+                        </div>
+                        <div class="lnb__depth">
+                            <a href="" class="active">통계</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+
+                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+                        <a href="" class="active">접속자</a>
+                        <a href="" class="">매출</a>
+                    </div>
+                    <div class="inner-wrap pb-20 pt-20" style="border-bottom: 10px solid #eaeaea;">
+                        <div class="flex mb-10">
+                            <select name="" id="" style="width: 85px;" class="newselect ml-5">
+                                <option value="">기능 선택</option>
+                            </select>
+                            <select name="" id="" style="width: 85px;" class="newselect ml-5">
+                                <option value="">분류 선택</option>
+                            </select>
+                            <select name="" id="" style="width: 85px;" class="newselect ml-5">
+                                <option value="">구분 선택</option>
+                            </select>
+
+                            <div class="flex statistics-form" style="flex: 1;">
+                                <strong class="l-border font-10">연령구분</strong>
+                                <input type="text">
+                                <span class="hypen">~</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-wrap" >
+                        <div class="statistics-section">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        날짜별
+                                    </span>
+                                </h2>
+                            </section>
+                            <div class="statistics-form start mt-20" style="flex: 1;">
+                                <strong class="l-border font-10">기간설정</strong>
+                                <input type="text" class="datepicker">
+                                <span class="hypen">~</span>
+                                <input type="text" class="datepicker">
+                                <div class="btnbox ml-10" style="width: 45px;">
+                                    <button class="btn btn--small btn-black">수정</button>
+                                </div>
+                            </div>
+
+                            <div class="statistics-chart mt-20">
+                                <canvas id="canvas" style="width: 100%;height: 400px;"></canvas>
+                                <script>
+                                    var barChartData = {
+                                        labels: ['03.25', '03.26', '03.27', '03.28', '03.29', '03.30', '03.31'],
+                                        datasets: [{
+                                            label: '메인 페이지',
+                                            backgroundColor: '#337ef7',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '공간 페이지',
+                                            backgroundColor: '#ffc400',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '선수 페이지',
+                                            backgroundColor: '#4af733',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '팀 페이지',
+                                            backgroundColor: 'rgba(255, 86, 11, 0.8)',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '대회',
+                                            backgroundColor: '#ce00ff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '예약',
+                                            backgroundColor: '#00ffff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '아카데미',
+                                            backgroundColor: '#7600ff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '게시판',
+                                            backgroundColor: '#797979',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }]
+
+                                    };
+                                    $(function() {
+                                        var ctx = document.getElementById('canvas').getContext('2d');
+                                        window.myBar = new Chart(ctx, {
+                                            type: 'bar',
+                                            data: barChartData,
+                                            options: {
+                                                title: {
+                                                    display: false,
+                                                    text: 'Chart.js Bar Chart - Stacked'
+                                                },
+                                                tooltips: {
+                                                    mode: 'index',
+                                                    intersect: false
+                                                },
+                                                responsive: true,
+                                                scales: {
+                                                    xAxes: [{
+                                                        stacked: true,
+                                                    }],
+                                                    yAxes: [{
+                                                        stacked: true
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
+
+                        </div>
+
+
+                        <div class="statistics-section">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        요일별
+                                    </span>
+                                </h2>
+                            </section>
+                            <div class="statistics-form start mt-20" style="flex: 1;">
+                                <strong class="l-border font-10">기간설정</strong>
+                                <input type="text" class="datepicker">
+                                <span class="hypen">~</span>
+                                <input type="text" class="datepicker">
+                                <div class="btnbox ml-10" style="width: 45px;">
+                                    <button class="btn btn--small btn-black">수정</button>
+                                </div>
+                            </div>
+
+                            <div class="statistics-chart mt-20">
+                                <canvas id="canvas2" style="width: 100%;height: 400px;"></canvas>
+                                <script>
+                                    var barChartData2 = {
+                                        labels: ['월', '화', '수', '목', '금', '토', '일'],
+                                        datasets: [{
+                                            label: '메인 페이지',
+                                            backgroundColor: '#337ef7',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '공간 페이지',
+                                            backgroundColor: '#ffc400',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '선수 페이지',
+                                            backgroundColor: '#4af733',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '팀 페이지',
+                                            backgroundColor: 'rgba(255, 86, 11, 0.8)',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '대회',
+                                            backgroundColor: '#ce00ff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '예약',
+                                            backgroundColor: '#00ffff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '아카데미',
+                                            backgroundColor: '#7600ff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '게시판',
+                                            backgroundColor: '#797979',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }]
+
+                                    };
+                                    $(function(){
+                                        var ctx2 = document.getElementById('canvas2').getContext('2d');
+                                        window.ctx2 = new Chart(ctx2, {
+                                            type: 'bar',
+                                            data: barChartData2,
+                                            options: {
+                                                title: {
+                                                    display: false,
+                                                    text: 'Chart.js Bar Chart - Stacked'
+                                                },
+                                                tooltips: {
+                                                    mode: 'index',
+                                                    intersect: false
+                                                },
+                                                responsive: true,
+                                                scales: {
+                                                    xAxes: [{
+                                                        stacked: true,
+                                                    }],
+                                                    yAxes: [{
+                                                        stacked: true
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
+
+                        </div>
+                        <div class="statistics-section">
+                            <section class="accounts__header">
+                                <h2 class="accounts__title">
+                                    <span>
+                                        시간별
+                                    </span>
+                                </h2>
+                            </section>
+                            <div class="statistics-form start mt-20" style="flex: 1;">
+                                <strong class="l-border font-10">기간설정</strong>
+                                <input type="text" class="datepicker">
+                                <span class="hypen">~</span>
+                                <input type="text" class="datepicker">
+                                <div class="btnbox ml-10" style="width: 45px;">
+                                    <button class="btn btn--small btn-black">수정</button>
+                                </div>
+                            </div>
+                            <div class="statistics-chart mt-20">
+                                <canvas id="canvas3" style="width: 100%;height: 400px;"></canvas>
+                                <script>
+                                    var barChartData3 = {
+                                        labels: ['00시', '02시', '04시', '06시', '08시', '10시', '12시', '14시', '16시', '18시', '20시', '22시'],
+                                        datasets: [{
+                                            label: '메인 페이지',
+                                            backgroundColor: '#337ef7',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '공간 페이지',
+                                            backgroundColor: '#ffc400',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '선수 페이지',
+                                            backgroundColor: '#4af733',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '팀 페이지',
+                                            backgroundColor: 'rgba(255, 86, 11, 0.8)',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '대회',
+                                            backgroundColor: '#ce00ff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '예약',
+                                            backgroundColor: '#00ffff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '아카데미',
+                                            backgroundColor: '#7600ff',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }, {
+                                            label: '게시판',
+                                            backgroundColor: '#797979',
+                                            data: [
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                                10,
+                                            ]
+                                        }]
+
+                                    };
+                                    $(function(){
+                                        var ctx3 = document.getElementById('canvas3').getContext('2d');
+                                        window.ctx3 = new Chart(ctx3, {
+                                            type: 'bar',
+                                            data: barChartData3,
+                                            options: {
+                                                title: {
+                                                    display: false,
+                                                    text: 'Chart.js Bar Chart - Stacked'
+                                                },
+                                                tooltips: {
+                                                    mode: 'index',
+                                                    intersect: false
+                                                },
+                                                responsive: true,
+                                                scales: {
+                                                    xAxes: [{
+                                                        stacked: true,
+                                                    }],
+                                                    yAxes: [{
+                                                        stacked: true
+                                                    }]
+                                                }
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

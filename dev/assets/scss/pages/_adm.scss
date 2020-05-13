@@ -1194,3 +1194,28 @@
 
   }
 }
+
+.statistics-form {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+  &.start {
+    justify-content: flex-start;
+  }
+  strong {
+    margin-right: 20px;
+  }
+  input {
+    width: 70px;
+    flex: none;
+    padding:0 10px;
+    border: $border;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 10px;
+  }
+}
+
+.statistics-section {
+  padding: 50px 0;
+}
