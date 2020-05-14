@@ -32,6 +32,15 @@
         background:$green;
       }
     }
+    &.btn-blue2 {
+      background:#fff !important;
+      border: 1px solid $blue !important;
+      color:$blue !important;
+      &:hover {
+        background:$blue !important;
+        color:#fff !important;
+      }
+    }
     &.btn-black {
       border:1px solid #5a5553;
       color:#5a5553;;
