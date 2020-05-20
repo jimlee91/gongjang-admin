@@ -215,3 +215,22 @@ gulp
 - [5. 마이페이지(1:1문의상세)](https://elegant-meninsky-d77a33.netlify.app/5.html)
 - [49. 상점](https://elegant-meninsky-d77a33.netlify.app/80.html)
 - [48. 쿠폰](https://elegant-meninsky-d77a33.netlify.app/81.html)
+
+
+--------------------------------------------
+### 추가2
+- [34. 순위 (컵) – 1](https://elegant-meninsky-d77a33.netlify.app/34-1.html)
+- [34. 순위 (리그)](https://elegant-meninsky-d77a33.netlify.app/34-2.html)
+- [32. 신청 내역 상세](https://elegant-meninsky-d77a33.netlify.app/32.html)
+- [30. 경기 일정 상세 – 1](https://elegant-meninsky-d77a33.netlify.app/30.html)
+- [30. 경기 일정 상세](https://elegant-meninsky-d77a33.netlify.app/30.html)
+- [29. 경기 일정 (리그)](https://elegant-meninsky-d77a33.netlify.app/29.html)
+- [28. 경기등록 (리그)](https://elegant-meninsky-d77a33.netlify.app/28-4.html)
+- [27. 대회 상세 (리그) – 2](https://elegant-meninsky-d77a33.netlify.app/27-4.html)
+- [26. 대회 등록 (리그) – 2](https://elegant-meninsky-d77a33.netlify.app/27-4.html)
+- [32. 신청 내역 상세 – 1](https://elegant-meninsky-d77a33.netlify.app/32.html)
+    - 등록선수 박스 하단 추가 버튼 클릭
+- [0 - 3. 회원 정보 – 5/ 아카데미 감독 , 코치 회원가입](https://elegant-meninsky-d77a33.netlify.app/0-3.html#//)
+- [0 - 3. 지점 관리자 회원가입](https://elegant-meninsky-d77a33.netlify.app/0-3.html)
+- [2. 마이페이지(관리자정보)](https://elegant-meninsky-d77a33.netlify.app/2.html)
+- [21. 예약 시간 관리](https://elegant-meninsky-d77a33.netlify.app/21.html)

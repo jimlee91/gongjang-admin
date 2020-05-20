@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
 
+
   .btn {
     font-size: 12px;
     border-radius: 3em;
@@ -15,6 +16,13 @@
     margin-right: 10px;
     &:last-child {
       margin-right: 0;
+    }
+
+    &.btn-rounded-sm {
+      width: 143px;
+      height: 32px;
+      line-height: 30px;
+      border-radius: 7px;
     }
 
     &.btn--small {
