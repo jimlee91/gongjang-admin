@@ -1,5 +1,4 @@
 .form {
-
   .depth {
     font-weight: 300;
   }
@@ -26,14 +25,13 @@
     font-size: 10px;
     margin-top: 2px;
     line-height: 15px;
-    color:rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     &.confirm {
       color: $blue;
     }
     &.error {
       color: #f00;
     }
-
   }
   .form__row {
     margin-bottom: 20px;
@@ -52,7 +50,7 @@
     }
     &.disabled {
       .form__row-title {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
     &.column {
@@ -82,7 +80,6 @@
         }
       }
       .box {
-
         margin: 0;
         flex: 1;
       }
@@ -95,20 +92,20 @@
     .form__row-title {
       font-size: 12px;
       font-weight: 600;
-
     }
     .box.column {
       flex-direction: column;
       .checkbox {
         width: 100%;
       }
-      select, input {
+      select,
+      input {
         height: 30px;
         flex: none;
       }
     }
     .box {
-      margin-top: 5px;
+      margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
       position: relative;
@@ -175,48 +172,53 @@
         border-radius: 7px;
         border: 1px solid $border-color;
         width: 100%;
-        padding:0 10px;
-        background: url('../images/arrow-down.png') no-repeat calc(100% - 10px) center;
+        padding: 0 10px;
+        background: url("../images/arrow-down.png") no-repeat calc(100% - 10px)
+          center;
         background-size: auto 7px;
         &.white {
-          color:#fff;
-          border-color: rgba(255,255,255,.8) !important;
-          background: url('../images/arrow-down-white.png') no-repeat calc(100% - 10px) center;
+          color: #fff;
+          border-color: rgba(255, 255, 255, 0.8) !important;
+          background: url("../images/arrow-down-white.png") no-repeat
+            calc(100% - 10px) center;
           background-size: auto 7px;
         }
       }
+      input + .btn {
+        margin-top: 6px;
+        margin-left: 10px !important;
+      }
       .btn {
         margin-left: 10px;
-        width: 100px;
+        width: 65px;
         text-align: center;
-        line-height: 28px;
-        height: 30px;
+        line-height: 22px;
+        height: 24px;
         border: 1px solid $green;
         border-radius: 2em;
-        color:#333;
-        font-size: 12px;
-        transition: all .3s;
+        color: #333;
+        font-size: 10px;
+        transition: all 0.3s;
         &:hover {
-          color:#fff;
+          color: #fff;
           background: $green;
         }
         &.btn-black {
-          border-color:#5A5553;
+          border-color: #5a5553;
           &:hover {
-            color:#fff;
-            background: #5A5553;
+            color: #fff;
+            background: #5a5553;
           }
         }
         &.btn-blue {
-           border-color:$blue;
-           color:$blue;
-           &:hover {
-             color:#fff;
-             background: $blue;
-           }
-         }
+          border-color: $blue;
+          color: $blue;
+          &:hover {
+            color: #fff;
+            background: $blue;
+          }
+        }
       }
-
 
       .btn--small {
         font-size: 10px !important;
@@ -231,15 +233,14 @@
         top: 0;
         line-height: 30px;
         font-size: 12px;
-        color:$blue;
+        color: $blue;
       }
     }
-
 
     .input-border {
       border-radius: 7px;
       border: $border !important;
-      padding:0 1em;
+      padding: 0 1em;
       font-size: 10px;
     }
   }
@@ -251,11 +252,12 @@
       height: 30px;
       font-size: 10px;
       width: 100%;
-      padding:0 10px;
+      padding: 0 10px;
       text-align: left;
       border-radius: 5px;
       border: 1px solid $border-color;
-      background: url('../images/i-search-black.png') no-repeat calc(100% - 10px) center;
+      background: url("../images/i-search-black.png") no-repeat
+        calc(100% - 10px) center;
       background-size: auto 14px;
     }
     .fileField-list {
@@ -280,7 +282,7 @@
         @include text-indent;
         width: 15px;
         height: 15px;
-        background: url('../images/i-x.png') no-repeat center;
+        background: url("../images/i-x.png") no-repeat center;
         background-size: auto 10px;
         margin-left: 5px;
       }
@@ -296,7 +298,7 @@
   cursor: pointer;
   font-weight: 500;
   &.readonly {
-    opacity: .6;
+    opacity: 0.6;
   }
   input {
     display: none;
@@ -307,21 +309,21 @@
       //width: 14px;
       //height: 16px;
       &:after {
-        content:'';
+        content: "";
         width: 7px;
         height: 12px;
         display: block;
         position: absolute;
         left: 2px;
         bottom: 4px;
-        border: 2px solid #5A5553;
+        border: 2px solid #5a5553;
         transform: rotate(45deg);
         border-width: 0 2px 2px 0;
       }
     }
   }
   span {
-    margin:0 !important;
+    margin: 0 !important;
     margin-right: 7px !important;
     width: 12px !important;
     height: 12px !important;
@@ -340,35 +342,78 @@
   input {
     display: none;
     &:checked + span {
-      background:$green;
+      background: $green;
     }
   }
   span {
     margin-right: 7px;
     width: 16px;
     height: 16px;
-    background:#d7d4d2;
+    background: #d7d4d2;
     border-radius: 50%;
-    transition: all .3s;
+    transition: all 0.3s;
   }
   strong {
     font-weight: 500;
   }
   i {
     font-style: normal;
-    color:$blue;
+    color: $blue;
   }
 }
 
-.switch{display:inline-block;cursor:pointer;width: 60px;}
-.switch__layout{width:60px;height:30px;position:relative;border-radius:2em;overflow:hidden;border: 1px solid $border-color;}
-.switch input{position:absolute;left:0;top:0;width:1px;height:1px;overflow:hidden;opacity:0;}
-.switch input + span:before{display:block;width:100%;height:100%;background:#fff;content:'';transition:all .2s ease-out;}
-.switch input + span:after{position:absolute;left:34px;top:4px;width:20px;height:20px;background:$border-color;content:'';display:block;border-radius:50%;transition:all .2s ease-out;}
-.switch input:checked + span:before{background:#fff;}
-.switch input:checked + span:after{left:4px;background: $blue;}
-.switch input:disabled + span:before{opacity: .3;}
-
+.switch {
+  display: inline-block;
+  cursor: pointer;
+  width: 60px;
+}
+.switch__layout {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  border-radius: 2em;
+  overflow: hidden;
+  border: 1px solid $border-color;
+}
+.switch input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+.switch input + span:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  content: "";
+  transition: all 0.2s ease-out;
+}
+.switch input + span:after {
+  position: absolute;
+  left: 34px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: $border-color;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  transition: all 0.2s ease-out;
+}
+.switch input:checked + span:before {
+  background: #fff;
+}
+.switch input:checked + span:after {
+  left: 4px;
+  background: $blue;
+}
+.switch input:disabled + span:before {
+  opacity: 0.3;
+}
 
 .form-search {
   position: absolute;
@@ -377,7 +422,7 @@
   width: 30px;
   height: 30px;
   @include text-indent;
-  background: url('../images/i-search-black.png') no-repeat center;
+  background: url("../images/i-search-black.png") no-repeat center;
   background-size: auto 15px;
 }
 
@@ -400,13 +445,14 @@ select.newselect {
   border-radius: 7px;
   border: 1px solid $border-color;
   width: 100%;
-  padding:0 10px;
-  background: url('../images/arrow-down.png') no-repeat calc(100% - 10px) center;
+  padding: 0 10px;
+  background: url("../images/arrow-down.png") no-repeat calc(100% - 10px) center;
   background-size: auto 7px;
   &.white {
-    color:#fff;
-    border-color: rgba(255,255,255,.8) !important;
-    background: url('../images/arrow-down-white.png') no-repeat calc(100% - 10px) center;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    background: url("../images/arrow-down-white.png") no-repeat
+      calc(100% - 10px) center;
     background-size: auto 7px;
   }
 }

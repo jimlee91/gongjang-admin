@@ -1,552 +1,571 @@
 @@include('./include/header.html')
+<style>
+  .stats__item {
+    margin-right: 20px;
+  }
+  .stats__item:last-child {
+    margin-right: 0;
+  }
+  .adm.prd .info-history .form input,
+  .adm.prd .info-history .button {
+    height: 24px;
+  }
+  .adm.prd .info-history .form,
+  .adm.prd .info-history .list {
+    padding: 10px 0;
+  }
+</style>
 <div class="container">
-    @@include('./include/gnb.html')
-    <div class="content">
-        <div class="adm prd">
-            <div class="wrap flex">
-                <div class="content__left">
-                    <div class="lnb">
-                        <div class="lnb__title">
-                            <a href="">회원 관리</a>
-                        </div>
-                        <div class="lnb__depth">
-                            <a href="" class="active">선수</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__main">
-                    <div class="content__header flex">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                                <span>
-                                    선수 상세
-                                </span>
-                            </h2>
-                        </section>
-                    </div>
-                    <div class="prd__section">
-                        <div class="prd__section-tab">
-                            <div>
-                                <strong>회원정보</strong>
-                                <article class="newbtnbox">
-                                    <a href="#//" onclick="showModal('#removeplayer')" class="btn">선수삭제</a>
-                                    <a href="" class="btn blue">수정완료</a>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="prd__section-content">
-                            <div class="prd-member">
-
-                                <div class="left">
-                                    <div class="userCard">
-                                        <a class="userCard__thumb" href="">
-                                            <span class="is_new">새글</span>
-                                            <img src="//via.placeholder.com/120x120" alt="">
-                                        </a>
-                                        <div class="form">
-                                            <div class="form__row">
-                                                <div class="box">
-                                                    <label class="form__fileFields" for="thumb">
-                                                        <input type="file" id="thumb" hidden>
-                                                        <button class="fileField-empty input-border" type="button">
-                                                            사진 변경
-                                                        </button>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="right">
-                                    <div class="form">
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">아이디</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" readonly value="hongildong23">
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">연락처</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="01055556666">
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">이름</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="김공장" readonly>
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">메일</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="hongildong23@gmail.com">
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">생년월일</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="92.09.22" readonly>
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">닉네임</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="김공장" >
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">가입일</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="92.09.22" readonly>
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">비밀번호</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="password" value="" >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prd__section">
-                        <button class="prd__section-tab">
-                            <div>
-                                <strong>선수정보</strong>
-                                <span>내용접기</span>
-                            </div>
-                        </button>
-                        <div class="prd__section-content">
-                            <div class="prd-info">
-                                <div class="left">
-                                    <div class="form">
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">리그</span>
-                                            </div>
-                                            <div class="box">
-                                                <div class="info-history">
-                                                    <form action="">
-                                                        <div class="form">
-                                                            <input type="text">
-                                                            <button class="blue button">추가</button>
-                                                        </div>
-                                                    </form>
-                                                    <ul class="list">
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">카드</span>
-                                            </div>
-                                            <div class="box">
-                                                <div class="info-history">
-                                                    <form action="">
-                                                        <div class="form">
-                                                            <input type="text">
-                                                            <button class="blue button">추가</button>
-                                                        </div>
-                                                    </form>
-                                                    <ul class="list">
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                        <li>
-                                                            <span class="numb">1.</span>
-                                                            <p>H-리그 26라운드 최고의 선수</p>
-                                                            <button class="button">삭제</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="right">
-                                    <div class="form">
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">친선</span>
-                                            </div>
-                                            <div class="box">
-                                                <div class="stats">
-                                                    <div class="stats__item stats__item--attack">
-                                                        <span>10</span>
-                                                        <div class="starts__item-box ">
-                                                            공격
-                                                        </div>
-                                                    </div>
-                                                    <div class="stats__item stats__item--pass">
-                                                        <span>21</span>
-                                                        <div class="starts__item-box">
-                                                            패스
-                                                        </div>
-                                                    </div>
-                                                    <div class="stats__item stats__item--defense">
-                                                        <span>8</span>
-                                                        <div class="starts__item-box">
-                                                            수비
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">축구 포지션</span>
-                                            </div>
-                                            <div class="box">
-                                                <select name="" id="">
-                                                    <option value="">피보(PVO)</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">풋살 포지션</span>
-                                            </div>
-                                            <div class="box">
-                                                <select name="" id="">
-                                                    <option value="">피보(PVO)</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">신장</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="182cm" class="input-border">
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">몸무게</span>
-                                            </div>
-                                            <div class="box">
-                                                <input type="text" value="80kg" class="input-border">
-                                            </div>
-                                        </div>
-                                        <div class="form__row column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">선출</span>
-                                            </div>
-                                            <div class="box">
-                                                <select name="" id="">
-                                                    <option value="">선출</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prd__section">
-                        <button class="prd__section-tab">
-                            <div>
-                                <strong>멤버십</strong>
-                                <span>내용접기</span>
-                            </div>
-                        </button>
-                        <div class="prd__section-content">
-                            <div class="form">
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">내 마일리지</span>
-                                    </div>
-                                    <div class="box">
-                                        <div class="admmileage">
-                                            <div class="admmileage__top">
-                                                <div class="col">
-                                                    <div class="circle">10,000</div>
-                                                    <p>총 적립 마일리지</p>
-                                                </div>
-                                                <span class="bar"></span>
-                                                <div class="col col2">
-                                                    <div class="circle">2,400</div>
-                                                    <p>총 가능 마일리지</p>
-                                                </div>
-                                                <span class="bar bar2"></span>
-                                                <div class="col col3">
-                                                    <div class="circle">7,600</div>
-                                                    <p>총 사용한 마일리지</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">내역</span>
-                                    </div>
-                                    <div class="box">
-                                        <div class="mbs-history">
-                                            <table>
-                                                <colgroup>
-                                                    <col width="30">
-                                                    <col>
-                                                    <col>
-                                                    <col>
-                                                    <col>
-                                                    <col width="40">
-                                                </colgroup>
-                                                <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>구분</th>
-                                                    <th>마일리지</th>
-                                                    <th>내역</th>
-                                                    <th>사용일</th>
-                                                    <th></th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td class="text-align: left;"><strong class="font-14">+</strong></td>
-                                                    <td>
-                                                        <select name="" id="">
-                                                            <option value="">구분</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="input-border">
-                                                    </td>
-                                                    <td>
-                                                        <select name="" id="">
-                                                            <option value="">내역</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <select name="" id="">
-                                                            <option value="">사용일</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <div class="btnbox">
-                                                            <a href="" class="btn btn--small ">추가</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-<!--                                                loop -->
-                                                <tr>
-                                                    <td>1.</td>
-                                                    <td>
-                                                        <strong class="color-green">적립</strong>
-                                                    </td>
-                                                    <td>2000</td>
-                                                    <td>예약</td>
-                                                    <td>20.03.03</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1.</td>
-                                                    <td>
-                                                        <strong class="color-blue">사용</strong>
-                                                    </td>
-                                                    <td>2000</td>
-                                                    <td>예약</td>
-                                                    <td>20.03.03</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1.</td>
-                                                    <td>
-                                                        <strong class="color-green">적립</strong>
-                                                    </td>
-                                                    <td>2000</td>
-                                                    <td>예약</td>
-                                                    <td>20.03.03</td>
-                                                    <td></td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prd__section">
-                        <button class="prd__section-tab">
-                            <div>
-                                <strong>소속 팀</strong>
-                                <span>내용접기</span>
-                            </div>
-                        </button>
-                        <div class="prd__section-content">
-                            <div class="form">
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">팀</span>
-                                    </div>
-                                    <div class="box">
-                                        <div class="teamtable">
-                                            <table>
-                                                <colgroup>
-                                                    <col width="30">
-                                                    <col>
-                                                    <col width="65">
-                                                </colgroup>
-                                                <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1.
-                                                    </td>
-                                                    <td>
-                                                        <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/40x40" alt="">
-                                                            </span>
-                                                            가나다 스포츠
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="btnbox">
-                                                            <a href="" class="btn btn--small ml-0">더보기</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        1.
-                                                    </td>
-                                                    <td>
-                                                        <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/40x40" alt="">
-                                                            </span>
-                                                            가나다 스포츠
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="btnbox">
-                                                            <a href="" class="btn btn--small ml-0">더보기</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        1.
-                                                    </td>
-                                                    <td>
-                                                        <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/40x40" alt="">
-                                                            </span>
-                                                            가나다 스포츠
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="btnbox">
-                                                            <a href="" class="btn btn--small ml-0">더보기</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prd__section">
-                        <div class="prd__section-tab">
-                            <div>
-                                <strong>예약</strong>
-                                <article class="btnbox" style="width: 65px;">
-                                    <a href="" class="btn btn--small btn-white">더보기</a>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="prd__section-content">
-
-                        </div>
-                    </div>
-                </div>
+  @@include('./include/gnb.html')
+  <div class="content">
+    <div class="adm prd">
+      <div class="wrap flex">
+        <div class="content__left">
+          <div class="lnb">
+            <div class="lnb__title">
+              <a href="">회원 관리</a>
             </div>
+            <div class="lnb__depth">
+              <a href="" class="active">선수</a>
+            </div>
+          </div>
         </div>
+        <div class="content__main">
+          <div class="content__header flex">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  선수 상세
+                </span>
+              </h2>
+            </section>
+          </div>
+          <div class="prd__section">
+            <div class="prd__section-tab">
+              <div>
+                <strong>회원정보</strong>
+                <article class="newbtnbox">
+                  <a href="#//" onclick="showModal('#removeplayer')" class="btn"
+                    >선수삭제</a
+                  >
+                  <a href="" class="btn blue">수정완료</a>
+                </article>
+              </div>
+            </div>
+            <div class="prd__section-content">
+              <div class="prd-member">
+                <div class="left">
+                  <div class="userCard">
+                    <a class="userCard__thumb" href="">
+                      <span class="is_new">새글</span>
+                      <img src="//via.placeholder.com/120x120" alt="" />
+                    </a>
+                    <div class="form">
+                      <div class="form__row">
+                        <div class="box">
+                          <label class="form__fileFields" for="thumb">
+                            <input type="file" id="thumb" hidden />
+                            <button
+                              class="fileField-empty input-border"
+                              type="button"
+                            >
+                              사진 변경
+                            </button>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="form">
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">아이디</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" readonly value="hongildong23" />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">연락처</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="01055556666" />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">이름</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="김공장" readonly />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">메일</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="hongildong23@gmail.com" />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">생년월일</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="92.09.22" readonly />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">닉네임</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="김공장" />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">가입일</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="92.09.22" readonly />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">비밀번호</span>
+                      </div>
+                      <div class="box">
+                        <input type="password" value="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prd__section">
+            <button class="prd__section-tab">
+              <div>
+                <strong>선수정보</strong>
+                <span>내용접기</span>
+              </div>
+            </button>
+            <div class="prd__section-content">
+              <div class="prd-info">
+                <div class="left">
+                  <div class="form">
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">리그</span>
+                      </div>
+                      <div class="box">
+                        <div class="info-history">
+                          <form action="">
+                            <div class="form">
+                              <input
+                                type="text"
+                                placeholder="내용을 입력하세요."
+                              />
+                              <button class="blue button">추가</button>
+                            </div>
+                          </form>
+                          <ul class="list">
+                            <li>
+                              <span class="numb">1.</span>
+                              <p>H-리그 26라운드 최고의 선수</p>
+                              <button class="button">삭제</button>
+                            </li>
+                            <li>
+                              <span class="numb">1.</span>
+                              <p>H-리그 26라운드 최고의 선수</p>
+                              <button class="button">삭제</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">카드</span>
+                      </div>
+                      <div class="box">
+                        <div class="info-history">
+                          <form action="">
+                            <div class="form">
+                              <input
+                                type="text"
+                                placeholder="내용을 입력하세요."
+                              />
+                              <button class="blue button">추가</button>
+                            </div>
+                          </form>
+                          <ul class="list">
+                            <li>
+                              <span class="numb">1.</span>
+                              <p>H-리그 26라운드 최고의 선수</p>
+                              <button class="button">삭제</button>
+                            </li>
+                            <li>
+                              <span class="numb">1.</span>
+                              <p>H-리그 26라운드 최고의 선수</p>
+                              <button class="button">삭제</button>
+                            </li>
+                            <li>
+                              <span class="numb">1.</span>
+                              <p>H-리그 26라운드 최고의 선수</p>
+                              <button class="button">삭제</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="form">
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">친선</span>
+                      </div>
+                      <div class="box">
+                        <div class="stats">
+                          <div class="stats__item stats__item--attack">
+                            <span>10</span>
+                            <div class="starts__item-box">
+                              공격
+                            </div>
+                          </div>
+                          <div class="stats__item stats__item--pass">
+                            <span>21</span>
+                            <div class="starts__item-box">
+                              패스
+                            </div>
+                          </div>
+                          <div class="stats__item stats__item--defense">
+                            <span>8</span>
+                            <div class="starts__item-box">
+                              수비
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">축구 포지션</span>
+                      </div>
+                      <div class="box">
+                        <select name="" id="">
+                          <option value="">피보(PVO)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">풋살 포지션</span>
+                      </div>
+                      <div class="box">
+                        <select name="" id="">
+                          <option value="">피보(PVO)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">신장</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="182cm" class="input-border" />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">몸무게</span>
+                      </div>
+                      <div class="box">
+                        <input type="text" value="80kg" class="input-border" />
+                      </div>
+                    </div>
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border">선출</span>
+                      </div>
+                      <div class="box">
+                        <select name="" id="">
+                          <option value="">선출</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prd__section">
+            <button class="prd__section-tab">
+              <div>
+                <strong>멤버십</strong>
+                <span>내용접기</span>
+              </div>
+            </button>
+            <div class="prd__section-content">
+              <div class="form">
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">내 마일리지</span>
+                  </div>
+                  <div class="box">
+                    <div class="admmileage">
+                      <div class="admmileage__top">
+                        <div class="col">
+                          <div class="circle">10,000</div>
+                          <p>총 적립 마일리지</p>
+                        </div>
+                        <span class="bar"></span>
+                        <div class="col col2">
+                          <div class="circle">2,400</div>
+                          <p>총 가능 마일리지</p>
+                        </div>
+                        <span class="bar bar2"></span>
+                        <div class="col col3">
+                          <div class="circle">7,600</div>
+                          <p>총 사용한 마일리지</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">내역</span>
+                  </div>
+                  <div class="box">
+                    <div class="mbs-history">
+                      <table>
+                        <colgroup>
+                          <col width="30" />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col width="40" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>구분</th>
+                            <th>마일리지</th>
+                            <th>내역</th>
+                            <th>사용일</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-align: left;">
+                              <strong class="font-14">+</strong>
+                            </td>
+                            <td>
+                              <select name="" id="">
+                                <option value="">구분</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" class="input-border" />
+                            </td>
+                            <td>
+                              <select name="" id="">
+                                <option value="">내역</option>
+                              </select>
+                            </td>
+                            <td>
+                              <select name="" id="">
+                                <option value="">사용일</option>
+                              </select>
+                            </td>
+                            <td>
+                              <div class="btnbox">
+                                <a href="" class="btn btn--small">추가</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <!--                                                loop -->
+                          <tr>
+                            <td>1.</td>
+                            <td>
+                              <strong class="color-green">적립</strong>
+                            </td>
+                            <td>2000</td>
+                            <td>예약</td>
+                            <td>20.03.03</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>1.</td>
+                            <td>
+                              <strong class="color-blue">사용</strong>
+                            </td>
+                            <td>2000</td>
+                            <td>예약</td>
+                            <td>20.03.03</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>1.</td>
+                            <td>
+                              <strong class="color-green">적립</strong>
+                            </td>
+                            <td>2000</td>
+                            <td>예약</td>
+                            <td>20.03.03</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd__section">
+            <button class="prd__section-tab">
+              <div>
+                <strong>소속 팀</strong>
+                <span>내용접기</span>
+              </div>
+            </button>
+            <div class="prd__section-content">
+              <div class="form">
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">팀</span>
+                  </div>
+                  <div class="box">
+                    <div class="teamtable">
+                      <table>
+                        <colgroup>
+                          <col width="30" />
+                          <col />
+                          <col width="65" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              1.
+                            </td>
+                            <td>
+                              <div class="teaminfo">
+                                <span class="thumb">
+                                  <img
+                                    src="//via.placeholder.com/40x40"
+                                    alt=""
+                                  />
+                                </span>
+                                가나다 스포츠
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btnbox">
+                                <a href="" class="btn btn--small ml-0"
+                                  >더보기</a
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              1.
+                            </td>
+                            <td>
+                              <div class="teaminfo">
+                                <span class="thumb">
+                                  <img
+                                    src="//via.placeholder.com/40x40"
+                                    alt=""
+                                  />
+                                </span>
+                                가나다 스포츠
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btnbox">
+                                <a href="" class="btn btn--small ml-0"
+                                  >더보기</a
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              1.
+                            </td>
+                            <td>
+                              <div class="teaminfo">
+                                <span class="thumb">
+                                  <img
+                                    src="//via.placeholder.com/40x40"
+                                    alt=""
+                                  />
+                                </span>
+                                가나다 스포츠
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btnbox">
+                                <a href="" class="btn btn--small ml-0"
+                                  >더보기</a
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd__section">
+            <div class="prd__section-tab">
+              <div>
+                <strong>예약</strong>
+                <article class="btnbox" style="width: 65px;">
+                  <a href="" class="btn btn--small btn-white">더보기</a>
+                </article>
+              </div>
+            </div>
+            <div class="prd__section-content"></div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
-
 <div class="modal" id="removeplayer" style="display: none;">
-    <div class="modal__content">
-        <h2 class="modal__title">
-            '김공장'선수를 <span>정말 삭제하시겠습니까?</span>
-        </h2>
-        <div class="modal__body">
-            <p>
-                삭제 시 복원하실 수 없습니다.
-            </p>
-        </div>
-        <div class="modal__btnbox">
-            <a href="" class="modal__btn js-modal-close">네</a>
-            <a href="" class="modal__btn bg-white js-modal-close">아니오</a>
-        </div>
+  <div class="modal__content">
+    <h2 class="modal__title">
+      '김공장'선수를 <span>정말 삭제하시겠습니까?</span>
+    </h2>
+    <div class="modal__body">
+      <p>
+        삭제 시 복원하실 수 없습니다.
+      </p>
     </div>
+    <div class="modal__btnbox">
+      <a href="" class="modal__btn js-modal-close">네</a>
+      <a href="" class="modal__btn bg-white js-modal-close">아니오</a>
+    </div>
+  </div>
 </div>
 @@include('./include/footer.html')

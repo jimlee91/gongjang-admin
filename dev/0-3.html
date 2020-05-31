@@ -1,134 +1,156 @@
-@@include('./include/header.html')
+@@include('./include/header2.html')
 <div class="container">
-    <div class="content account">
-        <div class="content__main">
-            <div class="accounts registered">
-                <section class="accounts__header">
-                    <h2 class="accounts__title">
-                            <span>
-                                회원가입
-                            </span>
-                    </h2>
-                    <div class="accounts__state step2-2">
-                        신청 마지막 단계
-                    </div>
-                </section>
+  <div class="content account">
+    <div class="content__main">
+      <div class="accounts registered">
+        <section class="accounts__header">
+          <h2 class="accounts__title">
+            <span>
+              회원가입
+            </span>
+          </h2>
+          <div class="accounts__state step2-2">
+            신청 마지막 단계
+          </div>
+        </section>
 
-                <div class="registered__form ">
-
-                    <div class="form">
-                        <div class="form__row">
-                            <label for="id" class="form__row-title">관리자 아이디</label>
-                            <div class="box">
-                                <input type="text" placeholder="최소 6자 이상 ~ 최대 12자 이하" class="">
-                                <button class="btn waves-effect ml-auto">중복확인</button>
-                            </div>
-                            <p class="form__help confirm">
-                                사용가능한 아이디입니다.
-                            </p>
-
-                        </div>
-
-                        <div class="form__row">
-                            <label for="" class="form__row-title">비밀번호</label>
-                            <div class="box">
-                                <input type="password" placeholder="영문자+숫자+특수문자 조합 8자 이상~16자 이하">
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__row-title">비밀번호 확인</label>
-                            <div class="box">
-                                <input type="password" placeholder="비밀번호 확인">
-                            </div>
-                        </div>
-<!--                        <div class="form__row">-->
-<!--                            <label for="" class="form__row-title">닉네임</label>-->
-<!--                            <div class="box">-->
-<!--                                <input type="text" placeholder="닉네임 입력" class="">-->
-<!--                                <button class="btn waves-effect ml-auto">중복확인</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                        <div class="form__row">
-                            <label for="" class="form__row-title">이름</label>
-                            <div class="box">
-                                <input type="text" placeholder="이름 입력">
-                            </div>
-                        </div>
-
-                        <div class="form__row">
-                            <label for="" class="form__row-title">성별</label>
-                            <div class="box">
-                                <label for="m" class="checkbox">
-                                    <input type="radio" id="m" name="gender" hidden="">
-                                    <span></span> 남성
-                                </label>
-
-                                <label for="F" class="checkbox">
-                                    <input type="radio" id="F" name="gender" hidden="">
-                                    <span></span> 여성
-                                </label>
-                            </div>
-                        </div>
-
-
-                        <div class="form__row">
-                            <label for="" class="form__row-title">생년월일</label>
-                            <div class="box">
-                                <input type="text" placeholder="8자리 입력">
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__row-title">이메일</label>
-                            <div class="box">
-                                <input type="email" placeholder="이메일 입력">
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__row-title">휴대폰 번호</label>
-                            <div class="box">
-                                <input type="text" placeholder="'-' 구분없이 입력" class="">
-                                <button class="btn waves-effect ml-auto">인증번호 전송</button>
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__row-title">인증번호</label>
-                            <div class="box">
-                                <input type="text" placeholder="인증번호 입력" class="">
-                                <button class="btn waves-effect ml-auto">인증확인</button>
-                                <span class="counter">3:00</span>
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__row-title">지점</label>
-                            <div class="box box--select">
-                                <select name="" id="">
-                                    <option value="">아카데미 지점을 선택하세요.</option>
-                                    <option value="">서울, 경기 지역</option>
-                                    <option value="">광주, 전라 지역</option>
-                                    <option value="">대전, 충청 지역</option>
-                                    <option value="">부산, 경상 지역</option>
-                                    <option value="">제주 지역</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__row-title">아카데미</label>
-                            <div class="box box--select">
-                                <select name="" id="">
-                                    <option value="">아카데미 선택</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accounts__btnbox">
-                        <button class="btn btn-blue waves-effect" onclick="showModal('#pravicy')">완료</button>
-                    </div>
-                </div>
+        <div class="registered__form">
+          <div class="form">
+            <div class="form__row">
+              <label for="id" class="form__row-title">관리자 아이디</label>
+              <div class="box">
+                <input
+                  type="text"
+                  placeholder="최소 6자 이상 ~ 최대 12자 이하"
+                  class=""
+                />
+                <button class="btn waves-effect ml-auto">중복확인</button>
+              </div>
+              <p class="form__help confirm">
+                사용가능한 아이디입니다.
+              </p>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="form__row">
+              <label for="id" class="form__row-title">POP 회원 아이디</label>
+              <div class="box">
+                <input
+                  type="text"
+                  placeholder="최소 6자 이상 ~ 최대 12자 이하"
+                  class=""
+                />
+                <button class="btn waves-effect ml-auto">중복확인</button>
+              </div>
+              <p class="form__help confirm">
+                사용가능한 아이디입니다.
+              </p>
+            </div>
 
+            <div class="form__row">
+              <label for="" class="form__row-title">비밀번호</label>
+              <div class="box">
+                <input
+                  type="password"
+                  placeholder="영문자+숫자+특수문자 조합 8자 이상~16자 이하"
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <label for="" class="form__row-title">비밀번호 확인</label>
+              <div class="box">
+                <input type="password" placeholder="비밀번호 확인" />
+              </div>
+            </div>
+            <!--                        <div class="form__row">-->
+            <!--                            <label for="" class="form__row-title">닉네임</label>-->
+            <!--                            <div class="box">-->
+            <!--                                <input type="text" placeholder="닉네임 입력" class="">-->
+            <!--                                <button class="btn waves-effect ml-auto">중복확인</button>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <div class="form__row">
+              <label for="" class="form__row-title">이름</label>
+              <div class="box">
+                <input type="text" placeholder="이름 입력" />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <label for="" class="form__row-title">성별</label>
+              <div class="box">
+                <label for="m" class="checkbox">
+                  <input type="radio" id="m" name="gender" hidden="" />
+                  <span></span> 남성
+                </label>
+
+                <label for="F" class="checkbox">
+                  <input type="radio" id="F" name="gender" hidden="" />
+                  <span></span> 여성
+                </label>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <label for="" class="form__row-title">생년월일</label>
+              <div class="box">
+                <input type="text" placeholder="8자리 입력" />
+              </div>
+            </div>
+            <div class="form__row">
+              <label for="" class="form__row-title">이메일</label>
+              <div class="box">
+                <input type="email" placeholder="이메일 입력" />
+              </div>
+            </div>
+            <div class="form__row">
+              <label for="" class="form__row-title">휴대폰 번호</label>
+              <div class="box">
+                <input type="text" placeholder="'-' 구분없이 입력" class="" />
+                <button class="btn waves-effect ml-auto">인증번호 전송</button>
+              </div>
+            </div>
+            <div class="form__row">
+              <label for="" class="form__row-title">인증번호</label>
+              <div class="box">
+                <input type="text" placeholder="인증번호 입력" class="" />
+                <button class="btn waves-effect ml-auto">인증확인</button>
+                <span class="counter">3:00</span>
+              </div>
+            </div>
+            <div class="form__row">
+              <label for="" class="form__row-title">지점</label>
+              <div class="box box--select">
+                <select name="" id="">
+                  <option value="">아카데미 지점을 선택하세요.</option>
+                  <option value="">서울, 경기 지역</option>
+                  <option value="">광주, 전라 지역</option>
+                  <option value="">대전, 충청 지역</option>
+                  <option value="">부산, 경상 지역</option>
+                  <option value="">제주 지역</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__row">
+              <label for="" class="form__row-title">아카데미</label>
+              <div class="box box--select">
+                <select name="" id="">
+                  <option value="">아카데미 선택</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="accounts__btnbox">
+            <button
+              class="btn btn-blue waves-effect"
+              onclick="showModal('#pravicy')"
+            >
+              완료
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 @@include('./include/footer.html')

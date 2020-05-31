@@ -1,345 +1,417 @@
 @@include('./include/header.html')
+<style>
+  .form .form__row .box .btn.btn-black {
+    width: 40px !important;
+    height: 24px !important;
+    opacity: 0.5;
+  }
+  .form .form__row .box .btn.btn-black:hover {
+    opacity: 1;
+  }
+</style>
 <div class="container">
-    @@include('./include/gnb.html')
-    <div class="content">
-        <div class="adm prd">
-            <form action="">
-                <div class="wrap flex">
-                    <div class="content__left">
-                        <div class="lnb">
-                            <div class="lnb__title">
-                                <a href="">회원 관리</a>
-                            </div>
-                            <div class="lnb__depth">
-                                <a href="" class="active">선수</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__main">
-                        <div class="content__header flex">
-                            <section class="accounts__header">
-                                <h2 class="accounts__title">
-                                <span>
-                                    팀 생성
-                                </span>
-                                </h2>
-                            </section>
-                        </div>
-                        <div class="prd__section">
-                            <div class="prd__section-tab">
-                                <div>
-                                    <strong>팀 정보</strong>
-                                </div>
-                            </div>
-                            <div class="prd__section-content">
-                                <div class="prd-member">
-
-                                    <div class="left">
-                                        <div class="userCard">
-                                            <a class="userCard__thumb" href="">
-                                                <img src="//via.placeholder.com/120x120" alt="">
-                                            </a>
-                                            <div class="form">
-                                                <div class="form__row">
-                                                    <div class="box">
-                                                        <label class="form__fileFields" for="thumb">
-                                                            <input type="file" id="thumb" hidden>
-                                                            <button class="fileField-empty input-border" type="button">
-                                                                사진 변경
-                                                            </button>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right">
-                                        <div class="form">
-                                            <div class="form__row form__row--full column">
-                                                <div class="form__row-title">
-                                                    <span class="l-border">팀 명</span>
-                                                </div>
-                                                <div class="box">
-                                                    <input type="text"  value="hongildong23" class="input-border">
-                                                </div>
-                                            </div>
-                                            <div class="form__row form__row--full column">
-                                                <div class="form__row-title">
-                                                    <span class="l-border">소개 말</span>
-                                                </div>
-                                                <div class="box">
-                                                    <textarea name="" id="" ></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="prd__section">
-                            <button class="prd__section-tab">
-                                <div>
-                                    <strong>팀원 정보</strong>
-                                </div>
-                            </button>
-                            <div class="prd__section-content">
-                                <div class="prd-info">
-                                    <div class="form" style="width: 100%;">
-                                        <div class="form__row form__row--full column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">팀원 검색</span>
-                                            </div>
-                                            <div class="box box--has-info">
-                                                <input type="text" placeholder="선수 명단 검색" onclick="showModal('#addMember')" class="input-border" readonly="">
-                                                <button class="form-search"></button>
-
-                                                <p class="form__help confirm">* 소속 팀원을 선택하세요.</p>
-                                            </div>
-                                        </div>
-                                        <div class="form__row form__row--full column">
-                                            <div class="form__row-title">
-                                                <span class="l-border">팀원</span>
-                                            </div>
-                                            <div class="box">
-                                                <div class="teamtable teamtable--player">
-                                                    <table>
-                                                        <colgroup>
-                                                            <col width="30">
-                                                            <col>
-                                                            <col width="65">
-                                                        </colgroup>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                1.
-                                                            </td>
-                                                            <td>
-                                                                <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/30x30" alt="">
-                                                            </span>
-                                                                    김공장
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small btn-black ml-0">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                1.
-                                                            </td>
-                                                            <td>
-                                                                <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/30x30" alt="">
-                                                            </span>
-                                                                    김공장
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small btn-black ml-0">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                1.
-                                                            </td>
-                                                            <td>
-                                                                <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/30x30" alt="">
-                                                            </span>
-                                                                    김공장
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small btn-black ml-0">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                1.
-                                                            </td>
-                                                            <td>
-                                                                <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/30x30" alt="">
-                                                            </span>
-                                                                    김공장
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small btn-black ml-0">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                1.
-                                                            </td>
-                                                            <td>
-                                                                <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/30x30" alt="">
-                                                            </span>
-                                                                    김공장
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small btn-black ml-0">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                1.
-                                                            </td>
-                                                            <td>
-                                                                <div class="teaminfo">
-                                                            <span class="thumb">
-                                                                <img src="//via.placeholder.com/30x30" alt="">
-                                                            </span>
-                                                                    김공장
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small btn-black ml-0">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btnbox mt-20 mb-100">
-                            <button class="btn btn-blue waves-effect">완료</button>
-                        </div>
-                    </div>
+  @@include('./include/gnb.html')
+  <div class="content">
+    <div class="adm prd">
+      <form action="">
+        <div class="wrap flex">
+          <div class="content__left">
+            <div class="lnb">
+              <div class="lnb__title">
+                <a href="">회원 관리</a>
+              </div>
+              <div class="lnb__depth">
+                <a href="" class="active">선수</a>
+              </div>
+            </div>
+          </div>
+          <div class="content__main">
+            <div class="content__header flex">
+              <section class="accounts__header">
+                <h2 class="accounts__title">
+                  <span>
+                    팀 생성
+                  </span>
+                </h2>
+              </section>
+            </div>
+            <div class="prd__section">
+              <div class="prd__section-tab">
+                <div>
+                  <strong>팀 정보</strong>
                 </div>
-            </form>
+              </div>
+              <div class="prd__section-content">
+                <div class="prd-member">
+                  <div class="left">
+                    <div class="userCard">
+                      <a class="userCard__thumb" href="">
+                        <img src="//via.placeholder.com/120x120" alt="" />
+                      </a>
+                      <div class="form">
+                        <div class="form__row">
+                          <div class="box">
+                            <label class="form__fileFields" for="thumb">
+                              <input type="file" id="thumb" hidden />
+                              <button
+                                class="fileField-empty input-border"
+                                type="button"
+                              >
+                                사진 변경
+                              </button>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="form">
+                      <div class="form__row form__row--full column">
+                        <div class="form__row-title">
+                          <span class="l-border">팀 명</span>
+                        </div>
+                        <div class="box">
+                          <input
+                            type="text"
+                            value="hongildong23"
+                            class="input-border"
+                          />
+                        </div>
+                      </div>
+                      <div class="form__row form__row--full column">
+                        <div class="form__row-title">
+                          <span class="l-border">소개 말</span>
+                        </div>
+                        <div class="box">
+                          <textarea name="" id=""></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="prd__section">
+              <button class="prd__section-tab">
+                <div>
+                  <strong>팀원 정보</strong>
+                </div>
+              </button>
+              <div class="prd__section-content">
+                <div class="prd-info">
+                  <div class="form" style="width: 100%;">
+                    <div class="form__row form__row--full column">
+                      <div class="form__row-title">
+                        <span class="l-border">팀원 검색</span>
+                      </div>
+                      <div class="box box--has-info">
+                        <input
+                          type="text"
+                          placeholder="선수 명단 검색"
+                          onclick="showModal('#addMember')"
+                          class="input-border"
+                          readonly=""
+                        />
+                        <button class="form-search"></button>
+
+                        <p class="form__help confirm">
+                          * 소속 팀원을 선택하세요.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="form__row form__row--full column">
+                      <div class="form__row-title">
+                        <span class="l-border">팀원</span>
+                      </div>
+                      <div class="box">
+                        <div class="teamtable teamtable--player">
+                          <table>
+                            <colgroup>
+                              <col width="30" />
+                              <col />
+                              <col width="40" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  1.
+                                </td>
+                                <td>
+                                  <div class="teaminfo">
+                                    <span class="thumb">
+                                      <img
+                                        src="//via.placeholder.com/30x30"
+                                        alt=""
+                                      />
+                                    </span>
+                                    김공장
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a
+                                      href=""
+                                      class="btn btn--small btn-black ml-0"
+                                      >삭제</a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  1.
+                                </td>
+                                <td>
+                                  <div class="teaminfo">
+                                    <span class="thumb">
+                                      <img
+                                        src="//via.placeholder.com/30x30"
+                                        alt=""
+                                      />
+                                    </span>
+                                    김공장
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a
+                                      href=""
+                                      class="btn btn--small btn-black ml-0"
+                                      >삭제</a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  1.
+                                </td>
+                                <td>
+                                  <div class="teaminfo">
+                                    <span class="thumb">
+                                      <img
+                                        src="//via.placeholder.com/30x30"
+                                        alt=""
+                                      />
+                                    </span>
+                                    김공장
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a
+                                      href=""
+                                      class="btn btn--small btn-black ml-0"
+                                      >삭제</a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  1.
+                                </td>
+                                <td>
+                                  <div class="teaminfo">
+                                    <span class="thumb">
+                                      <img
+                                        src="//via.placeholder.com/30x30"
+                                        alt=""
+                                      />
+                                    </span>
+                                    김공장
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a
+                                      href=""
+                                      class="btn btn--small btn-black ml-0"
+                                      >삭제</a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  1.
+                                </td>
+                                <td>
+                                  <div class="teaminfo">
+                                    <span class="thumb">
+                                      <img
+                                        src="//via.placeholder.com/30x30"
+                                        alt=""
+                                      />
+                                    </span>
+                                    김공장
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a
+                                      href=""
+                                      class="btn btn--small btn-black ml-0"
+                                      >삭제</a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  1.
+                                </td>
+                                <td>
+                                  <div class="teaminfo">
+                                    <span class="thumb">
+                                      <img
+                                        src="//via.placeholder.com/30x30"
+                                        alt=""
+                                      />
+                                    </span>
+                                    김공장
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a
+                                      href=""
+                                      class="btn btn--small btn-black ml-0"
+                                      >삭제</a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btnbox mt-20 mb-100">
+              <button class="btn btn-blue waves-effect">완료</button>
+            </div>
+          </div>
         </div>
+      </form>
     </div>
+  </div>
 </div>
 
 <div class="modal" id="addMember" style="display: none;">
-    <div class="modal__content pl-20 pr-20">
-        <h2 class="modal__title">선수 명단 선택</h2>
-        <div class="modal__body">
-            <div class="form">
-                <div class="form__row ">
-                    <div class="box">
-                        <input type="text" placeholder="선수 명단 검색" class="input-border">
-                        <button class="form-search"></button>
-                    </div>
-                    <p class="form__help confirm pl-0">* 함께 경기할 선수의 이름을 입력하세요.</p>
-                </div>
-            </div>
-
-            <ul class="addMember__list">
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-
-                    <button class="add">추가</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-            </ul>
+  <div class="modal__content pl-20 pr-20">
+    <h2 class="modal__title">선수 명단 선택</h2>
+    <div class="modal__body">
+      <div class="form">
+        <div class="form__row">
+          <div class="box">
+            <input
+              type="text"
+              placeholder="선수 명단 검색"
+              class="input-border"
+            />
+            <button class="form-search"></button>
+          </div>
+          <p class="form__help confirm pl-0">
+            * 함께 경기할 선수의 이름을 입력하세요.
+          </p>
         </div>
-        <div class="modal__btnbox border">
-            <a href="#//" class="modal__btn js-modal-close">완료</a>
-        </div>
+      </div>
+
+      <ul class="addMember__list">
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+
+          <button class="add">추가</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+      </ul>
     </div>
+    <div class="modal__btnbox border">
+      <a href="#//" class="modal__btn js-modal-close">완료</a>
+    </div>
+  </div>
 </div>
 
 @@include('./include/footer.html')

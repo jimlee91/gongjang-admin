@@ -1,4 +1,9 @@
 @@include('./include/header.html')
+<style>
+    .ui-datepicker th{font-size: 10px;opacity: .5;height: 50px;}
+    .reservation .calendar .ui-datepicker .ui-datepicker-next{right: 180px;}
+    .reservation .calendar .ui-datepicker .ui-datepicker-prev{left: 180px;}
+</style>
 <div class="container">
     @@include('./include/gnb.html')
     <div class="content">
@@ -37,17 +42,26 @@
 
                     <div class="inner-wrap">
                         <form action="">
-                            <div class="form">
-                                <div class="form__row column">
-                                    <div class="form__row-title "><span class="l-border">지점목록</span></div>
+                            <div class="form flex">
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border">리그 지점목록</span></div>
                                     <div class="box column">
-                                        <select name="" id="" class="w-220">
+                                        <select name="" id="" class="">
                                             <option value="">지점선택</option>
                                             <option value="">시흥 장왕점</option>
                                         </select>
-
                                     </div>
                                 </div>
+                                <div class="form__row column form__row-half">
+                                    <div class="form__row-title "><span class="l-border">리그 그룹목록</span></div>
+                                    <div class="box column">
+                                        <select name="" id="" class="">
+                                            <option value="">그룹 선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form">
                                 <div class="form__row column">
                                     <div class="form__row-title vertical-top"><span class="l-border">날짜선택</span></div>
                                     <div class="box">

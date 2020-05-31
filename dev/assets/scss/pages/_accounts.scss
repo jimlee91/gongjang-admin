@@ -1,8 +1,7 @@
 .accounts {
   .form .form__row .input-border.bg {
     border: none !important;
-    background:#eaeaea;
-
+    background: #eaeaea;
   }
 }
 
@@ -18,11 +17,11 @@
       position: absolute;
       left: -2px;
       bottom: -2px;
-      opacity: .5;
+      opacity: 0.5;
       width: calc(100% + 4px);
-      height:12px;
-      background:$green;
-      content:'';
+      height: 12px;
+      background: $green;
+      content: "";
       z-index: 1;
     }
     span {
@@ -34,29 +33,30 @@
 }
 .accounts__state {
   font-size: 10px;
-  color:$green;
-  &.step1-2{
-    background: url('../images/step1-2.png') no-repeat left center;
+  color: $green;
+  margin-left: 15px;
+  &.step1-2 {
+    background: url("../images/step1-2.png") no-repeat left center;
     background-size: auto 10px;
     padding-left: 30px;
   }
   &.step2-2 {
-    background: url('../images/step2-2.png') no-repeat left center;
+    background: url("../images/step2-2.png") no-repeat left center;
     background-size: auto 10px;
     padding-left: 30px;
   }
   &.step3-1 {
-    background: url('../images/step3-1.png') no-repeat left center;
+    background: url("../images/step3-1.png") no-repeat left center;
     background-size: auto 10px;
     padding-left: 50px;
   }
   &.step3-2 {
-    background: url('../images/step3-2.png') no-repeat left center;
+    background: url("../images/step3-2.png") no-repeat left center;
     background-size: auto 10px;
     padding-left: 50px;
   }
   &.step3-3 {
-    background: url('../images/step3-3.png') no-repeat left center;
+    background: url("../images/step3-3.png") no-repeat left center;
     background-size: auto 10px;
     padding-left: 50px;
   }
@@ -72,11 +72,10 @@
     }
     p {
       font-size: 10px;
-      color:#646464;
+      color: #646464;
       margin-top: 10px;
     }
   }
-
 
   .accounts__etc {
     display: flex;
@@ -84,9 +83,9 @@
     align-items: center;
     justify-content: center;
     a {
-      padding:0 .5em;
+      padding: 0 0.5em;
       font-size: 10px;
-      color:#333;
+      color: #333;
       border-right: 1px solid #bcbcbc;
       &:last-child {
         border-right: 0;
@@ -106,7 +105,7 @@
       line-height: 33px;
       display: block;
       width: 190px;
-      transition: all .3s;
+      transition: all 0.3s;
       text-align: center;
       margin-right: 10px;
       &:last-child {
@@ -114,29 +113,30 @@
       }
 
       &.btn-blue {
-        background:$blue;
-        color:#fff;
+        background: $blue;
+        color: #fff;
         &:hover {
-          background:$green;
+          background: $green;
         }
       }
       &.btn-green {
-        background:$green;
-        color:#fff;
+        background: $green;
+        color: #fff;
         &:hover {
-          background:$blue;
+          background: $blue;
         }
       }
       &.btn-white {
-        color:#333;
+        color: #333;
         border: 1px solid $green;
+        font-weight: 600;
         &:hover {
-          background:$green;
-          color:#fff;
+          background: $green;
+          color: #fff;
         }
       }
       &.btn-white2 {
-        color:#333;
+        color: #333;
         border: 1px solid $border-color;
       }
     }
@@ -150,10 +150,10 @@
 
 .login {
   .login__form {
-    padding:  70px 0;
+    padding: 70px 0;
     width: 100%;
     max-width: 260px;
-    margin:0 auto;
+    margin: 0 auto;
   }
   .login__logo {
     text-align: center;
@@ -161,15 +161,15 @@
   .login__text {
     text-align: center;
     margin: 40px 0 30px;
-    color:#000;
+    color: #000;
     h2 {
       font-size: 22px;
     }
     p {
-      line-height:1.5em;
+      line-height: 1.5em;
       margin-top: 5px;
       font-size: 12px;
-      color: rgba(0,0,0,0.7);
+      color: rgba(0, 0, 0, 0.7);
     }
   }
   .form__row {
@@ -181,7 +181,6 @@
   .accounts__btnbox {
     margin-top: 50px;
   }
-
 }
 
 .registered {
@@ -192,25 +191,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin:0 auto;
+      margin: 0 auto;
       font-size: 24px;
-      color:#fff;
       width: 55px;
       height: 55px;
-      background:$green;
+      background: $green url("../images/regi-check-icon.png") no-repeat center;
       border-radius: 50%;
     }
     h3 {
       margin: 20px 0 10px;
       font-size: 22px;
       font-weight: 300;
-      line-height:1.5em;
+      line-height: 1.5em;
     }
     p {
       font-size: 12px;
       color: #999;
       font-weight: 300;
-      line-height:1.5em;
+      line-height: 1.5em;
     }
   }
   .registered__form {
@@ -238,7 +236,7 @@
       }
       a {
         font-size: 10px;
-        color:#646464;
+        color: #646464;
       }
     }
   }
@@ -259,11 +257,11 @@
         border: $border;
         border-radius: 7px;
         cursor: pointer;
-        transition: all .3s;
+        transition: all 0.3s;
       }
       input:checked + span {
-        border-color:$green;
-        color:$green;
+        border-color: $green;
+        color: $green;
       }
       &:last-child {
         margin-bottom: 0;
@@ -285,12 +283,12 @@
       margin-right: 14px;
     }
     .box {
-      padding:0 8px;
+      padding: 0 8px;
       border: $border;
       border-radius: 7px;
     }
     strong {
-      color:#5a5553;
+      color: #5a5553;
       font-size: 10px;
       display: block;
       text-align: center;
@@ -305,13 +303,12 @@
     }
 
     input:checked + .box {
-      border-color:$green;
-      color:$green;
+      border-color: $green;
+      color: $green;
       strong {
-        color:$green;
-        border-color:$green;
+        color: $green;
+        border-color: $green;
       }
     }
   }
-
 }

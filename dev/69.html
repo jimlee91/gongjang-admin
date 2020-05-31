@@ -3,6 +3,12 @@
 <!-- chartjs cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+     Chart.defaults.global.legend.labels.usePointStyle = true;
+    Chart.Legend.prototype.afterFit = function() {
+        this.height = this.height + 20;
+    };
+</script>
 
 <div class="container">
     @@include('./include/gnb.html')
@@ -67,6 +73,7 @@
                             <div class="statistics-chart mt-20">
                                 <canvas id="canvas" style="width: 100%;height: 400px;"></canvas>
                                 <script>
+                                   
                                     var barChartData = {
                                         labels: ['03.25', '03.26', '03.27', '03.28', '03.29', '03.30', '03.31'],
                                         datasets: [{
@@ -174,6 +181,7 @@
                                             type: 'bar',
                                             data: barChartData,
                                             options: {
+                                                cornerRadius: 20,
                                                 title: {
                                                     display: false,
                                                     text: 'Chart.js Bar Chart - Stacked'
@@ -186,6 +194,7 @@
                                                 scales: {
                                                     xAxes: [{
                                                         stacked: true,
+                                                        barPercentage: 0.4      
                                                     }],
                                                     yAxes: [{
                                                         stacked: true
@@ -340,6 +349,7 @@
                                                 scales: {
                                                     xAxes: [{
                                                         stacked: true,
+                                                        barPercentage: 0.6   
                                                     }],
                                                     yAxes: [{
                                                         stacked: true
@@ -531,6 +541,7 @@
                                                 scales: {
                                                     xAxes: [{
                                                         stacked: true,
+                                                        barPercentage: 0.6    
                                                     }],
                                                     yAxes: [{
                                                         stacked: true

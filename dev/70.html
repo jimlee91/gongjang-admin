@@ -3,7 +3,12 @@
 <!-- chartjs cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-
+<script>
+     Chart.defaults.global.legend.labels.usePointStyle = true;
+    Chart.Legend.prototype.afterFit = function() {
+        this.height = this.height + 20;
+    };
+</script>
 <div class="container">
     @@include('./include/gnb.html')
     <div class="content">

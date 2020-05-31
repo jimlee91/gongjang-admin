@@ -1,0 +1,135 @@
+@@include('./include/header.html')
+<div class="container">
+  @@include('./include/gnb.html')
+  <div class="content">
+    <div class="adm">
+      <div class="wrap flex">
+        <div class="content__left">
+          <div class="lnb">
+            <div class="lnb__title">
+              <a href="">마이페이지</a>
+            </div>
+            <div class="lnb__depth">
+              <a href="" class="active">게시물</a>
+            </div>
+          </div>
+        </div>
+        <div class="content__main">
+          <div class="content__header flex">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  수정하기
+                </span>
+              </h2>
+            </section>
+          </div>
+          <div class="inner-wrap registered">
+            <div class="registered__form mt-0">
+              <form action="">
+                <div class="form">
+                  <div class="form__row column">
+                    <label for="" class="form__row-title">제목</label>
+                    <div class="box">
+                      <input
+                        type="text"
+                        placeholder="제목을 입력하세요."
+                        class="input-border"
+                        value="잔디 A/S 양식입니다."
+                      />
+                    </div>
+                  </div>
+                  <div class="form__row column">
+                    <label for="" class="form__row-title">내용</label>
+                    <div class="box">
+                      <textarea
+                        type="text"
+                        placeholder="내용을 입력하세요."
+                        class="input-border"
+                      >
+양식1 입니다.</textarea
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form__row column">
+                    <label for="" class="form__row-title">업로드</label>
+                    <div class="box">
+                      <div class="form__fileFields">
+                        <!-- if # 등록된 파일이 없을경우 -->
+                        <button
+                          class="fileField-empty input-border"
+                          id="fileField-empty"
+                          type="button"
+                          onclick="showModal('#addFile')"
+                        >
+                          업로드 파일 선택
+                        </button>
+                        <!-- else -->
+                        <ul
+                          class="fileField-list"
+                          id="fileField-list"
+                          style="display: none;"
+                        ></ul>
+                        <!-- end if -->
+                      </div>
+                    </div>
+                    <!--                                        <p class="form__help confirm">-->
+                    <!--                                            * 사진 및 동영상 업로드 가능-->
+                    <!--                                        </p>-->
+                  </div>
+                </div>
+
+                <div class="accounts pt-0 pm-0">
+                  <div class="accounts__btnbox">
+                    <button
+                      class="btn btn-blue btn-rounded-sm waves-effect"
+                      type="submit"
+                      onclick=""
+                    >
+                      확인
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="addFile" style="display: none;">
+  <div class="modal__content">
+    <div class="modal__body">
+      <label for="fileImages" class="addFile__images">
+        <input
+          type="file"
+          id="fileImages"
+          hidden=""
+          multiple=""
+          accept="image/*"
+        />
+        <div class="icon">사진 아이콘</div>
+        <p>사진</p>
+      </label>
+
+      <label for="fileVideos" class="addFile__videos">
+        <input
+          type="file"
+          id="fileVideos"
+          hidden=""
+          multiple=""
+          accept="video/*"
+        />
+        <div class="icon">동영상</div>
+        <p>동영상</p>
+      </label>
+    </div>
+    <div class="modal__btnbox">
+      <a href="" class="modal__btn js-modal-close">확인</a>
+    </div>
+  </div>
+</div>
+@@include('./include/footer.html')
