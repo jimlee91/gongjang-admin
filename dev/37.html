@@ -1,461 +1,455 @@
 @@include('./include/header.html')
 <div class="container">
-    @@include('./include/gnb.html')
-    <div class="content">
-        <div class="adm frcs">
-            <div class="wrap flex">
-                <div class="content__left">
-                    <div class="lnb">
-                        <div class="lnb__title " >
-                            <a href="" class="">기능 관리</a>
-                        </div>
-                        <div class="lnb__depth">
-                            <a href="" class="active">지점</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__main">
-                    <div class="frcs__header">
-                        <div class="content__header flex">
-                            <section class="accounts__header">
-                                <h2 class="accounts__title">
-                                    <span>
-                                        HNS 아카데미
-                                    </span>
-                                </h2>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="cup__info-tab cup__info-tab--type2 black mb-40">
-                        <a href="" class="active">아카데미 정보</a>
-                        <a href="" class="">수강생</a>
-                        <a href="" class="">수업</a>
-                        <a href="" class=" ">결제내역</a>
-                        <a href="" class=" ">코치</a>
-                        <a href="" class=" ">공지사항</a>
-                        <a href="" class="">쿠폰</a>
-                        <a href="" class="">상점</a>
-                    </div>
-
-                    <div class="inner-wrap pb-20" style="border-bottom: 10px solid #eaeaea;">
-
-                        <div class="form flex">
-                            <div class="form__row form__row-half column">
-                                <div class="form__row-title">
-                                    <span class="l-border font-10">아카데미 명</span>
-                                </div>
-                                <div class="box">
-                                    <input type="text" placeholder="아카데미명을 입력하세요.">
-                                </div>
-                            </div>
-                            <div class="form__row form__row-half column">
-                                <div class="form__row-title">
-                                    <span class="l-border font-10">지점 선택</span>
-                                </div>
-                                <div class="box">
-                                    <input type="text" placeholder="" value="동대문점" readonly>
-                                </div>
-                            </div>
-                            <div class="form__row form__row-half column">
-                                <div class="form__row-title">
-                                    <span class="l-border font-10">아카데미 포스터</span>
-                                </div>
-                                <div class="box">
-                                    <div class="form__fileFields">
-                                        <!-- if # 등록된 파일이 없을경우 -->
-                                        <button class="fileField-empty input-border" id="fileField-empty" type="button" onclick="showModal('#addFile')">
-                                            업로드 파일 선택
-                                        </button>
-                                        <!-- else -->
-                                        <ul class="fileField-list" id="fileField-list" style="display: none;">
-
-                                        </ul>
-                                        <!-- end if -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form__row form__row-half column">
-                                <div class="form__row-title">
-                                    <span class="l-border font-10">아카데미 로고</span>
-                                </div>
-                                <div class="box">
-                                    <div class="form__fileFields">
-                                        <!-- if # 등록된 파일이 없을경우 -->
-                                        <button class="fileField-empty input-border" id="fileField-empty" type="button" onclick="showModal('#addFile')">
-                                            업로드 파일 선택
-                                        </button>
-                                        <!-- else -->
-                                        <ul class="fileField-list" id="fileField-list" style="display: none;">
-
-                                        </ul>
-                                        <!-- end if -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inner-wrap pt-40 pb-20" style="border-bottom: 10px solid #eaeaea;">
-                        <div class="form ">
-                            <div class="form__row column">
-                                <div class="form__row-title ">
-                                    <span class="l-border font-10">수업등록</span>
-                                </div>
-                                <div class="box column">
-                                    <div class="acdm-reg flex">
-                                        <div class="left">
-                                            <div class="form__row column">
-                                                <div class="form__row-title ">
-                                                    <span class="l-border font-10">수업 명</span>
-                                                </div>
-                                                <div class="box">
-                                                    <input type="text" placeholder="수업 명을 입력하세요.">
-                                                </div>
-                                            </div>
-                                            <div class="form__row column">
-                                                <div class="form__row-title ">
-                                                    <span class="l-border font-10">수업 설명</span>
-                                                </div>
-                                                <div class="box">
-                                                    <textarea name="" id="" placeholder="40자 이내로 입력하세요." style="min-height: 90px;"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="form__row column">
-                                                <div class="form__row-title ">
-                                                    <span class="l-border font-10">모집 대상</span>
-                                                </div>
-                                                <div class="box">
-                                                    <input type="text" placeholder="모집 대상을 입력하세요.">
-                                                </div>
-                                            </div>
-                                            <div class="form__row column">
-                                                <div class="form__row-title ">
-                                                    <span class="l-border font-10">모집 인원</span>
-                                                </div>
-                                                <div class="box">
-                                                    <input type="text" placeholder="모집 인원을 입력하세요." style="flex: 1;">
-                                                    <span class="unit font-10">명</span>
-                                                </div>
-                                            </div>
-                                            <div class="form__row column">
-                                                <div class="form__row-title ">
-                                                    <span class="l-border font-10">수업료</span>
-                                                </div>
-                                                <div class="box box--has-info">
-                                                    <input type="text" placeholder="수업료를 입력하세요." style="flex: 1;">
-                                                    <span class="unit font-10">원</span>
-
-                                                    <select name="" id="" style="width: 75px;" class="ml-10">
-                                                        <option value="">기간</option>
-                                                    </select>
-
-                                                    <p class="form__help confirm" style="white-space: nowrap;">* 기입된 수업료가 해당되는 기간을 선택하세요.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acdm-reg ">
-                                        <div class="form__row column">
-                                            <div class="form__row-title ">
-                                                <span class="l-border font-10">요일</span>
-                                            </div>
-                                            <div class="box column">
-                                                <div class="time">
-                                                    <select name="" id="">
-                                                        <option value="">팀</option>
-                                                    </select>
-                                                    <select name="" id="">
-                                                        <option value="">AM</option>
-                                                    </select>
-                                                    <input type="text" class="input-border" placeholder="시작 시간">
-                                                    <span class="hypen">~</span>
-
-                                                    <select name="" id="">
-                                                        <option value="">PM</option>
-                                                    </select>
-                                                    <input type="text" class="input-border" placeholder="종료 시간">
-
-                                                    <a href="" class="btn btn--small btn-blue">추가</a>
-                                                </div>
-
-                                                <ul class="i-list">
-                                                    <li>
-                                                        월 AM 12:00 ~ AM 13:00
-                                                        <button class="remover">빼기</button>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="form__row column">
-                                            <div class="form__row-title ">
-                                                <span class="l-border font-10">코치</span>
-                                            </div>
-                                            <div class="box column">
-                                                <div class="flex">
-                                                    <select name="" id="" class="mr-0">
-                                                        <option value="">코치 리스트</option>
-                                                    </select>
-                                                    <a href="" class="btn btn--small btn-blue">추가</a>
-                                                </div>
-
-                                                <ul class="i-list">
-                                                    <li>
-                                                        김공장 코치
-                                                        <button class="remover">빼기</button>
-                                                    </li>
-                                                    <li>
-                                                        김공장 코치
-                                                        <button class="remover">빼기</button>
-                                                    </li>
-                                                    <li>
-                                                        김공장 코치
-                                                        <button class="remover">빼기</button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="form__row form__row--info column">
-                                            <div class="form__row-title ">
-                                                <div class="newbtnbox">
-                                                    <a href="" class=" blue">등록하기</a>
-                                                </div>
-                                            </div>
-                                            <div class="box ">
-                                                <span class="mr-15">
-                                                    <img src="//via.placeholder.com/25x25" alt="">
-                                                </span>
-                                                <p class="font-10 color-gray">
-                                                    * 하단 수업 목록에서 원하는 항목의 수정 버튼을 클릭 시<br/>
-                                                    상단 수업등록에서 수정 가능합니다.
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="form__row column">
-                                            <div class="form__row-title ">
-                                                <span class="l-border font-10">수업목록</span>
-                                            </div>
-                                            <div class="box ">
-                                                <div class="admtable border-bottom">
-                                                    <table>
-                                                        <colgroup>
-                                                            <col width="40">
-                                                            <col>
-                                                            <col>
-                                                            <col>
-                                                            <col width="">
-                                                        </colgroup>
-                                                        <thead>
-                                                        <tr>
-                                                            <th></th>
-                                                            <th>수업명</th>
-                                                            <th>모집대상</th>
-                                                            <th>수업료</th>
-                                                            <th></th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>1.</td>
-                                                            <td>FC 정왕</td>
-                                                            <td>14세 미만</td>
-                                                            <td>160,000 (월)</td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small ">수정</a>
-                                                                    <a href="" class="btn btn--small btn-black">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1.</td>
-                                                            <td>FC 정왕</td>
-                                                            <td>14세 미만</td>
-                                                            <td>160,000 (월)</td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small ">수정</a>
-                                                                    <a href="" class="btn btn--small btn-black">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1.</td>
-                                                            <td>FC 정왕</td>
-                                                            <td>14세 미만</td>
-                                                            <td>160,000 (월)</td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small ">수정</a>
-                                                                    <a href="" class="btn btn--small btn-black">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1.</td>
-                                                            <td>FC 정왕</td>
-                                                            <td>14세 미만</td>
-                                                            <td>160,000 (월)</td>
-                                                            <td>
-                                                                <div class="btnbox">
-                                                                    <a href="" class="btn btn--small ">수정</a>
-                                                                    <a href="" class="btn btn--small btn-black">삭제</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="inner-wrap pt-40">
-                        <form action="">
-                            <div class="form ">
-<!--                                <div class="form__row column">-->
-<!--                                    <div class="form__row-title ">-->
-<!--                                        <span class="l-border font-10">옵션</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="box column">-->
-<!--                                        <div class="form__row" style="margin-bottom: 10px !important;">-->
-<!--                                            <div class="form__row-title font-10">옵션 명</div>-->
-<!--                                            <div class="box">-->
-<!--                                                <input type="text" placeholder="옵션 명을 적어주세요.">-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        <div class="form__row">-->
-<!--                                            <div class="form__row-title font-10">가격</div>-->
-<!--                                            <div class="box">-->
-<!--                                                <input type="text" placeholder="가격를 적어주세요.">-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-                                <div class="form__row column">
-                                    <div class="form__row-title vertical-top">
-                                        <span class="l-border font-10">아카데미 설명</span>
-                                    </div>
-                                    <div class="box">
-                                        <textarea name="" id="" placeholder="아카데미 설명을 적어주세요."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title vertical-top">
-                                        <span class="l-border font-10">유의사항</span>
-                                    </div>
-                                    <div class="box box--has-info">
-                                        <div class="form__fileFields">
-                                            <!-- if # 등록된 파일이 없을경우 -->
-                                            <button class="fileField-empty input-border" id="fileField-empty" type="button" onclick="showModal('#addFile')">
-                                                업로드 파일 선택
-                                            </button>
-                                            <!-- else -->
-                                            <ul class="fileField-list" id="fileField-list" style="display: none;">
-
-                                            </ul>
-                                            <!-- end if -->
-                                        </div>
-
-                                        <p class="form__help confirm">
-                                            * 사진 및 동영상 업로드 가능
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title vertical-top">
-                                        <span class="l-border font-10">환불정책</span>
-                                    </div>
-                                    <div class="box">
-                                        <textarea name="" id="" placeholder="환불 규정을 적어주세요."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title ">
-                                        <span class="l-border font-10">계좌번호</span>
-                                    </div>
-                                    <div class="box column">
-                                        <div class="form__row" style="margin-bottom: 10px !important;">
-                                            <div class="form__row-title font-10">은행</div>
-                                            <div class="box">
-                                                <input type="text" placeholder="은행을 적어주세요.">
-                                            </div>
-                                        </div>
-                                        <div class="form__row">
-                                            <div class="form__row-title font-10">계좌번호</div>
-                                            <div class="box">
-                                                <input type="text" placeholder="계좌번호를 적어주세요.">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title vertical-top">
-                                        <span class="l-border font-10">결제방식</span>
-                                    </div>
-                                    <div class="box">
-                                        <div class="frcs__benefit">
-                                            <label for="ck12" class="checkbox2">
-                                                <input type="checkbox" hidden id="ck12">
-                                                <span></span> 계좌이체
-                                            </label>
-                                            <label for="ck22" class="checkbox2">
-                                                <input type="checkbox" hidden id="ck22">
-                                                <span></span> 카드결제
-                                            </label>
-                                            <label for="ck32" class="checkbox2">
-                                                <input type="checkbox" hidden id="ck32">
-                                                <span></span> 핸드폰결제
-                                            </label>
-                                            <label for="ck42" class="checkbox2">
-                                                <input type="checkbox" hidden id="ck42">
-                                                <span></span> 네이버 페이
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-<!--                            <div class="btnbox mt-100">-->
-<!--                                <a href="" class="btn btn-blue">완료</a>-->
-<!--                            </div>-->
-                        </form>
-                    </div>
-                </div>
+  @@include('./include/gnb.html')
+  <div class="content">
+    <div class="adm frcs">
+      <div class="wrap flex">
+        <div class="content__left">
+          <div class="lnb">
+            <div class="lnb__title">
+              <a href="" class="">기능 관리</a>
             </div>
+            <div class="lnb__depth">
+              <a href="" class="active">지점</a>
+            </div>
+          </div>
         </div>
+        <div class="content__main">
+          <div class="frcs__header">
+            <div class="content__header flex">
+              <section class="accounts__header">
+                <h2 class="accounts__title">
+                  <span>
+                    HNS 아카데미
+                  </span>
+                </h2>
+              </section>
+            </div>
+          </div>
+
+          <div class="cup__info-tab cup__info-tab--type2 black mb-40">
+            <a href="" class="active">아카데미 정보</a>
+            <a href="" class="">수강생</a>
+            <a href="" class="">수업</a>
+            <a href="" class=" ">결제내역</a>
+            <a href="" class=" ">코치</a>
+            <a href="" class=" ">공지사항</a>
+            <a href="" class="">쿠폰</a>
+            <a href="" class="">상점</a>
+          </div>
+
+          <div class="inner-wrap pb-20" style="border-bottom: 10px solid #eaeaea;">
+            <div class="form flex">
+              <div class="form__row form__row-half column">
+                <div class="form__row-title">
+                  <span class="l-border font-10">아카데미 명</span>
+                </div>
+                <div class="box">
+                  <input type="text" placeholder="아카데미명을 입력하세요." />
+                </div>
+              </div>
+              <div class="form__row form__row-half column">
+                <div class="form__row-title">
+                  <span class="l-border font-10">지점 선택</span>
+                </div>
+                <div class="box">
+                  <input type="text" placeholder="" value="동대문점" readonly />
+                </div>
+              </div>
+              <div class="form__row form__row-half column">
+                <div class="form__row-title">
+                  <span class="l-border font-10">아카데미 포스터</span>
+                </div>
+                <div class="box">
+                  <div class="form__fileFields">
+                    <!-- if # 등록된 파일이 없을경우 -->
+                    <button
+                      class="fileField-empty input-border"
+                      id="fileField-empty"
+                      type="button"
+                      onclick="showModal('#addFile')"
+                    >
+                      업로드 파일 선택
+                    </button>
+                    <!-- else -->
+                    <ul class="fileField-list" id="fileField-list" style="display: none;"></ul>
+                    <!-- end if -->
+                  </div>
+                </div>
+              </div>
+              <div class="form__row form__row-half column">
+                <div class="form__row-title">
+                  <span class="l-border font-10">아카데미 로고</span>
+                </div>
+                <div class="box">
+                  <div class="form__fileFields">
+                    <!-- if # 등록된 파일이 없을경우 -->
+                    <button
+                      class="fileField-empty input-border"
+                      id="fileField-empty"
+                      type="button"
+                      onclick="showModal('#addFile')"
+                    >
+                      업로드 파일 선택
+                    </button>
+                    <!-- else -->
+                    <ul class="fileField-list" id="fileField-list" style="display: none;"></ul>
+                    <!-- end if -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-wrap pt-40 pb-20" style="border-bottom: 10px solid #eaeaea;">
+            <div class="form">
+              <div class="form__row column">
+                <div class="form__row-title">
+                  <span class="l-border font-10">수업등록</span>
+                </div>
+                <div class="box column">
+                  <div class="acdm-reg flex">
+                    <div class="left">
+                      <div class="form__row column">
+                        <div class="form__row-title">
+                          <span class="l-border font-10">수업 명</span>
+                        </div>
+                        <div class="box">
+                          <input type="text" placeholder="수업 명을 입력하세요." />
+                        </div>
+                      </div>
+                      <div class="form__row column">
+                        <div class="form__row-title">
+                          <span class="l-border font-10">수업 설명</span>
+                        </div>
+                        <div class="box">
+                          <textarea
+                            name=""
+                            id=""
+                            placeholder="40자 이내로 입력하세요."
+                            style="min-height: 90px;"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="form__row column">
+                        <div class="form__row-title">
+                          <span class="l-border font-10">모집 대상</span>
+                        </div>
+                        <div class="box">
+                          <input type="text" placeholder="모집 대상을 입력하세요." />
+                        </div>
+                      </div>
+                      <div class="form__row column">
+                        <div class="form__row-title">
+                          <span class="l-border font-10">모집 인원</span>
+                        </div>
+                        <div class="box">
+                          <input type="text" placeholder="모집 인원을 입력하세요." style="flex: 1;" />
+                          <span class="unit font-10">명</span>
+                        </div>
+                      </div>
+                      <div class="form__row column">
+                        <div class="form__row-title">
+                          <span class="l-border font-10">수업료</span>
+                        </div>
+                        <div class="box box--has-info">
+                          <input type="text" placeholder="수업료를 입력하세요." style="flex: 1;" />
+                          <span class="unit font-10">원</span>
+
+                          <select name="" id="" style="width: 75px;" class="ml-10">
+                            <option value="">기간</option>
+                          </select>
+
+                          <p class="form__help confirm" style="white-space: nowrap;">
+                            * 기입된 수업료가 해당되는 기간을 선택하세요.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acdm-reg">
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border font-10">요일</span>
+                      </div>
+                      <div class="box column">
+                        <div class="time">
+                          <select name="" id="">
+                            <option value="">팀</option>
+                          </select>
+                          <select name="" id="">
+                            <option value="">AM</option>
+                          </select>
+                          <input type="text" class="input-border" placeholder="시작 시간" />
+                          <span class="hypen">~</span>
+
+                          <select name="" id="">
+                            <option value="">PM</option>
+                          </select>
+                          <input type="text" class="input-border" placeholder="종료 시간" />
+
+                          <a href="" class="btn btn--small btn-blue">추가</a>
+                        </div>
+
+                        <ul class="i-list">
+                          <li>
+                            월 AM 12:00 ~ AM 13:00
+                            <button class="remover">빼기</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border font-10">코치</span>
+                      </div>
+                      <div class="box column">
+                        <div class="flex">
+                          <select name="" id="" class="mr-0">
+                            <option value="">코치 리스트</option>
+                          </select>
+                          <a href="" class="btn btn--small btn-blue">추가</a>
+                        </div>
+
+                        <ul class="i-list">
+                          <li>
+                            김공장 코치
+                            <button class="remover">빼기</button>
+                          </li>
+                          <li>
+                            김공장 코치
+                            <button class="remover">빼기</button>
+                          </li>
+                          <li>
+                            김공장 코치
+                            <button class="remover">빼기</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="form__row form__row--info column">
+                      <div class="form__row-title">
+                        <div class="newbtnbox">
+                          <a href="" class="blue">등록하기</a>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <span class="mr-15">
+                          <img src="//via.placeholder.com/25x25" alt="" />
+                        </span>
+                        <p class="font-10 color-gray">
+                          * 하단 수업 목록에서 원하는 항목의 수정 버튼을 클릭 시<br />
+                          상단 수업등록에서 수정 가능합니다.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="form__row column">
+                      <div class="form__row-title">
+                        <span class="l-border font-10">수업목록</span>
+                      </div>
+                      <div class="box">
+                        <div class="admtable border-bottom">
+                          <table>
+                            <colgroup>
+                              <col width="40" />
+                              <col />
+                              <col />
+                              <col />
+                              <col width="" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>수업명</th>
+                                <th>모집대상</th>
+                                <th>수업료</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1.</td>
+                                <td>FC 정왕</td>
+                                <td>14세 미만</td>
+                                <td>160,000 (월)</td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a href="" class="btn btn--small">수정</a>
+                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.</td>
+                                <td>FC 정왕</td>
+                                <td>14세 미만</td>
+                                <td>160,000 (월)</td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a href="" class="btn btn--small">수정</a>
+                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.</td>
+                                <td>FC 정왕</td>
+                                <td>14세 미만</td>
+                                <td>160,000 (월)</td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a href="" class="btn btn--small">수정</a>
+                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.</td>
+                                <td>FC 정왕</td>
+                                <td>14세 미만</td>
+                                <td>160,000 (월)</td>
+                                <td>
+                                  <div class="btnbox">
+                                    <a href="" class="btn btn--small">수정</a>
+                                    <a href="" class="btn btn--small btn-black">삭제</a>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-wrap pt-40">
+            <form action="">
+              <div class="form">
+                <!--                                <div class="form__row column">-->
+                <!--                                    <div class="form__row-title ">-->
+                <!--                                        <span class="l-border font-10">옵션</span>-->
+                <!--                                    </div>-->
+                <!--                                    <div class="box column">-->
+                <!--                                        <div class="form__row" style="margin-bottom: 10px !important;">-->
+                <!--                                            <div class="form__row-title font-10">옵션 명</div>-->
+                <!--                                            <div class="box">-->
+                <!--                                                <input type="text" placeholder="옵션 명을 적어주세요.">-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                        <div class="form__row">-->
+                <!--                                            <div class="form__row-title font-10">가격</div>-->
+                <!--                                            <div class="box">-->
+                <!--                                                <input type="text" placeholder="가격를 적어주세요.">-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <div class="form__row column">
+                  <div class="form__row-title vertical-top">
+                    <span class="l-border font-10" style="margin-top: 10px;">아카데미 설명</span>
+                  </div>
+                  <div class="box">
+                    <textarea name="" id="" placeholder="아카데미 설명을 입력하세요."></textarea>
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title vertical-top">
+                    <span class="l-border font-10" style="margin-top: 10px;">유의사항</span>
+                  </div>
+                  <div class="box">
+                    <textarea name="" id="" placeholder="유의사항을 입력하세요."></textarea>
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title vertical-top">
+                    <span class="l-border font-10" style="margin-top: 10px;">환불정책</span>
+                  </div>
+                  <div class="box">
+                    <textarea name="" id="" placeholder="환불 규정을 입력하세요."></textarea>
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border font-10">계좌번호</span>
+                  </div>
+                  <div class="box column">
+                    <div class="form__row" style="margin-bottom: 10px !important;">
+                      <div class="form__row-title font-10">은행</div>
+                      <div class="box">
+                        <input type="text" placeholder="은행을 적어주세요." />
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__row-title font-10">계좌번호</div>
+                      <div class="box">
+                        <input type="text" placeholder="계좌번호를 적어주세요." />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title vertical-top">
+                    <span class="l-border font-10">결제방식</span>
+                  </div>
+                  <div class="box">
+                    <div class="frcs__benefit">
+                      <label for="ck12" class="checkbox2">
+                        <input type="checkbox" hidden id="ck12" />
+                        <span></span> 계좌이체
+                      </label>
+                      <label for="ck22" class="checkbox2">
+                        <input type="checkbox" hidden id="ck22" />
+                        <span></span> 카드결제
+                      </label>
+                      <label for="ck32" class="checkbox2">
+                        <input type="checkbox" hidden id="ck32" />
+                        <span></span> 핸드폰결제
+                      </label>
+                      <label for="ck42" class="checkbox2">
+                        <input type="checkbox" hidden id="ck42" />
+                        <span></span> 네이버 페이
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btnbox mt-100">
+                <a href="" class="btn btn-blue">수정</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
-
 <div class="modal" id="addFile" style="display: none;">
-    <div class="modal__content">
-        <div class="modal__body">
-            <label for="fileImages" class="addFile__images">
-                <input type="file" id="fileImages" hidden="" multiple="" accept="image/*">
-                <div class="icon">사진 아이콘</div>
-                <p>사진</p>
-            </label>
+  <div class="modal__content">
+    <div class="modal__body">
+      <label for="fileImages" class="addFile__images">
+        <input type="file" id="fileImages" hidden="" multiple="" accept="image/*" />
+        <div class="icon">사진 아이콘</div>
+        <p>사진</p>
+      </label>
 
-            <label for="fileVideos" class="addFile__videos">
-                <input type="file" id="fileVideos" hidden="" multiple="" accept="video/*">
-                <div class="icon">동영상</div>
-                <p>동영상</p>
-            </label>
-        </div>
-        <div class="modal__btnbox">
-            <a href="" class="modal__btn js-modal-close">확인</a>
-        </div>
+      <label for="fileVideos" class="addFile__videos">
+        <input type="file" id="fileVideos" hidden="" multiple="" accept="video/*" />
+        <div class="icon">동영상</div>
+        <p>동영상</p>
+      </label>
     </div>
+    <div class="modal__btnbox">
+      <a href="" class="modal__btn js-modal-close">확인</a>
+    </div>
+  </div>
 </div>
 @@include('./include/footer.html')

@@ -1,617 +1,646 @@
 @@include('./include/header.html')
 <div class="container">
-    @@include('./include/gnb.html')
-    <div class="content">
-        <div class="adm main">
-            <div class="main__section">
-                <div class="wrap flex">
-                    <div class="content__left">
-                        <div class="lnb">
-                            <div class="lnb__title">
-                                <a href="">메인페이지</a>
-                            </div>
-                            <div class="lnb__depth">
-                                <a href="" class="active">예약</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__main column">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                                <span>
-                                    지점
-                                </span>
-                            </h2>
-                        </section>
-                        <div class="form mt-35">
-                            <div class="form__row column mb-0">
-                                <div class="box ">
-                                    <select name="" id="" style="">
-                                        <option value="">지점 선택</option>
-                                    </select>
-                                    <div class="btnbox" style="width: 45px !important;">
-                                        <a href="" class="btn btn--small btn-blue2 ml-0 mt-0" style="line-height: 28px !important;height: 30px !important;">추가</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admtable border-bottom mt-40">
-                            <table>
-                                <colgroup>
-                                    <col width="40">
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col width="50">
-                                </colgroup>
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>지점명</th>
-                                    <th>분류</th>
-                                    <th>관리자 명</th>
-                                    <th>주소</th>
-                                    <th>삭제</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">시흥 정왕점</a>
-                                    </td>
-                                    <td>
-                                        지점
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>서울시 용산구 원효로 90-11</td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">시흥 정왕점</a>
-                                    </td>
-                                    <td>
-                                        지점
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>서울시 용산구 원효로 90-11</td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">시흥 정왕점</a>
-                                    </td>
-                                    <td>
-                                        지점
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>서울시 용산구 원효로 90-11</td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">시흥 정왕점</a>
-                                    </td>
-                                    <td>
-                                        지점
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>서울시 용산구 원효로 90-11</td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-
-
-                                </tbody>
-                            </table>
-                        </div>
-                        @@include('./include/pagination.html')
-                    </div>
-                </div>
+  @@include('./include/gnb.html')
+  <div class="content">
+    <div class="adm main">
+      <div class="main__section">
+        <div class="wrap flex">
+          <div class="content__left">
+            <div class="lnb">
+              <div class="lnb__title">
+                <a href="">메인페이지</a>
+              </div>
+              <div class="lnb__depth">
+                <a href="" class="active">예약</a>
+              </div>
             </div>
-            <div class="main__section">
-                <div class="wrap flex">
-                    <div class="content__left">
-                        <div class="lnb">
-                            <div class="lnb__title">
-                                <a href="">메인 페이지</a>
-                            </div>
-                            <div class="lnb__depth">
-                                <a href="" class="active">대회</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__main column">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                                <span>
-                                    대회
-                                </span>
-                            </h2>
-                        </section>
-                        <div class="form mt-35">
-                            <div class="form__row column mb-0">
-                                <div class="box ">
-                                    <select name="" id="" style="width: 120px;flex: none;" class="mr-10">
-                                        <option value="">년도 선택</option>
-                                    </select>
-                                    <input type="text" placeholder="지점을 검색하세요." class="input-border">
-                                    <div class="btnbox" style="width: 45px !important;">
-                                        <a href="" class="btn btn--small btn-blue2 ml-0 mt-0" style="line-height: 28px !important;height: 30px !important;">추가</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admtable border-bottom mt-40">
-                            <table>
-                                <colgroup>
-                                    <col width="40">
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col width="150">
-                                    <col>
-                                    <col width="50">
-                                </colgroup>
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>대회명</th>
-                                    <th>대회구분</th>
-                                    <th>참가대상</th>
-                                    <th>기간</th>
-                                    <th>진행상황</th>
-                                    <th></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">2020 H-리그</a>
-                                    </td>
-                                    <td>리그</td>
-                                    <td>
-                                        성인
-                                    </td>
-                                    <td>
-                                        2020.02.03 ~ 2020.03.03
-                                    </td>
-                                    <td>
-                                        <span class="color-green">모집중</span>
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">2020 H-리그</a>
-                                    </td>
-                                    <td>리그</td>
-                                    <td>
-                                        성인
-                                    </td>
-                                    <td>
-                                        2020.02.03 ~ 2020.03.03
-                                    </td>
-                                    <td>
-                                        <span class="color-green">모집중</span>
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">2020 H-리그</a>
-                                    </td>
-                                    <td>리그</td>
-                                    <td>
-                                        성인
-                                    </td>
-                                    <td>
-                                        2020.02.03 ~ 2020.03.03
-                                    </td>
-                                    <td>
-                                        <span class="color-green">모집중</span>
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-
-
-                                </tbody>
-                            </table>
-                        </div>
-                        @@include('./include/pagination.html')
-                    </div>
+          </div>
+          <div class="content__main column">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  지점
+                </span>
+              </h2>
+            </section>
+            <div class="form mt-35">
+              <div class="form__row column mb-0">
+                <div class="box">
+                  <select name="" id="" style="">
+                    <option value="">지점 선택</option>
+                  </select>
+                  <div class="btnbox" style="width: 45px !important;">
+                    <a
+                      href=""
+                      class="btn btn--small btn-blue2 ml-0 mt-0"
+                      style="line-height: 28px !important; height: 30px !important;"
+                      >추가</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="main__section">
-                <div class="wrap flex">
-                    <div class="content__left">
-                        <div class="lnb">
-                            <div class="lnb__title">
-                                <a href="">메인 페이지</a>
-                            </div>
-                            <div class="lnb__depth">
-                                <a href="" class="active">공간</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__main column">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                                <span>
-                                    공간
-                                </span>
-                            </h2>
-                        </section>
-                        <div class="form mt-35">
-                            <div class="form__row column mb-0">
-                                <div class="box ">
-                                    <input type="text" placeholder="게시물 명을 입력하세요." class="input-border">
-                                    <div class="btnbox" style="width: 45px !important;">
-                                        <a href="" class="btn btn--small btn-blue2 ml-0 mt-0" style="line-height: 28px !important;height: 30px !important;">추가</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admtable  mt-20">
-                            <table>
-                                <colgroup>
-                                    <col width="40">
-                                    <col width="80">
-                                    <col width="150">
-                                    <col>
-                                    <col >
-                                    <col>
-                                    <col>
-                                    <col width="50">
-                                </colgroup>
-                                <tbody>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">
-                                            <img src="//via.placeholder.com/80x80" alt="">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장김공장김공장</a>
-                                    </td>
-                                    <td>영상</td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        20.03.04
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="breakhr"></div>
-                        <div class="admtable">
-                            <table>
-                                <colgroup>
-                                    <col width="40">
-                                    <col width="80">
-                                    <col width="150">
-                                    <col>
-                                    <col >
-                                    <col>
-                                    <col>
-                                    <col width="50">
-                                </colgroup>
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th>제목</th>
-                                    <th>분류</th>
-                                    <th>공간이름</th>
-                                    <th>등록자</th>
-                                    <th>등록일</th>
-                                    <th>삭제</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td colspan="8" style="height: 15px;"></td>
-                                    </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">
-                                            <img src="//via.placeholder.com/80x80" alt="">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장김공장김공장</a>
-                                    </td>
-                                    <td>영상</td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        20.03.04
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">
-                                            <img src="//via.placeholder.com/80x80" alt="">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장김공장김공장</a>
-                                    </td>
-                                    <td>영상</td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        20.03.04
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">
-                                            <img src="//via.placeholder.com/80x80" alt="">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장김공장김공장</a>
-                                    </td>
-                                    <td>영상</td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        20.03.04
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">
-                                            <img src="//via.placeholder.com/80x80" alt="">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장김공장김공장</a>
-                                    </td>
-                                    <td>영상</td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        <a href="">김공장</a>
-                                    </td>
-                                    <td>
-                                        20.03.04
-                                    </td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            <div class="admtable border-bottom mt-40">
+              <table>
+                <colgroup>
+                  <col width="40" />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col width="50" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>지점명</th>
+                    <th>분류</th>
+                    <th>관리자 명</th>
+                    <th>주소</th>
+                    <th>삭제</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">시흥 정왕점</a>
+                    </td>
+                    <td>
+                      지점
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>서울시 용산구 원효로 90-11</td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">시흥 정왕점</a>
+                    </td>
+                    <td>
+                      지점
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>서울시 용산구 원효로 90-11</td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">시흥 정왕점</a>
+                    </td>
+                    <td>
+                      지점
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>서울시 용산구 원효로 90-11</td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">시흥 정왕점</a>
+                    </td>
+                    <td>
+                      지점
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>서울시 용산구 원효로 90-11</td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <div class="main__section">
-                <div class="wrap flex">
-                    <div class="content__left">
-                        <div class="lnb">
-                            <div class="lnb__title">
-                                <a href="">메인 페이지</a>
-                            </div>
-                            <div class="lnb__depth">
-                                <a href="" class="active">아카데미</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__main column">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                                <span>
-                                    아카데미
-                                </span>
-                            </h2>
-                        </section>
-                        <div class="form mt-35">
-                            <div class="form__row column mb-0">
-                                <div class="box ">
-                                    <select name="" id="">
-                                        <option value="">아카데미 선택</option>
-                                    </select>
-                                    <div class="btnbox" style="width: 45px !important;">
-                                        <a href="" class="btn btn--small btn-blue2 ml-0 mt-0" style="line-height: 28px !important;height: 30px !important;">추가</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admtable border-bottom mt-40">
-                            <table>
-                                <colgroup>
-                                    <col width="40">
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col width="50">
-                                </colgroup>
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>아카데미명</th>
-                                    <th>지점</th>
-                                    <th>회원수</th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">FC 정왕</a>
-                                    </td>
-                                    <td>
-                                        정왕점
-                                    </td>
-                                    <td>
-                                        100
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">FC 정왕</a>
-                                    </td>
-                                    <td>
-                                        정왕점
-                                    </td>
-                                    <td>
-                                        100
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">FC 정왕</a>
-                                    </td>
-                                    <td>
-                                        정왕점
-                                    </td>
-                                    <td>
-                                        100
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">1.</td>
-                                    <td>
-                                        <a href="">FC 정왕</a>
-                                    </td>
-                                    <td>
-                                        정왕점
-                                    </td>
-                                    <td>
-                                        100
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        <div class="btnbox">
-                                            <a href="" class="btn btn--small btn-black">삭제</a>
-                                        </div>
-                                    </td>
-                                </tr>
-
-
-                                </tbody>
-                            </table>
-                        </div>
-                        @@include('./include/pagination.html')
-                    </div>
-                </div>
-            </div>
+            @@include('./include/pagination.html')
+          </div>
         </div>
+      </div>
+      <div class="main__section">
+        <div class="wrap flex">
+          <div class="content__left">
+            <div class="lnb">
+              <div class="lnb__title">
+                <a href="">메인 페이지</a>
+              </div>
+              <div class="lnb__depth">
+                <a href="" class="active">대회</a>
+              </div>
+            </div>
+          </div>
+          <div class="content__main column">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  대회
+                </span>
+              </h2>
+            </section>
+            <div class="form mt-35">
+              <div class="form__row column mb-0">
+                <div class="box">
+                  <select name="" id="" style="width: 120px; flex: none;" class="mr-10">
+                    <option value="">년도 선택</option>
+                  </select>
+                  <select name="" id="" style="" class="mr-10">
+                    <option value="">대회명 선택</option>
+                  </select>
+                  <div class="btnbox" style="width: 45px !important;">
+                    <a
+                      href=""
+                      class="btn btn--small btn-blue2 ml-0 mt-0"
+                      style="line-height: 28px !important; height: 30px !important;"
+                      >추가</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="admtable border-bottom mt-40">
+              <table>
+                <colgroup>
+                  <col width="40" />
+                  <col />
+                  <col />
+                  <col />
+                  <col width="150" />
+                  <col />
+                  <col width="50" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>대회명</th>
+                    <th>대회구분</th>
+                    <th>참가대상</th>
+                    <th>기간</th>
+                    <th>진행상황</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">2020 H-리그</a>
+                    </td>
+                    <td>리그</td>
+                    <td>
+                      성인
+                    </td>
+                    <td>
+                      2020.02.03 ~ 2020.03.03
+                    </td>
+                    <td>
+                      <span class="color-green">모집중</span>
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">2020 H-리그</a>
+                    </td>
+                    <td>리그</td>
+                    <td>
+                      성인
+                    </td>
+                    <td>
+                      2020.02.03 ~ 2020.03.03
+                    </td>
+                    <td>
+                      <span class="color-green">모집중</span>
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">2020 H-리그</a>
+                    </td>
+                    <td>리그</td>
+                    <td>
+                      성인
+                    </td>
+                    <td>
+                      2020.02.03 ~ 2020.03.03
+                    </td>
+                    <td>
+                      <span class="color-green">모집중</span>
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            @@include('./include/pagination.html')
+          </div>
+        </div>
+      </div>
+      <div class="main__section">
+        <div class="wrap flex">
+          <div class="content__left">
+            <div class="lnb">
+              <div class="lnb__title">
+                <a href="">메인 페이지</a>
+              </div>
+              <div class="lnb__depth">
+                <a href="" class="active">공간</a>
+              </div>
+            </div>
+          </div>
+          <div class="content__main column">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  공간
+                </span>
+              </h2>
+            </section>
+            <div class="form mt-35">
+              <div class="form__row column mb-0">
+                <div class="box">
+                  <div style="flex: 1; position: relative;">
+                    <input type="text" placeholder="게시물 명을 입력하세요." class="input-border" />
+                    <button
+                      style="
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 30px;
+                        height: 30px;
+                        background: url('./assets/images/i-search-black.png') no-repeat center;
+                        background-size: auto 12px;
+                      "
+                    ></button>
+                  </div>
+                  <div class="btnbox" style="width: 45px !important;">
+                    <a
+                      href=""
+                      class="btn btn--small btn-blue2 ml-0 mt-0"
+                      style="line-height: 28px !important; height: 30px !important;"
+                      >추가</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="admtable mt-20">
+              <table>
+                <colgroup>
+                  <col width="40" />
+                  <col width="80" />
+                  <col width="150" />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col width="50" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">
+                        <img src="//via.placeholder.com/80x80" alt="" />
+                      </a>
+                    </td>
+                    <td>
+                      <a href="">김공장김공장김공장</a>
+                    </td>
+                    <td>영상</td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      20.03.04
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="breakhr"></div>
+            <div class="admtable">
+              <table>
+                <colgroup>
+                  <col width="40" />
+                  <col width="80" />
+                  <col width="150" />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col width="50" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>제목</th>
+                    <th>분류</th>
+                    <th>공간이름</th>
+                    <th>등록자</th>
+                    <th>등록일</th>
+                    <th>삭제</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="8" style="height: 15px;"></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">
+                        <img src="//via.placeholder.com/80x80" alt="" />
+                      </a>
+                    </td>
+                    <td>
+                      <a href="">김공장김공장김공장</a>
+                    </td>
+                    <td>영상</td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      20.03.04
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">
+                        <img src="//via.placeholder.com/80x80" alt="" />
+                      </a>
+                    </td>
+                    <td>
+                      <a href="">김공장김공장김공장</a>
+                    </td>
+                    <td>영상</td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      20.03.04
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">
+                        <img src="//via.placeholder.com/80x80" alt="" />
+                      </a>
+                    </td>
+                    <td>
+                      <a href="">김공장김공장김공장</a>
+                    </td>
+                    <td>영상</td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      20.03.04
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">
+                        <img src="//via.placeholder.com/80x80" alt="" />
+                      </a>
+                    </td>
+                    <td>
+                      <a href="">김공장김공장김공장</a>
+                    </td>
+                    <td>영상</td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      <a href="">김공장</a>
+                    </td>
+                    <td>
+                      20.03.04
+                    </td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__section">
+        <div class="wrap flex">
+          <div class="content__left">
+            <div class="lnb">
+              <div class="lnb__title">
+                <a href="">메인 페이지</a>
+              </div>
+              <div class="lnb__depth">
+                <a href="" class="active">아카데미</a>
+              </div>
+            </div>
+          </div>
+          <div class="content__main column">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  아카데미
+                </span>
+              </h2>
+            </section>
+            <div class="form mt-35">
+              <div class="form__row column mb-0">
+                <div class="box">
+                  <select name="" id="">
+                    <option value="">아카데미 선택</option>
+                  </select>
+                  <div class="btnbox" style="width: 45px !important;">
+                    <a
+                      href=""
+                      class="btn btn--small btn-blue2 ml-0 mt-0"
+                      style="line-height: 28px !important; height: 30px !important;"
+                      >추가</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="admtable border-bottom mt-40">
+              <table>
+                <colgroup>
+                  <col width="40" />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col width="50" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>아카데미명</th>
+                    <th>지점</th>
+                    <th>회원수</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">FC 정왕</a>
+                    </td>
+                    <td>
+                      정왕점
+                    </td>
+                    <td>
+                      100
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">FC 정왕</a>
+                    </td>
+                    <td>
+                      정왕점
+                    </td>
+                    <td>
+                      100
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">FC 정왕</a>
+                    </td>
+                    <td>
+                      정왕점
+                    </td>
+                    <td>
+                      100
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">1.</td>
+                    <td>
+                      <a href="">FC 정왕</a>
+                    </td>
+                    <td>
+                      정왕점
+                    </td>
+                    <td>
+                      100
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="btnbox">
+                        <a href="" class="btn btn--small btn-black">삭제</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            @@include('./include/pagination.html')
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 @@include('./include/footer.html')

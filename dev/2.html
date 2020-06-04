@@ -1,163 +1,164 @@
 @@include('./include/header.html')
 <div class="container">
-    @@include('./include/gnb.html')
-    <div class="content">
-        <div class="adm adminfo">
-            <div class="wrap flex">
-                <div class="content__left">
-                    <div class="lnb">
-                        <div class="lnb__title">
-                            <a href="">마이페이지</a>
-                        </div>
-                        <div class="lnb__depth">
-                            <a href="" class="active">관리자 정보</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__main">
-                    <div class="content__header flex">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                                <span>
-                                    관리자 정보
-                                </span>
-                            </h2>
-                        </section>
-                        <div class="newbtnbox">
-                            <a href="">탈퇴</a>
-                            <a href="" class="blue">수정완료</a>
-                        </div>
-                    </div>
-
-                    <div class="adminfo-cont">
-                        <div class="inner-wrap">
-                            <div class="form">
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">구분</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="text" readonly value="지점 관리자">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">아이디</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="text" readonly value="hongildong23">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">비밀번호</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="password" value="">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">비밀번호 확인</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="password" value="">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">이름</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="text" readonly value="김공장">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">성별</span>
-                                    </div>
-                                    <div class="box">
-                                        <label for="m" class="checkbox">
-                                            <input type="radio" id="m" name="gender" hidden="" checked>
-                                            <span></span> 남성
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">생년월일</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="text" readonly value="1990.05.25">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">이메일</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="text"  value="hongildong23@gmail.com">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title">
-                                        <span class="l-border">휴대폰 번호</span>
-                                    </label>
-                                    <div class="box">
-                                        <input type="text" placeholder="" value="01055556666" class="">
-                                        <button class="btn waves-effect ml-auto">인증 확인</button>
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">지점</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="text" readonly value="정왕점">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">아카데미</span>
-                                    </div>
-                                    <div class="box">
-                                        <input type="text" readonly value="정왕점 아카데미">
-                                    </div>
-                                </div>
-                                <div class="form__row column">
-                                    <div class="form__row-title">
-                                        <span class="l-border">코치 이력</span>
-                                    </div>
-                                    <div class="box column">
-                                        <select name="" id="">
-                                            <option value="">김공장 코치</option>
-                                        </select>
-                                        <div class="coach-history">
-                                            <div class="coach-history-row">
-                                                <span class="numb">1.</span>
-                                                <p>코치 이력</p>
-                                                <div class="btnbox">
-                                                    <a href="" class="blue">수정</a>
-                                                    <a href="">삭제</a>
-                                                </div>
-                                            </div>
-                                            <div class="coach-history-row">
-                                                <span class="numb">2.</span>
-                                                <p>코치이력코치이력코치이력코치이력코치이력코치이력코치이력코치이력</p>
-                                                <div class="btnbox">
-                                                    <a href="" class="blue">수정</a>
-                                                    <a href="">삭제</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  @@include('./include/gnb.html')
+  <div class="content">
+    <div class="adm adminfo">
+      <div class="wrap flex">
+        <div class="content__left">
+          <div class="lnb">
+            <div class="lnb__title">
+              <a href="">마이페이지</a>
             </div>
+            <div class="lnb__depth">
+              <a href="" class="active">관리자 정보</a>
+            </div>
+          </div>
+        </div>
+        <div class="content__main">
+          <div class="content__header flex">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  관리자 정보
+                </span>
+              </h2>
+            </section>
+            <div class="newbtnbox">
+              <a href="">탈퇴</a>
+              <a href="" class="blue">수정완료</a>
+            </div>
+          </div>
+
+          <div class="adminfo-cont">
+            <div class="inner-wrap">
+              <div class="form">
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">구분</span>
+                  </div>
+                  <div class="box">
+                    <input type="text" readonly value="지점 관리자" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">아이디</span>
+                  </div>
+                  <div class="box">
+                    <input type="text" readonly value="hongildong23" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">비밀번호</span>
+                  </div>
+                  <div class="box">
+                    <input type="password" value="" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">비밀번호 확인</span>
+                  </div>
+                  <div class="box">
+                    <input type="password" value="" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">이름</span>
+                  </div>
+                  <div class="box">
+                    <input type="text" readonly value="김공장" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">성별</span>
+                  </div>
+                  <div class="box">
+                    <label for="m" class="checkbox">
+                      <input type="radio" id="m" name="gender" hidden="" checked />
+                      <span></span> 남성
+                    </label>
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">생년월일</span>
+                  </div>
+                  <div class="box">
+                    <input type="text" readonly value="1990.05.25" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">이메일</span>
+                  </div>
+                  <div class="box">
+                    <input type="text" value="hongildong23@gmail.com" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <label for="" class="form__row-title">
+                    <span class="l-border">휴대폰 번호</span>
+                  </label>
+                  <div class="box">
+                    <input type="text" placeholder="" value="01055556666" class="" />
+                    <button class="btn waves-effect ml-auto">인증 확인</button>
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">지점</span>
+                  </div>
+                  <div class="box">
+                    <input type="text" readonly value="정왕점" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">아카데미</span>
+                  </div>
+                  <div class="box">
+                    <input type="text" readonly value="정왕점 아카데미" />
+                  </div>
+                </div>
+                <div class="form__row column">
+                  <div class="form__row-title">
+                    <span class="l-border">코치 이력</span>
+                  </div>
+                  <div class="box column">
+                    <div class="newhistoryinput">
+                      <input type="text" class="border" />
+                      <button></button>
+                    </div>
+                    <div class="coach-history">
+                      <div class="coach-history-row">
+                        <span class="numb">1.</span>
+                        <p>코치 이력</p>
+                        <div class="btnbox">
+                          <a href="" class="blue">수정</a>
+                          <a href="">삭제</a>
+                        </div>
+                      </div>
+                      <div class="coach-history-row">
+                        <span class="numb">2.</span>
+                        <p>코치이력코치이력코치이력코치이력코치이력코치이력코치이력코치이력</p>
+                        <div class="btnbox">
+                          <a href="" class="blue">수정</a>
+                          <a href="">삭제</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  @@include('./include/footer.html')
 </div>
-@@include('./include/footer.html')

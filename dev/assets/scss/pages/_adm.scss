@@ -207,7 +207,7 @@
         width: 165px;
         height: 160px;
         border: $border;
-        background: url("../images/add-file-img2.png") no-repeat center;
+        background: url('../images/add-file-img2.png') no-repeat center;
       }
       img {
         width: 100%;
@@ -436,7 +436,7 @@
   }
 
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 2px;
     height: 12px;
@@ -560,7 +560,7 @@
     position: relative;
     border-bottom: 10px solid #eaeaea;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0;
@@ -574,7 +574,7 @@
     }
     span {
       font-size: 10px;
-      background: url("../images/arrow-down.png") no-repeat right center;
+      background: url('../images/arrow-down.png') no-repeat right center;
       background-size: auto 5px;
       padding-right: 12px;
     }
@@ -609,15 +609,15 @@
       }
     }
     .stats__item.stats__item--attack .starts__item-box {
-      background: url("../images/stat-white-1.png") no-repeat center;
+      background: url('../images/stat-white-1.png') no-repeat center;
       background-size: 100% 100%;
     }
     .stats__item.stats__item--pass .starts__item-box {
-      background: url("../images/stat-white-2.png") no-repeat center;
+      background: url('../images/stat-white-2.png') no-repeat center;
       background-size: 100% 100%;
     }
     .stats__item.stats__item--defense .starts__item-box {
-      background: url("../images/stat-white-3.png") no-repeat center;
+      background: url('../images/stat-white-3.png') no-repeat center;
       background-size: 100% 100%;
     }
   }
@@ -789,7 +789,7 @@
 
   .select-frcs-arrow {
     flex: 1;
-    background: url("../images/i-arrow-right.png") no-repeat center;
+    background: url('../images/i-arrow-right.png') no-repeat center;
     background-size: auto 20px;
   }
   .select-frcs-item {
@@ -1007,7 +1007,7 @@
       height: 15px;
       text-indent: -9999px;
       overflow: hidden;
-      background: url("../images/i-minus-black.png") no-repeat center;
+      background: url('../images/i-minus-black.png') no-repeat center;
       background-size: auto 10px;
     }
   }
@@ -1202,7 +1202,7 @@
   margin: 20px 0;
   position: relative;
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 10px;
@@ -1213,7 +1213,7 @@
     background: #eaeaea;
   }
   &:before {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 10px;
@@ -1273,13 +1273,13 @@
         &:after {
           width: 60px;
           height: 60px;
-          background: url("../images/tournament__2row.png") no-repeat center;
+          background: url('../images/tournament__2row.png') no-repeat center;
           background-size: 100% 100%;
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
           top: 10px;
-          content: "";
+          content: '';
         }
         .matchinfo {
           margin: 0 57px;
@@ -1290,22 +1290,22 @@
         &:after {
           width: 115px;
           height: 65px;
-          background: url("../images/tournament__4row.png") no-repeat center;
+          background: url('../images/tournament__4row.png') no-repeat center;
           background-size: 100% 100%;
           position: absolute;
           left: 150px;
           top: 10px;
-          content: "";
+          content: '';
         }
         &:before {
           width: 115px;
           height: 65px;
-          background: url("../images/tournament__4row.png") no-repeat center;
+          background: url('../images/tournament__4row.png') no-repeat center;
           background-size: 100% 100%;
           position: absolute;
           right: 150px;
           top: 10px;
-          content: "";
+          content: '';
         }
         .matchinfo {
           margin: 0 5px;
@@ -1355,8 +1355,8 @@
         }
         &.star {
           &:after {
-            content: "";
-            background: url("../images/star1.png") no-repeat center;
+            content: '';
+            background: url('../images/star1.png') no-repeat center;
             background-size: 100% 100%;
             width: 15px;
             height: 15px;
@@ -1392,7 +1392,7 @@
   .evaluation__item-remove {
     width: 15px;
     height: 15px;
-    background: #fff url("../images/i-x-black.png") no-repeat center;
+    background: #fff url('../images/i-x-black.png') no-repeat center;
     background-size: auto 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
     border-radius: 50%;
@@ -1404,19 +1404,45 @@
 }
 
 .reservation .ui-datepicker .ui-datepicker-header {
-  border-color:#5A5553;
-  border-bottom-left-radius: 0;;
-  border-bottom-right-radius: 0;;
+  border-color: #5a5553;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .reservation .ui-widget.ui-widget-content {
-  border: none !important;;
+  border: none !important;
 
   table {
     border: 1px solid rgba(112, 112, 112, 0.5) !important;
   }
 }
 
+.ui-datepicker th {
+  font-size: 10px;
+  opacity: 0.5;
+  height: 50px;
+}
+.reservation .calendar .ui-datepicker .ui-datepicker-next {
+  right: 180px;
+}
+.reservation .calendar .ui-datepicker .ui-datepicker-prev {
+  left: 180px;
+}
 
-.ui-datepicker th{font-size: 10px;opacity: .5;height: 50px;}
-.reservation .calendar .ui-datepicker .ui-datepicker-next{right: 180px;}
-.reservation .calendar .ui-datepicker .ui-datepicker-prev{left: 180px;}
+.newhistoryinput {
+  width: 100%;
+  position: relative;
+  input {
+    border: $border;
+    border-radius: 7px;
+    padding: 0 30px 0 10px;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url('../images/i-plus-black.png') no-repeat center;
+    background-size: auto 10px;
+  }
+}

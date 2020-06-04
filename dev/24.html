@@ -1,368 +1,357 @@
 @@include('./include/header.html')
+<style>
+  .evaluation .evaluation__item:nth-child(3n) {
+    margin-right: 38px;
+  }
+  .evaluation .evaluation__item:nth-child(6n) {
+    margin-right: 38px;
+  }
+  .evaluation .evaluation__item:nth-child(n + 4) {
+    margin-top: 0;
+  }
+  .evaluation .evaluation__item:nth-child(n + 7) {
+    margin-top: 10px;
+  }
+</style>
 <div class="container">
-    @@include('./include/gnb.html')
-    <div class="content">
-        <div class="adm prd prd-detail">
-            <div class="wrap flex">
-                <div class="content__left">
-                    <div class="lnb">
-                        <div class="lnb__title">
-                            <a href="">기능 관리</a>
-                        </div>
-                        <div class="lnb__depth">
-                            <a href="" class="active">예약</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__main">
-                    <div class="content__header flex">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                                <span>
-                                    예약상세
-                                </span>
-                            </h2>
-                        </section>
-                    </div>
-                    <div class="prd__section">
-                        <div class="prd__section-tab">
-                            <div>
-                                <strong>예약정보</strong>
-                                <article class="accounts__state step3-2 mr-auto">
-                                    환불요청
-                                </article>
-                            </div>
-                        </div>
-                        <div class="prd__section-content">
-                            <div class="prd-member">
-                                <div class="form flex">
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">지점명</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="시흥 장왕점">
-                                            <a href="" class="btn btn--small">더보기</a>
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">예약번호</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" value="A274918498" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">예약날짜</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" value="2020-03-01" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">예약자</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="김공장">
-                                            <a href="" class="btn btn--small">더보기</a>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">예약시간</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" value="12:00 ~14:00" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">예약구장</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" value="A-구장" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">매치신청</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" value="무" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">용병신청</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" value="유 " readonly>
-                                            <a href="" class="btn btn--small">더보기</a>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">옵션</span>
-                                        </div>
-                                        <div class="box">
-                                            <div class="rsvt">
-                                                <p>음료수 10개 50,000원</p>
-                                                <p>음료수 10개 50,000원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__row column form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">예약자 휴대폰 번호</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" value="01055556666" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form__row  form__row-half">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">공유선수 목록</span>
-                                        </div>
-                                        <div class="box">
-                                            <div class="evaluation mt-10">
-                                                <div class="evaluation__item">
-                                                    <span class="thumb">
-                                                        <img src="//via.placeholder.com/95x95" alt="">
-                                                        <span>수비</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <h3>김공장</h3>
-                                                        <p>
-                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="evaluation__item">
-                                                    <span class="thumb">
-                                                        <img src="//via.placeholder.com/95x95" alt="">
-                                                        <span>수비</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <h3>김공장</h3>
-                                                        <p>
-                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="evaluation__item">
-                                                    <span class="thumb">
-                                                        <img src="//via.placeholder.com/95x95" alt="">
-                                                        <span>수비</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <h3>김공장</h3>
-                                                        <p>
-                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="evaluation__item">
-                                                    <span class="thumb">
-                                                        <img src="//via.placeholder.com/95x95" alt="">
-                                                        <span>수비</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <h3>김공장</h3>
-                                                        <p>
-                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="evaluation__item">
-                                                    <span class="thumb">
-                                                        <img src="//via.placeholder.com/95x95" alt="">
-                                                        <span>수비</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <h3>김공장</h3>
-                                                        <p>
-                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="evaluation__item">
-                                                    <span class="thumb">
-                                                        <img src="//via.placeholder.com/95x95" alt="">
-                                                        <span>수비</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <h3>김공장</h3>
-                                                        <p>
-                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="evaluation__item">
-                                                    <span class="thumb">
-                                                        <img src="//via.placeholder.com/95x95" alt="">
-                                                        <span>수비</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <h3>김공장</h3>
-                                                        <p>
-                                                            <img src="//via.placeholder.com/15x15" alt=""> 티키타카 스포츠
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prd__section">
-                        <div class="prd__section-tab">
-                            <div>
-                                <strong>결제정보</strong>
-                            </div>
-                        </div>
-                        <div class="prd__section-content">
-                            <div class="prd-member">
-                                <div class="form flex">
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">결제금액</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="200,000 원">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">결제자</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="김공장">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">결제수단</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="카드결제">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">결제일</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="2020-03-01">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">마일리지</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="0 원">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">가격</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="200,000 원">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <article class="btnbox" >
-                                <a href="" class="btn btn--small btn-white ml-auto">결제완료</a>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="prd__section">
-                        <div class="prd__section-tab">
-                            <div>
-                                <strong>환불정보</strong>
-                            </div>
-                        </div>
-                        <div class="prd__section-content">
-                            <div class="prd-member">
-                                <div class="form flex">
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">환불금액</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="200,000 원">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">환불방법</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="계좌이체">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">결제금액</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="200,000 원">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">결제수단</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="카드결제">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">계좌번호</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="국민은행 22266688888">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">받는사람</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="김공장">
-                                        </div>
-                                    </div>
-                                    <div class="form__row form__row-half column">
-                                        <div class="form__row-title">
-                                            <span class="l-border font-12">환불사유</span>
-                                        </div>
-                                        <div class="box">
-                                            <input type="text" readonly value="일정 변경">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <article class="btnbox" >
-                                <a href="" class="btn btn--small btn-white ml-auto">환불완료</a>
-                            </article>
-                        </div>
-                    </div>
-
-                </div>
+  @@include('./include/gnb.html')
+  <div class="content">
+    <div class="adm prd prd-detail">
+      <div class="wrap flex">
+        <div class="content__left">
+          <div class="lnb">
+            <div class="lnb__title">
+              <a href="">기능 관리</a>
             </div>
+            <div class="lnb__depth">
+              <a href="" class="active">예약</a>
+            </div>
+          </div>
         </div>
+        <div class="content__main">
+          <div class="content__header flex">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  예약상세
+                </span>
+              </h2>
+            </section>
+          </div>
+          <div class="prd__section">
+            <div class="prd__section-tab">
+              <div>
+                <strong>예약정보</strong>
+                <article class="accounts__state step3-2 mr-auto">
+                  환불요청
+                </article>
+              </div>
+            </div>
+            <div class="prd__section-content">
+              <div class="prd-member">
+                <div class="form flex">
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">지점명</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="시흥 장왕점" />
+                      <a href="" class="btn btn--small">더보기</a>
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">예약번호</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" value="A274918498" readonly />
+                    </div>
+                  </div>
+                  <div class="form__row column form__row-half">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">예약날짜</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" value="2020-03-01" readonly />
+                    </div>
+                  </div>
+                  <div class="form__row column form__row-half">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">예약자</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="김공장" />
+                      <a href="" class="btn btn--small">더보기</a>
+                    </div>
+                  </div>
+                  <div class="form__row column form__row-half">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">예약시간</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" value="12:00 ~14:00" readonly />
+                    </div>
+                  </div>
+                  <div class="form__row column form__row-half">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">예약구장</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" value="A-구장" readonly />
+                    </div>
+                  </div>
+                  <div class="form__row column form__row-half">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">매치신청</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" value="무" readonly />
+                      <a href="" class="btn btn--small">더보기</a>
+                    </div>
+                  </div>
+                  <div class="form__row column form__row-half">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">용병신청</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" value="유 " readonly />
+                      <a href="" class="btn btn--small">더보기</a>
+                    </div>
+                  </div>
+                  <div class="form__row column form__row-half">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">예약자 휴대폰 번호</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" value="01055556666" readonly />
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">공유선수 목록</span>
+                    </div>
+                    <div class="box">
+                      <div class="evaluation mt-10">
+                        <div class="evaluation__item">
+                          <span class="thumb">
+                            <img src="//via.placeholder.com/95x95" alt="" />
+                            <span>수비</span>
+                          </span>
+                          <div class="info">
+                            <h3>김공장</h3>
+                            <p><img src="//via.placeholder.com/15x15" alt="" /> 티키타카 스포츠</p>
+                          </div>
+                        </div>
+                        <div class="evaluation__item">
+                          <span class="thumb">
+                            <img src="//via.placeholder.com/95x95" alt="" />
+                            <span>수비</span>
+                          </span>
+                          <div class="info">
+                            <h3>김공장</h3>
+                            <p><img src="//via.placeholder.com/15x15" alt="" /> 티키타카 스포츠</p>
+                          </div>
+                        </div>
+                        <div class="evaluation__item">
+                          <span class="thumb">
+                            <img src="//via.placeholder.com/95x95" alt="" />
+                            <span>수비</span>
+                          </span>
+                          <div class="info">
+                            <h3>김공장</h3>
+                            <p><img src="//via.placeholder.com/15x15" alt="" /> 티키타카 스포츠</p>
+                          </div>
+                        </div>
+                        <div class="evaluation__item">
+                          <span class="thumb">
+                            <img src="//via.placeholder.com/95x95" alt="" />
+                            <span>수비</span>
+                          </span>
+                          <div class="info">
+                            <h3>김공장</h3>
+                            <p><img src="//via.placeholder.com/15x15" alt="" /> 티키타카 스포츠</p>
+                          </div>
+                        </div>
+                        <div class="evaluation__item">
+                          <span class="thumb">
+                            <img src="//via.placeholder.com/95x95" alt="" />
+                            <span>수비</span>
+                          </span>
+                          <div class="info">
+                            <h3>김공장</h3>
+                            <p><img src="//via.placeholder.com/15x15" alt="" /> 티키타카 스포츠</p>
+                          </div>
+                        </div>
+                        <div class="evaluation__item">
+                          <span class="thumb">
+                            <img src="//via.placeholder.com/95x95" alt="" />
+                            <span>수비</span>
+                          </span>
+                          <div class="info">
+                            <h3>김공장</h3>
+                            <p><img src="//via.placeholder.com/15x15" alt="" /> 티키타카 스포츠</p>
+                          </div>
+                        </div>
+                        <div class="evaluation__item">
+                          <span class="thumb">
+                            <img src="//via.placeholder.com/95x95" alt="" />
+                            <span>수비</span>
+                          </span>
+                          <div class="info">
+                            <h3>김공장</h3>
+                            <p><img src="//via.placeholder.com/15x15" alt="" /> 티키타카 스포츠</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd__section">
+            <div class="prd__section-tab">
+              <div>
+                <strong>결제정보</strong>
+              </div>
+            </div>
+            <div class="prd__section-content">
+              <div class="prd-member">
+                <div class="form flex">
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">결제금액</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="200,000 원" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">결제자</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="김공장" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">결제수단</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="카드결제" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">결제일</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="2020-03-01" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">마일리지</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="0 원" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">가격</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="200,000 원" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <article class="btnbox">
+                <a href="" class="btn btn--small btn-white ml-auto">결제완료</a>
+              </article>
+            </div>
+          </div>
+
+          <div class="prd__section">
+            <div class="prd__section-tab">
+              <div>
+                <strong>환불정보</strong>
+              </div>
+            </div>
+            <div class="prd__section-content">
+              <div class="prd-member">
+                <div class="form flex">
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">환불금액</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="200,000 원" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">환불방법</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="계좌이체" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">결제금액</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="200,000 원" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">결제수단</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="카드결제" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">계좌번호</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="국민은행 22266688888" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">받는사람</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="김공장" />
+                    </div>
+                  </div>
+                  <div class="form__row form__row-half column">
+                    <div class="form__row-title">
+                      <span class="l-border font-12">환불사유</span>
+                    </div>
+                    <div class="box">
+                      <input type="text" readonly value="일정 변경" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <article class="btnbox">
+                <a href="" class="btn btn--small btn-white ml-auto">환불완료</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 @@include('./include/footer.html')
