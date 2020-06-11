@@ -1,4 +1,7 @@
 @@include('./include/header.html')
+<style>
+    .newbtnbox a{font-weight: 400;}
+</style>
 <div class="container">
     @@include('./include/gnb.html')
     <div class="content">
@@ -20,7 +23,7 @@
                             <section class="accounts__header">
                                 <h2 class="accounts__title">
                                     <span>
-                                        동대문점
+                                        대회 명
                                     </span>
                                 </h2>
                             </section>
@@ -31,21 +34,26 @@
                         <a href="" class="">대회정보</a>
                         <a href="" class="">경기등록</a>
                         <a href="" class="">경기일정</a>
-                        <a href="" class="active ">신청내역</a>
+                        <a href="" class=" ">신청내역</a>
                         <a href="" class=" ">순위</a>
-                        <a href="" class=" ">공지사항</a>
+                        <a href="" class="active ">공지사항</a>
                     </div>
 
                     <div class="inner-wrap">
-                        <div class="flex mb-10">
-                            <select name="" id="" style="width: 85px;" class="newselect ml-auto">
-                                <option value="">지역선택</option>
-                            </select>
-                            <select name="" id="" style="width: 85px;" class="newselect ml-5">
-                                <option value="">진행상황</option>
-                            </select>
+
+                        <div class="form">
+                            <div class="form__row column mb-0">
+                                <div class="box ">
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">분류선택</option>
+                                        <option value="">분류</option>
+                                    </select>
+                                    <input type="text" placeholder="검색어를 입력하세요." class="input-border">
+                                    <button class="form-search"></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="admtable mt-70">
+                        <div class="admtable mt-40">
                             <table>
                                 <colgroup>
                                     <col width="40">
@@ -53,33 +61,33 @@
                                     <col>
                                     <col>
                                     <col>
-                                    <col width="55">
+                                    <col width="65">
                                 </colgroup>
                                 <thead>
                                 <tr>
                                     <th></th>
-                                    <th>팀명</th>
-                                    <th>지점</th>
-                                    <th>신청일</th>
-                                    <th>진행상황</th>
+                                    <th>관리자 이름</th>
+                                    <th>제목</th>
+                                    <th>등록일</th>
                                     <th></th>
+                                    <th>
+                                        <div class="newbtnbox">
+                                            <a href="" class="blue">등록하기</a>
+                                        </div>
+                                    </th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td class="text-left">1.</td>
+                                    <td>김공장 코치</td>
                                     <td>
-                                        <a href="">공장</a>
+                                        <a href="">공지사항 제목자리 입니다.</a>
                                     </td>
                                     <td>
-                                        장황점
+                                        20.03.03
                                     </td>
-                                    <td>
-                                        2020.02.03
-                                    </td>
-                                    <td>
-                                        <span class="color-green">결제대기</span>
-                                    </td>
+                                    <td></td>
                                     <td>
                                         <div class="btnbox">
                                             <a href="" class="btn btn--small btn-black">삭제</a>
@@ -88,18 +96,14 @@
                                 </tr>
                                 <tr>
                                     <td class="text-left">1.</td>
+                                    <td>김공장 코치</td>
                                     <td>
-                                        <a href="">공장</a>
+                                        <a href="">공지사항 제목자리 입니다.</a>
                                     </td>
                                     <td>
-                                        장황점
+                                        20.03.03
                                     </td>
-                                    <td>
-                                        2020.02.03
-                                    </td>
-                                    <td>
-                                        <span class="color-green">결제대기</span>
-                                    </td>
+                                    <td></td>
                                     <td>
                                         <div class="btnbox">
                                             <a href="" class="btn btn--small btn-black">삭제</a>
@@ -108,18 +112,32 @@
                                 </tr>
                                 <tr>
                                     <td class="text-left">1.</td>
+                                    <td>김공장 코치</td>
                                     <td>
-                                        <a href="">공장</a>
+                                        <a href="">공지사항 제목자리 입니다.</a>
                                     </td>
+                                    
                                     <td>
-                                        장황점
+                                        20.03.03
                                     </td>
+                                    <td></td>
                                     <td>
-                                        2020.02.03
+                                        <div class="btnbox">
+                                            <a href="" class="btn btn--small btn-black">삭제</a>
+                                        </div>
                                     </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">1.</td>
+                                    <td>김공장 코치</td>
                                     <td>
-                                        <span class="color-gray">신청완료</span>
+                                        <a href="">공지사항 제목자리 입니다.</a>
                                     </td>
+                                    
+                                    <td>
+                                        20.03.03
+                                    </td>
+                                    <td></td>
                                     <td>
                                         <div class="btnbox">
                                             <a href="" class="btn btn--small btn-black">삭제</a>
@@ -131,21 +149,6 @@
                         </div>
 
                         @@include('./include/pagination.html')
-
-                        <div class="form mt-40">
-                            <div class="form__row column mb-0">
-                                <div class="box ">
-                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
-                                        <option value="">분류선택</option>
-                                        <option value="">가맹</option>
-                                        <option value="">지점</option>
-                                        <option value="">제휴</option>
-                                    </select>
-                                    <input type="text" placeholder="지점을 검색하세요." class="input-border">
-                                    <button class="form-search"></button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

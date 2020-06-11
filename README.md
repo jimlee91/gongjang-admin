@@ -89,7 +89,7 @@ gulp
 - [25. 대회 – 1](https://elegant-meninsky-d77a33.netlify.app/25.html)
 - [25. 대회 – 2](https://elegant-meninsky-d77a33.netlify.app/25.html)
 - [26. 대회 등록 (리그.html) – 1](https://elegant-meninsky-d77a33.netlify.app/26.html)
-- [26. 대회 등록 (리그.html) – 2](https://elegant-meninsky-d77a33.netlify.app/26.html)
+- [26. 대회 등록 (리그.html) – 2](https://elegant-meninsky-d77a33.netlify.app/26-2.html)
 - [26. 대회 등록 (컵.html)](https://elegant-meninsky-d77a33.netlify.app/26.html)
 - [26. 대회 등록 (컵.html) – 1](https://elegant-meninsky-d77a33.netlify.app/26.html)
 - [26. 대회 등록 (컵.html) – 2](https://elegant-meninsky-d77a33.netlify.app/26.html)

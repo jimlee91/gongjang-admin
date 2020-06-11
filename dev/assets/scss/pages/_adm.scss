@@ -1446,3 +1446,39 @@
     background-size: auto 10px;
   }
 }
+
+.filelistbox {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;;
+  font-size: 10px;
+  .downlink {
+    width: 65px;
+    height: 24px;
+    line-height: 22px;
+    border: 1px solid $green;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 10px;
+    margin-left: 15px;
+  }
+  ul {
+    flex: 1;
+    height: 32px;
+    border: 1px solid rgba(90,85,83, .6);
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    padding:0 10px;
+    li {
+      margin-right: 5px;
+      font-size: 10px;
+      &:after {
+        content:','
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+}
