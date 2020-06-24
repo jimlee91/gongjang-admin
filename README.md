@@ -234,3 +234,9 @@ gulp
 - [0 - 3. 지점 관리자 회원가입](https://elegant-meninsky-d77a33.netlify.app/0-3.html)
 - [2. 마이페이지(관리자정보)](https://elegant-meninsky-d77a33.netlify.app/2.html)
 - [21. 예약 시간 관리](https://elegant-meninsky-d77a33.netlify.app/21.html)
+
+-------------------
+
+- [28. 공지사항(리그) - 1](https://elegant-meninsky-d77a33.netlify.app/28-1.html)
+- [28. 공지사항(리그) - 2](https://elegant-meninsky-d77a33.netlify.app/28-1-d.html)
+- [28. 공지사항(리그) - 3](https://elegant-meninsky-d77a33.netlify.app/28-1-w.html)
